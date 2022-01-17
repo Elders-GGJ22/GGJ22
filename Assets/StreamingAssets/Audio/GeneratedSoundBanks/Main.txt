@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
 	398364805	Chitarra			\Default Work Unit\Chitarra	
+	2726606664	Drums			\Default Work Unit\Drums	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	331542880	New Sound SFX	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRAVIS_BARKER_drum_fill_12_90_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\New Sound SFX		470464
 	902822089	TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm		846784
 
