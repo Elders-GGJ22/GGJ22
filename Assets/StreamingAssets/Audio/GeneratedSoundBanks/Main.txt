@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	398364805	Chitarra			\Default Work Unit\Chitarra	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	902822089	TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm		846784
+
