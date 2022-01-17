@@ -1,6 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1097980931	TestEvent			\Default Work Unit\TestEvent	
+	83547222	Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm			\Default Work Unit\Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	
+	2770176984	Play_TRAVIS_BARKER_drum_fill_12_90			\Default Work Unit\Play_TRAVIS_BARKER_drum_fill_12_90	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	37976664	TestSound	G:\UNITY\Jam2022\Jam2022_WwiseProject\.cache\Windows\SFX\TRAVIS_BARKER_drum_fill_12_90_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSound		470464
+	108806208	TRAVIS_BARKER_drum_fill_12_90	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRAVIS_BARKER_drum_fill_12_90_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRAVIS_BARKER_drum_fill_12_90		470464
+	523437854	TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm		846784
 
