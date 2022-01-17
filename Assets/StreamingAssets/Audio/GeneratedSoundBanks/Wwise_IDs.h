@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_TRAVIS_BARKER_DRUM_FILL_12_90 = 2770176984U;
         static const AkUniqueID PLAY_TRKTRN_GUITAR_ELECTRIC_CLEAN_1_LATINA_BPM_100_DM = 83547222U;
     } // namespace EVENTS
 
