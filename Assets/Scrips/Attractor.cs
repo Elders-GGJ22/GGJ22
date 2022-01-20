@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using Cinemachine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Attractor : MonoBehaviour
@@ -8,8 +9,8 @@ public class Attractor : MonoBehaviour
 	const float G = 667.4f;
 	public static List<Attractor> attractors;
 	[SerializeField] private bool positive = true;
-	[SerializeField] private bool interagible = true;
 	private Rigidbody rb;
+	//public CinemachineTargetGroup ctg;
 
 	private void Start()
 	{
@@ -25,27 +26,17 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
-	public void Add(bool positive)
-	{
-		if(!interagible) { return; }
-		//TODO
-	}
-
-	public void Remove(Rigidbody rb)
-	{
-		if (!interagible) { return; }
-		//TODO
-	}
-
 	void OnEnable()
 	{
 		if (attractors == null) { attractors = new List<Attractor>(); }
 		attractors.Add(this);
+		//TODO: Add this to CinemachineTargetGroup 
 	}
 
 	void OnDisable()
 	{
 		attractors.Remove(this);
+		//TODO: Remove this to CinemachineTargetGroup 
 	}
 
 	void Attract(Attractor objToAttract)

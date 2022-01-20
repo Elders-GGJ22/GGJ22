@@ -9,6 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5703920014523421142}
+  - component: {fileID: 764541303}
+  - component: {fileID: 764541304}
+  - component: {fileID: 764541305}
+  - component: {fileID: 764541306}
   m_Layer: 0
   m_Name: Gabbia base
   m_TagString: Untagged
@@ -45,6 +49,58 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &764541303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998252647534334215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 31.713957, y: 14.274345, z: 2.4606361}
+  m_Center: {x: 0.3434515, y: 6.6371737, z: 7.710346}
+--- !u!65 &764541304
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998252647534334215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.2949858, y: 14.274345, z: 19.623043}
+  m_Center: {x: -14.57723, y: 6.6371737, z: 16.218798}
+--- !u!65 &764541305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998252647534334215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5003529, y: 14.274345, z: 19.623043}
+  m_Center: {x: 14.9502535, y: 6.6371737, z: 16.218798}
+--- !u!65 &764541306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998252647534334215}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 31.713957, y: 14.274345, z: 2.4606361}
+  m_Center: {x: 0.3434515, y: 6.6371737, z: 24.8}
 --- !u!1001 &182753089988506574
 PrefabInstance:
   m_ObjectHideFlags: 0
