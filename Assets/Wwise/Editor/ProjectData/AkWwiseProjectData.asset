@@ -66,8 +66,22 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: fd10f6e5a090e24b968b1be1339d8833
     GuidInternal: 
-    m_lastTime: -8585591481729607752
-    List: []
+    m_lastTime: -8585591459266531430
+    List:
+    - name: Main
+      guid: 7d44178dc04c414cb807d01d7dd41c42
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fd10f6e5a090e24b968b1be1339d8833
+      - ElementName: Main
+        ObjectType: 7
+        guid: 7d44178dc04c414cb807d01d7dd41c42
+      Path: SoundBanks\Default Work Unit\Main
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     PathAndIcons:
@@ -80,8 +94,42 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1858724dd5c98a42b89402b3eac7db45
     GuidInternal: 
-    m_lastTime: -8585591481729968087
-    List: []
+    m_lastTime: -8585591459266341257
+    List:
+    - name: Play_TRAVIS_BARKER_drum_fill_12_90
+      guid: ff381033b673c4448c288c191522f303
+      id: 2770176984
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_TRAVIS_BARKER_drum_fill_12_90
+        ObjectType: 3
+        guid: ff381033b673c4448c288c191522f303
+      Path: Events\Default Work Unit\Play_TRAVIS_BARKER_drum_fill_12_90
+      maxAttenuation: 0
+      maxDuration: 2.666667
+      minDuration: 2.666667
+    - name: Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
+      guid: d0d107714049f548b59777d5e5ec4294
+      id: 83547222
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
+        ObjectType: 3
+        guid: d0d107714049f548b59777d5e5ec4294
+      Path: Events\Default Work Unit\Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
+      maxAttenuation: 0
+      maxDuration: 4.8
+      minDuration: 4.8
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
