@@ -1,0 +1,977 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2998252647534334215
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5703920014523421142}
+  m_Layer: 0
+  m_Name: Gabbia base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5703920014523421142
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2998252647534334215}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2130657048846373429}
+  - {fileID: 684872966155701357}
+  - {fileID: 4410391065763561300}
+  - {fileID: 3459660068455790266}
+  - {fileID: 4591599931398571712}
+  - {fileID: 8053231854904936355}
+  - {fileID: 1441349199458273984}
+  - {fileID: 361411168241439781}
+  - {fileID: 6254805791633947674}
+  - {fileID: 6067531758799483920}
+  - {fileID: 6571592757240884584}
+  - {fileID: 2388556868636953634}
+  - {fileID: 5138740478522460961}
+  - {fileID: 833420084167562265}
+  - {fileID: 5621066243672963366}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &182753089988506574
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.350933
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.843842
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_L (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+--- !u!4 &361411168241439781 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+  m_PrefabInstance: {fileID: 182753089988506574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &872113226538988530
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 9.214522
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.463
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &833420084167562265 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 872113226538988530}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1012062146441767814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.803501
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.997299
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_L
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+--- !u!4 &684872966155701357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+  m_PrefabInstance: {fileID: 1012062146441767814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1407948865830415659
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.817434
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.406232
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &1441349199458273984 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 1407948865830415659}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1881137063975646686
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7606678
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.37814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &2130657048846373429 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 1881137063975646686}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2787555186821934025
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.270002
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.434908
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &2388556868636953634 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 2787555186821934025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4001896860826751313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.761957
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.37814
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &3459660068455790266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 4001896860826751313}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4049328367085101355
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.1982765
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 8.84464
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_L (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+--- !u!4 &4591599931398571712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+  m_PrefabInstance: {fileID: 4049328367085101355}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4232928674813958335
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.241278
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.221919
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_d
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+--- !u!4 &4410391065763561300 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+  m_PrefabInstance: {fileID: 4232928674813958335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4673258945836346570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.650843
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.9965
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_L (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+--- !u!4 &5138740478522460961 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+  m_PrefabInstance: {fileID: 4673258945836346570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5298679072508714701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.213234
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.463
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &5621066243672963366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 5298679072508714701}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5856704571654069233
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.7880516
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.463001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &6254805791633947674 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 5856704571654069233}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6034412840400032763
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.789341
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.463001
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &6067531758799483920 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 6034412840400032763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6681166695213697667
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 14.27
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 13.433619
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &6571592757240884584 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 6681166695213697667}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7514373390791434312
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5703920014523421142}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.817432
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 19.407522
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_Name
+      value: Gabbia_muro_S (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+--- !u!4 &8053231854904936355 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+  m_PrefabInstance: {fileID: 7514373390791434312}
+  m_PrefabAsset: {fileID: 0}
