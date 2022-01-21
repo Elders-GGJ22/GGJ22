@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: fd10f6e5a090e24b968b1be1339d8833
     GuidInternal: 
-    m_lastTime: -8585591459266531430
+    m_lastTime: -8585588262672983825
     List:
     - name: Main
       guid: 7d44178dc04c414cb807d01d7dd41c42
@@ -94,11 +94,11 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1858724dd5c98a42b89402b3eac7db45
     GuidInternal: 
-    m_lastTime: -8585591459266341257
+    m_lastTime: -8585588175911557023
     List:
-    - name: Play_TRAVIS_BARKER_drum_fill_12_90
-      guid: ff381033b673c4448c288c191522f303
-      id: 2770176984
+    - name: Play_Criceto_Death_Blood
+      guid: 18e5b49bc82ad34ab7cc168c6868cd35
+      id: 1211002835
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -106,16 +106,16 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
-      - ElementName: Play_TRAVIS_BARKER_drum_fill_12_90
+      - ElementName: Play_Criceto_Death_Blood
         ObjectType: 3
-        guid: ff381033b673c4448c288c191522f303
-      Path: Events\Default Work Unit\Play_TRAVIS_BARKER_drum_fill_12_90
+        guid: 18e5b49bc82ad34ab7cc168c6868cd35
+      Path: Events\Default Work Unit\Play_Criceto_Death_Blood
       maxAttenuation: 0
-      maxDuration: 2.666667
-      minDuration: 2.666667
-    - name: Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
-      guid: d0d107714049f548b59777d5e5ec4294
-      id: 83547222
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Criceto_Impact
+      guid: 59fc9d545373924d924d7f26a3d16c82
+      id: 2339399990
       PathAndIcons:
       - ElementName: Events
         ObjectType: 5
@@ -123,13 +123,64 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
-      - ElementName: Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
+      - ElementName: Play_Criceto_Impact
         ObjectType: 3
-        guid: d0d107714049f548b59777d5e5ec4294
-      Path: Events\Default Work Unit\Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm
+        guid: 59fc9d545373924d924d7f26a3d16c82
+      Path: Events\Default Work Unit\Play_Criceto_Impact
       maxAttenuation: 0
-      maxDuration: 4.8
-      minDuration: 4.8
+      maxDuration: 0.555398
+      minDuration: 0.433919
+    - name: Play_Criceto_Start
+      guid: a67dfbee67b51c45a3b600b4b38a559f
+      id: 1031767396
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Criceto_Start
+        ObjectType: 3
+        guid: a67dfbee67b51c45a3b600b4b38a559f
+      Path: Events\Default Work Unit\Play_Criceto_Start
+      maxAttenuation: 0
+      maxDuration: 0.842843
+      minDuration: 0.516745
+    - name: Play_Impact_Box
+      guid: b15887d2b127434eafdbedc18091bdcd
+      id: 973569650
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Impact_Box
+        ObjectType: 3
+        guid: b15887d2b127434eafdbedc18091bdcd
+      Path: Events\Default Work Unit\Play_Impact_Box
+      maxAttenuation: 0
+      maxDuration: 3.226483
+      minDuration: 2.829988
+    - name: Play_Magnetismo
+      guid: 7b9ed0670124464bb80c0ef3b7641fa2
+      id: 1637986760
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Magnetismo
+        ObjectType: 3
+        guid: 7b9ed0670124464bb80c0ef3b7641fa2
+      Path: Events\Default Work Unit\Play_Magnetismo
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -142,8 +193,22 @@ MonoBehaviour:
     ParentPath: Game Parameters\Default Work Unit
     guid: 2a12e14064080b47acbdf299e5046b4c
     GuidInternal: 
-    m_lastTime: -8585591481729958078
-    List: []
+    m_lastTime: -8585588262672653528
+    List:
+    - name: Magnetismo_Distance
+      guid: 2ffca3a78014664089c789285ad34164
+      id: 3788238483
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2a12e14064080b47acbdf299e5046b4c
+      - ElementName: Magnetismo_Distance
+        ObjectType: 13
+        guid: 2ffca3a78014664089c789285ad34164
+      Path: Game Parameters\Default Work Unit\Magnetismo_Distance
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     PathAndIcons:
@@ -156,8 +221,74 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 2983a294e376f641a7dcd57793f28cde
     GuidInternal: 
-    m_lastTime: -8585591481729587740
-    List: []
+    m_lastTime: -8585588175911216629
+    List:
+    - name: Criceto_Death
+      guid: 88d75f6b2fbb0f4f8c58e735e19dfa53
+      id: 2902505743
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2983a294e376f641a7dcd57793f28cde
+      - ElementName: Criceto_Death
+        ObjectType: 9
+        guid: 88d75f6b2fbb0f4f8c58e735e19dfa53
+      Path: States\Default Work Unit\Criceto_Death
+      values:
+      - name: None
+        guid: 702a0b9a27ff3c43a08e1e5ee2fc1c93
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Criceto_Death
+          ObjectType: 9
+          guid: 88d75f6b2fbb0f4f8c58e735e19dfa53
+        - ElementName: None
+          ObjectType: 8
+          guid: 702a0b9a27ff3c43a08e1e5ee2fc1c93
+      - name: Off
+        guid: bff0f7161c0d98489ebbb5973cd9bce1
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Criceto_Death
+          ObjectType: 9
+          guid: 88d75f6b2fbb0f4f8c58e735e19dfa53
+        - ElementName: Off
+          ObjectType: 8
+          guid: bff0f7161c0d98489ebbb5973cd9bce1
+      - name: On
+        guid: 83463573c2d056408d0c21b829740ae0
+        id: 1651971902
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Criceto_Death
+          ObjectType: 9
+          guid: 88d75f6b2fbb0f4f8c58e735e19dfa53
+        - ElementName: On
+          ObjectType: 8
+          guid: 83463573c2d056408d0c21b829740ae0
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -170,7 +301,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7140a187516809448f8d6390b02b02ec
     GuidInternal: 
-    m_lastTime: -8585591481729587740
+    m_lastTime: -8585588175911306733
     List: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
@@ -187,7 +318,7 @@ MonoBehaviour:
     m_lastTime: -8585591481729577733
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 06000000070000000b0000000c000000
+  ExpandedWaapiItemIds: 0500000006000000070000000b0000000d0000000e0000000f000000ce000000cf0000005201000053010000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
