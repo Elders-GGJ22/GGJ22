@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scrips;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
@@ -83,6 +84,7 @@ public class Attractor : MonoBehaviour
 		{
 			hitted = true;
 			touchEvent.Invoke();
+			EventsManager.Instance.SfxEvent_Collided.Post(this.gameObject);
 			Debug.Log("minDistance in");
 		}
 		else if (hitted == true && distance > minDistance)

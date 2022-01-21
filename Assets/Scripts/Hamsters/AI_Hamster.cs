@@ -20,15 +20,31 @@ namespace Assets.Scrips.Criceti
         }*/
 
         private NavMeshAgent agent;
-
+        private IEnumerator mainRoutine;
         private const float DURATA_PAUSA = 1.5f;
+
+        public float walkRadius;
 
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-            
-            StartCoroutine(Brain());
+            StartBrain();
         }
+
+        public void StartBrain()
+        {
+            agent.enabled = true;
+            mainRoutine = Brain();
+            StartCoroutine(mainRoutine);
+        }
+
+        public void StopBrain()
+        {
+            agent.enabled = false;
+            StopCoroutine(mainRoutine);
+            mainRoutine = null;
+        }
+        
 
         /// <summary>
         /// Restituisce un punto randomico in un raggio di azione all'interno di una navmesh
@@ -37,40 +53,35 @@ namespace Assets.Scrips.Criceti
         /// <param name="range">raggio di ricerca in u</param>
         /// <param name="result">vero se ha trovato un punto valido</param>
         /// <returns></returns>
-        private bool RandomPoint(Vector3 center, float range, out Vector3 result)
+        private Vector3 RandomPoint()
         {
-            for (int i = 0; i < 30; i++)
-            {
-                Vector3 randomPoint = center + Random.insideUnitSphere * range;
-                NavMeshHit hit;
-                if (NavMesh.SamplePosition(randomPoint, out hit, 1.0f, NavMesh.AllAreas))
-                {
-                    result = hit.position;
-                    return true;
-                }
-            }
-            result = Vector3.zero;
-            return false;
+            Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
+            randomDirection += transform.position;
+            NavMeshHit hit;
+            NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
+            return hit.position;
         }
 
         // al posto di update, utilizzo una coroutine in modo da avere molto più controllo su quando e come intervenire
         private IEnumerator Brain()
         {
-            int rand = Random.Range(1, 2);
-
-            // TODO aggiungere qui le azioni possibili
-            switch (rand)
+            while (true)
             {
-                case 1: 
-                    yield return MuoviACaso();
-                    break;
-                case 2:
-                    yield return Scuotiti();
-                    break;
+                int rand = Random.Range(1, 2);
+
+                // TODO aggiungere qui le azioni possibili
+                switch (rand)
+                {
+                    case 1:
+                        yield return MuoviACaso();
+                        break;
+                    case 2:
+                        yield return Scuotiti();
+                        break;
+                }
+
+                yield return PensaPrimaDiAgire();
             }
-            
-            yield return PensaPrimaDiAgire();
-            StartCoroutine(Brain());
         }
         
         /// <summary>
@@ -85,11 +96,7 @@ namespace Assets.Scrips.Criceti
 
         private IEnumerator MuoviACaso()
         {
-            if (RandomPoint(transform.position, 10, out var rand))
-            {
-                agent.destination = rand;                
-            }
-
+            agent.destination = RandomPoint();
             while (agent.remainingDistance <= 0)
             {
                 yield return new WaitForEndOfFrame();    

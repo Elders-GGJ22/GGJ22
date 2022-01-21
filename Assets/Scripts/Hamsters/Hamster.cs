@@ -31,7 +31,7 @@ namespace Assets.Scrips.Criceti
 
         public void Start()
         {
-            // in base al tipo prepara
+            
         }
     }
 }

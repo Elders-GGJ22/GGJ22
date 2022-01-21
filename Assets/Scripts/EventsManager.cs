@@ -33,6 +33,7 @@ namespace Assets.Scrips
         [Header("AK Wwise Events")] 
         public AK.Wwise.Event SfxEvent_HamsterDead;
         public AK.Wwise.Event SfxEvent_GameOver;
+        public AK.Wwise.Event SfxEvent_Collided;
         // etc
 
         [Header("Custom Events")] 
