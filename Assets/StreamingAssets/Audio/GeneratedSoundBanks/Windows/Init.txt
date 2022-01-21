@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2902505743	Criceto_Death			\Default Work Unit\Criceto_Death	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Criceto_Death			
+	930712164	Off	Criceto_Death			
+	1651971902	On	Criceto_Death			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

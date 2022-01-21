@@ -11,33 +11,72 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="3690994985">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2186044830">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1921698351">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1744705891">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2770176984" Name="Play_TRAVIS_BARKER_drum_fill_12_90" ObjectPath="\Events\Default Work Unit\Play_TRAVIS_BARKER_drum_fill_12_90" DurationType="OneShot" DurationMin="2.666667" DurationMax="2.666667">
+				<Event Id="2339399990" Name="Play_Criceto_Impact" ObjectPath="\Events\Default Work Unit\Play_Criceto_Impact">
 					<IncludedMemoryFiles>
-						<File Id="108806208" Language="SFX">
-							<ShortName>TRAVIS_BARKER_drum_fill_12_90.wav</ShortName>
-							<Path>SFX\TRAVIS_BARKER_drum_fill_12_90_10C4C929.wem</Path>
+						<File Id="315214619" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_4_6C257B70.wem</Path>
+						</File>
+						<File Id="491050347" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_1_F927B38C.wem</Path>
+						</File>
+						<File Id="1042466446" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_6_E0421EBC.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="83547222" Name="Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm" ObjectPath="\Events\Default Work Unit\Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm" DurationType="OneShot" DurationMin="4.800000" DurationMax="4.800000">
+				<Event Id="1031767396" Name="Play_Criceto_Start" ObjectPath="\Events\Default Work Unit\Play_Criceto_Start">
 					<IncludedMemoryFiles>
-						<File Id="523437854" Language="SFX">
-							<ShortName>TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm.wav</ShortName>
-							<Path>SFX\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm_10C4C929.wem</Path>
+						<File Id="222786278" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_3_CA651061.wem</Path>
+						</File>
+						<File Id="736105152" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_2_6C257A96.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="973569650" Name="Play_Impact_Box" ObjectPath="\Events\Default Work Unit\Play_Impact_Box">
+					<IncludedMemoryFiles>
+						<File Id="119744232" Language="SFX">
+							<ShortName>BOXES\_ Impact_metal_3.wav</ShortName>
+							<Path>SFX\BOXES\_ Impact_metal_3_10C4C929.wem</Path>
+						</File>
+						<File Id="186127481" Language="SFX">
+							<ShortName>BOXES\_ Impact_Metal_1.wav</ShortName>
+							<Path>SFX\BOXES\_ Impact_Metal_1_10C4C929.wem</Path>
+						</File>
+						<File Id="1023022279" Language="SFX">
+							<ShortName>BOXES\_ Impact_Metal_2.wav</ShortName>
+							<Path>SFX\BOXES\_ Impact_Metal_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1637986760" Name="Play_Magnetismo" ObjectPath="\Events\Default Work Unit\Play_Magnetismo">
+					<IncludedMemoryFiles>
+						<File Id="542621630" Language="SFX">
+							<ShortName>_ Attrazione 1.wav</ShortName>
+							<Path>SFX\_ Attrazione 1_8B064675.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3788238483" Name="Magnetismo_Distance" ObjectPath="\Game Parameters\Default Work Unit\Magnetismo_Distance"/>
+			</GameParameters>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
