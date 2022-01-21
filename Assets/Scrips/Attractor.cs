@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 //using Cinemachine;
 
-[RequireComponent(typeof(MeshRenderer))]
 [RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(MeshRenderer))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class Attractor : MonoBehaviour
 {
 	[Header("Variables")]
 	[SerializeField] private bool positive = true;
 	[SerializeField] private bool magnetic = true;
+	[SerializeField] private Vector2 walkEverySeconds = new Vector2(1, 3);
+	[SerializeField] private int walkRadius = 3;
 
 	[Header("Materials")]
 	[SerializeField] private Material idleMaterial;
@@ -20,13 +24,16 @@ public class Attractor : MonoBehaviour
 	public static List<Attractor> attractors;
 	private Rigidbody rb;
 	private MeshRenderer meshRenderer;
+	private NavMeshAgent agent;
 	//public CinemachineTargetGroup ctg;
 
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
+		this.agent = this.GetComponent<NavMeshAgent>();
+		StartCoroutine(MoveRandomOverTime());
 		this.meshRenderer = this.GetComponent<MeshRenderer>();
-		SetMaterial();
+		SetMagnetic(magnetic);
 	}
 
 	void FixedUpdate()
@@ -52,26 +59,48 @@ public class Attractor : MonoBehaviour
 		//TODO: Remove this to CinemachineTargetGroup 
 	}
 
+	IEnumerator MoveRandomOverTime()
+	{
+		while(true)
+		{
+			yield return new WaitForSeconds(Random.Range(walkEverySeconds.x, walkEverySeconds.y));
+			MoveRandom();
+		}
+	}
+
+	void MoveRandom()
+	{
+		if(!agent.enabled) { return; }
+		Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
+		randomDirection += transform.position;
+		NavMeshHit hit;
+		NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
+		agent.destination = hit.position;
+	}
+
 	public bool IsPositive()
 	{
 		return this.positive;
 	}
-
 
 	public bool IsMagnetic()
 	{
 		return this.magnetic;
 	}
 
-	public void SetMagnetic(bool _magnetic)
+	public void SetMagnetic(bool _magnetic) // Called from AttractorManager
 	{
 		this.magnetic = _magnetic;
+		this.agent.enabled = !_magnetic;
+		this.rb.isKinematic = !_magnetic;
 		SetMaterial();
 	}
 
 	public void SetPositive(bool _positive) // Called from AttractorManager
 	{
 		this.magnetic = true;
+		this.agent.enabled = !this.magnetic;
+		this.rb.isKinematic = !this.magnetic;
 		this.positive = _positive;
 		SetMaterial();
 	}

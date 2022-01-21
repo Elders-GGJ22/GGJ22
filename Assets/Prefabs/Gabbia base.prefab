@@ -1,5 +1,101 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1097439733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1097439737}
+  - component: {fileID: 1097439736}
+  - component: {fileID: 1097439735}
+  - component: {fileID: 1097439734}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &1097439737
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097439733}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.23, y: 0, z: 16.53}
+  m_LocalScale: {x: 2.68, y: 1, z: 1.5}
+  m_Children: []
+  m_Father: {fileID: 5703920014523421142}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1097439736
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097439733}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &1097439735
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097439733}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 2e64279c879136a42bc11f7bdea57566, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1097439734
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097439733}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &2998252647534334215
 GameObject:
   m_ObjectHideFlags: 0
@@ -18,7 +114,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5703920014523421142
 Transform:
@@ -46,6 +142,7 @@ Transform:
   - {fileID: 5138740478522460961}
   - {fileID: 833420084167562265}
   - {fileID: 5621066243672963366}
+  - {fileID: 1097439737}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -156,6 +253,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_L (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
 --- !u!4 &361411168241439781 stripped
@@ -217,6 +322,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_S (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
@@ -280,6 +393,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_L
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
 --- !u!4 &684872966155701357 stripped
@@ -341,6 +462,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_S (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
@@ -404,6 +533,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_S
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
 --- !u!4 &2130657048846373429 stripped
@@ -465,6 +602,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_S (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
@@ -528,6 +673,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_S (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
 --- !u!4 &3459660068455790266 stripped
@@ -589,6 +742,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_L (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
@@ -652,6 +813,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_d
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 61f136de6067138429a9377dc47d9741, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61f136de6067138429a9377dc47d9741, type: 3}
 --- !u!4 &4410391065763561300 stripped
@@ -713,6 +882,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_L (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9864b2eb46385324a8534607f1e369c8, type: 3}
@@ -776,6 +953,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_S (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
 --- !u!4 &5621066243672963366 stripped
@@ -837,6 +1022,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_S (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
@@ -900,6 +1093,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_S (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
 --- !u!4 &6067531758799483920 stripped
@@ -962,6 +1163,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gabbia_muro_S (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
 --- !u!4 &6571592757240884584 stripped
@@ -1023,6 +1232,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
       propertyPath: m_Name
       value: Gabbia_muro_S (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f605965bf5baad4db6317b1b89e1693, type: 3}
