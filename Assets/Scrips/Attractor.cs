@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 //using Cinemachine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -19,6 +20,11 @@ public class Attractor : MonoBehaviour
 	[SerializeField] private Material idleMaterial;
 	[SerializeField] private Material positiveMaterial;
 	[SerializeField] private Material negativeMaterial;
+
+	[Header("Sounds")]
+	[SerializeField] private float minDistance = 1f;
+	[SerializeField] private UnityEvent soundEvent;
+	private bool hitted = false;
 
 	const float G = 667.4f;
 	public static List<Attractor> attractors;
@@ -119,6 +125,13 @@ public class Attractor : MonoBehaviour
 
 		Vector3 direction = rb.position - rbToAttract.position;
 		float distance = direction.magnitude;
+
+		if(distance < minDistance) {
+			hitted = true;
+			soundEvent.Invoke();
+		}
+		else if( hitted == true ) { hitted = false; }
+
 		if (distance == 0f) { return; }
 
 		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
