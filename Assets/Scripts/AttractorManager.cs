@@ -31,6 +31,11 @@ public class AttractorManager : MonoBehaviour
                                 attractor.SetMagnetic(false);
                                 positiveCharges++;
                             }
+                            else if(!attractor.IsPositive())
+                            {
+                                attractor.SetMagnetic(false);
+                                negativeCharges++;
+                            }
                         }
                         else if(positiveCharges > 0)
                         {
@@ -50,6 +55,11 @@ public class AttractorManager : MonoBehaviour
                             {
                                 attractor.SetMagnetic(false);
                                 negativeCharges++;
+                            }
+                            else if (attractor.IsPositive())
+                            {
+                                attractor.SetMagnetic(false);
+                                positiveCharges++;
                             }
                         }
                         else if (negativeCharges > 0)

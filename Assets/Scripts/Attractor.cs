@@ -23,7 +23,7 @@ public class Attractor : MonoBehaviour
 
 	[Header("Touching")]
 	[SerializeField] private float minDistance = 1.5f;
-	[SerializeField] private float debouncingTime = 0.5f;
+	//[SerializeField] private float debouncingTime = 0.5f;
 	[SerializeField] private UnityEvent touchEvent;
 	private bool hitted = false;
 
@@ -78,7 +78,7 @@ public class Attractor : MonoBehaviour
 
 	void SoundEvent(float distance)
 	{
-		if(debouncingTimeCurrent < debouncingTime) { return; }
+		//if(debouncingTimeCurrent < debouncingTime) { return; }
 		if (!hitted && distance < minDistance)
 		{
 			hitted = true;
