@@ -299,8 +299,9 @@ MonoBehaviour:
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
-  minDistance: 1
-  soundEvent:
+  minDistance: 1.5
+  debouncingTime: 0.5
+  touchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &594071376
@@ -491,8 +492,9 @@ MonoBehaviour:
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
-  minDistance: 1
-  soundEvent:
+  minDistance: 1.5
+  debouncingTime: 0.5
+  touchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!54 &827740448
@@ -793,8 +795,9 @@ MonoBehaviour:
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
-  minDistance: 1
-  soundEvent:
+  minDistance: 1.5
+  debouncingTime: 0.5
+  touchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!195 &1355356618

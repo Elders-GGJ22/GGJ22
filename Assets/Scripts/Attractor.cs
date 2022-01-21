@@ -21,9 +21,10 @@ public class Attractor : MonoBehaviour
 	[SerializeField] private Material positiveMaterial;
 	[SerializeField] private Material negativeMaterial;
 
-	[Header("Sounds")]
-	[SerializeField] private float minDistance = 1f;
-	[SerializeField] private UnityEvent soundEvent;
+	[Header("Touching")]
+	[SerializeField] private float minDistance = 1.5f;
+	[SerializeField] private float debouncingTime = 0.5f;
+	[SerializeField] private UnityEvent touchEvent;
 	private bool hitted = false;
 
 	const float G = 667.4f;
@@ -31,6 +32,7 @@ public class Attractor : MonoBehaviour
 	private Rigidbody rb;
 	private MeshRenderer meshRenderer;
 	private NavMeshAgent agent;
+	private float debouncingTimeCurrent = 0f;
 	//public CinemachineTargetGroup ctg;
 
 	private void Start()
@@ -49,6 +51,11 @@ public class Attractor : MonoBehaviour
 		{
 			if (attractor != this) { Attract(attractor); }
 		}
+	}
+
+	private void Update()
+	{
+		debouncingTimeCurrent += Time.deltaTime;
 	}
 
 	void Attract(Attractor objToAttract)
@@ -71,10 +78,11 @@ public class Attractor : MonoBehaviour
 
 	void SoundEvent(float distance)
 	{
+		if(debouncingTimeCurrent < debouncingTime) { return; }
 		if (!hitted && distance < minDistance)
 		{
 			hitted = true;
-			soundEvent.Invoke();
+			touchEvent.Invoke();
 			Debug.Log("minDistance in");
 		}
 		else if (hitted == true && distance > minDistance)
@@ -148,6 +156,14 @@ public class Attractor : MonoBehaviour
 		if(!this.magnetic) { this.meshRenderer.material = idleMaterial; }
 		else if(this.positive) { this.meshRenderer.material = positiveMaterial; }
 		else { this.meshRenderer.material = negativeMaterial; }
+	}
+
+	private void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(this.transform.position, walkRadius);
+		Gizmos.color = Color.blue;
+		Gizmos.DrawWireSphere(this.transform.position, minDistance);
 	}
 
 }
