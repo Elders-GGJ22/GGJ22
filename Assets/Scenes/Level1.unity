@@ -153,8 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d91941ff9d77a47866b116fdd11ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positiveCharges: 3
-  negativeCharges: 3
+  positiveCharges: 2
+  negativeCharges: 2
 --- !u!114 &234534890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -294,9 +294,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positive: 0
   magnetic: 0
+  walkEverySeconds: {x: 1, y: 3}
+  walkRadius: 3
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
+  minDistance: 1
+  soundEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &594071376
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -480,9 +486,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positive: 0
   magnetic: 0
+  walkEverySeconds: {x: 1, y: 3}
+  walkRadius: 3
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
+  minDistance: 1
+  soundEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!54 &827740448
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -776,9 +788,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positive: 1
   magnetic: 0
+  walkEverySeconds: {x: 1, y: 3}
+  walkRadius: 3
   idleMaterial: {fileID: 2100000, guid: 04858e33a7bcaf94aab34c4830dc25bf, type: 2}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
+  minDistance: 1
+  soundEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!195 &1355356618
 NavMeshAgent:
   m_ObjectHideFlags: 0

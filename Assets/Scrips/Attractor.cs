@@ -47,8 +47,40 @@ public class Attractor : MonoBehaviour
 		if(!magnetic) { return; }
 		foreach (Attractor attractor in attractors)
 		{
-			if (attractor != this)
-				Attract(attractor);
+			if (attractor != this) { Attract(attractor); }
+		}
+	}
+
+	void Attract(Attractor objToAttract)
+	{
+		if (!objToAttract.magnetic) { return; }
+		Rigidbody rbToAttract = objToAttract.rb;
+
+		Vector3 direction = rb.position - rbToAttract.position;
+		float distance = direction.magnitude;
+		SoundEvent(distance);
+
+		if (distance == 0f) { return; }
+
+		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
+		Vector3 force = direction.normalized * forceMagnitude;
+
+		int opposite = objToAttract.positive == this.positive ? -1 : 1;
+		rbToAttract.AddForce(force * opposite);
+	}
+
+	void SoundEvent(float distance)
+	{
+		if (!hitted && distance < minDistance)
+		{
+			hitted = true;
+			soundEvent.Invoke();
+			Debug.Log("minDistance in");
+		}
+		else if (hitted == true && distance > minDistance)
+		{
+			hitted = false;
+			Debug.Log("minDistance out");
 		}
 	}
 
@@ -116,29 +148,6 @@ public class Attractor : MonoBehaviour
 		if(!this.magnetic) { this.meshRenderer.material = idleMaterial; }
 		else if(this.positive) { this.meshRenderer.material = positiveMaterial; }
 		else { this.meshRenderer.material = negativeMaterial; }
-	}
-
-	void Attract(Attractor objToAttract)
-	{
-		if(!objToAttract.magnetic) { return; }
-		Rigidbody rbToAttract = objToAttract.rb;
-
-		Vector3 direction = rb.position - rbToAttract.position;
-		float distance = direction.magnitude;
-
-		if(distance < minDistance) {
-			hitted = true;
-			soundEvent.Invoke();
-		}
-		else if( hitted == true ) { hitted = false; }
-
-		if (distance == 0f) { return; }
-
-		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
-		Vector3 force = direction.normalized * forceMagnitude;
-
-		int opposite = objToAttract.positive == this.positive ? -1 : 1;
-		rbToAttract.AddForce(force * opposite);
 	}
 
 }
