@@ -1,8 +1,10 @@
 Event	ID	Name			Wwise Object Path	Notes
-	83547222	Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm			\Default Work Unit\Play_TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	
-	2770176984	Play_TRAVIS_BARKER_drum_fill_12_90			\Default Work Unit\Play_TRAVIS_BARKER_drum_fill_12_90	
+	973569650	Play_Impact_Box			\Default Work Unit\Play_Impact_Box	
+	1637986760	Play_Magnetismo			\Default Work Unit\Play_Magnetismo	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	108806208	TRAVIS_BARKER_drum_fill_12_90	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRAVIS_BARKER_drum_fill_12_90_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRAVIS_BARKER_drum_fill_12_90		470464
-	523437854	TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TRKTRN_Guitar_Electric_Clean_1_Latina_BPM_100_Dm		846784
+	119744232	_ Impact_metal_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_metal_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_metal_3		529264
+	186127481	_ Impact_Metal_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_Metal_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_Metal_1		529264
+	542621630	Magnetismo	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Attrazione 1_666DD319.wem		\Actor-Mixer Hierarchy\Default Work Unit\Magnetismo		618728
+	1023022279	_ Impact_Metal_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_Metal_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_Metal_2		529264
 
