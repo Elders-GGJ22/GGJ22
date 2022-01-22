@@ -14,6 +14,7 @@ public class Attractor : MonoBehaviour
 	[Header("Variables")]
 	[SerializeField] private bool positive = true;
 	[SerializeField] private bool magnetic = true;
+	[SerializeField] private bool cinematic = false;
 	//[SerializeField] private Vector2 walkEverySeconds = new Vector2(1, 3);
 	//[SerializeField] private int walkRadius = 3;
 
@@ -144,7 +145,7 @@ public class Attractor : MonoBehaviour
 	{
 		this.magnetic = _magnetic;
 		//this.agent.enabled = !_magnetic;
-		this.rb.isKinematic = !_magnetic;
+		this.rb.isKinematic = cinematic ? true : !_magnetic;
 		SetGFX();
 		if(_magnetic) { magnetizeEvent.Invoke(); }
 		else { demagnetizeEvent.Invoke(); }
