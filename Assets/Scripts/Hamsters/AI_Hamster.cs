@@ -21,63 +21,42 @@ namespace Assets.Scrips.Criceti
             Annusa
         }*/
 
-        private NavMeshAgent agent;
-        private IEnumerator mainRoutine;
-        private const float DURATA_PAUSA = 1.5f;
+        [Header("Variables")]
+        [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
+        [SerializeField] private float walkRadius = 3f;
+        [SerializeField] private Transform goal;
 
-        public float walkRadius;
-        public GameObject goal;
+        private NavMeshAgent agent;
+        private NavMeshPath path;
+        private float waiting = 0;
 
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-            StartBrain();
-        }
-
-        public void StartBrain()
-        {
-            agent.enabled = true;
-            mainRoutine = Brain();
-            StartCoroutine(mainRoutine);
-        }
-
-        public void StopBrain()
-        {
-            agent.enabled = false;
-            StopCoroutine(mainRoutine);
-            mainRoutine = null;
+            //StartCoroutine(Brain());
         }
         
-
-        /// <summary>
-        /// Restituisce un punto randomico in un raggio di azione all'interno di una navmesh
-        /// </summary>
-        /// <param name="center">punto di partenza del raggio di ricerca</param>
-        /// <param name="range">raggio di ricerca in u</param>
-        /// <param name="result">vero se ha trovato un punto valido</param>
-        /// <returns></returns>
-        private Vector3 RandomPoint()
+        private Vector3 AngentDestinationPoint()
         {
-            var path = new NavMeshPath();
-            
-            agent.CalculatePath(goal.transform.position, path);
-            
-            if (path.status == NavMeshPathStatus.PathComplete)
+            if(goal)
             {
-                /*foreach (Vector3 corner in path.corners)
-                {
-                    if ((corner - this.transform.position).magnitude > walkRadius)
-                    {
-                        Debug.Log("vado a punto");   
-                        return (corner - this.transform.position).normalized * walkRadius;
-                    }
-                }*/
-                
-                Debug.Log("vado a punto preciso");
-                return goal.transform.position;
+                path = new NavMeshPath();
+                agent.CalculatePath(goal.position, path);
 
-                
-                //yield return MuoviAPunto(goal.transform.position);
+                if (path.status == NavMeshPathStatus.PathComplete)
+                {
+                    /*foreach (Vector3 corner in path.corners)
+                    {
+                        if ((corner - this.transform.position).magnitude > walkRadius)
+                        {
+                            Debug.Log("vado a punto");   
+                            return (corner - this.transform.position).normalized * walkRadius;
+                        }
+                    }*/
+
+                    Debug.Log("vado a punto preciso");
+                    return goal.position;
+                }
             }
 
             Debug.Log("vado a caso");
@@ -86,76 +65,55 @@ namespace Assets.Scrips.Criceti
             NavMeshHit hit;
             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
             return hit.position;
-            
         }
 
         // al posto di update, utilizzo una coroutine in modo da avere molto più controllo su quando e come intervenire
-        private IEnumerator Brain()
+        //private IEnumerator Brain()
+        void Update()
         {
-            while (true)
+            //while (true)
+            //{
+            if (agent.enabled && waiting < 0)
             {
-                /*var path = new NavMeshPath();
-                bool reachable = agent.CalculatePath(goal.transform.position, path);
-                Debug.Log("Raggiungo=" + reachable + path.status);
-                if (reachable)
+                waiting = Random.Range(timeToWait.x, timeToWait.y);
+                // TODO aggiungere qui le azioni possibili
+                switch (Random.Range(1, 3))
                 {
-                    Debug.Log("vado a punto");
-                    yield return MuoviAPunto(goal.transform.position);
+                    case 1:
+                        agent.destination = AngentDestinationPoint();
+                        break;
+                    case 2:
+                        Debug.Log("scuoto");
+                        this.transform.DOShakePosition(waiting, 0.3f);
+                        //yield return Shake(2f);
+                        break;
                 }
-                else
-                {*/
-                    int rand = Random.Range(1, 3);
-                    // TODO aggiungere qui le azioni possibili
-                    switch (rand)
-                    {
-                        case 1:
-                            agent.destination = RandomPoint();
-                            break;
-                        case 2:
-                            Debug.Log("scuoto");
-                            yield return Scuotiti();
-                            break;
-                    }
-                //}
-
-                
-                
-                yield return PensaPrimaDiAgire();
             }
-        }
-        
-        /// <summary>
-        /// Attendi qualche istante prima di fare una nuova azione
-        /// sono pigri criceti dopotutto
-        /// </summary>
-        /// <returns></returns>
-        private IEnumerator PensaPrimaDiAgire()
-        {
-            yield return new WaitForSeconds(DURATA_PAUSA*Random.Range(1f,1.5f));
-        }
-        private IEnumerator MuoviAPunto(Vector3 goal)
-        {
-            agent.destination = goal;
-            yield return null;
-          /*  while (agent.remainingDistance <= 0)
-            {
-                yield return new WaitForEndOfFrame();    
-            }*/
+
+            //yield return new WaitForSeconds(Random.Range(timeToWait.x, timeToWait.y));
+            //}
+            waiting -= Time.deltaTime;
         }
 
-
-        private IEnumerator Scuotiti()
+        /*private IEnumerator Shake(float duration, float strenght = 0.3f)
         {
-            float DurataShake = 2;
-            this.transform.DOShakePosition(DurataShake, 0.3f);
-            
-            yield return new WaitForSeconds(DurataShake);
-        }
+            this.transform.DOShakePosition(duration, strenght);
+            yield return new WaitForSeconds(duration);
+        }*/
         
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(this.transform.position, walkRadius);
+
+            if(path != null)
+            {
+                Gizmos.color = Color.magenta;
+                for (int i = 0; i < path.corners.Length - 1; i++)
+                {
+                    Gizmos.DrawLine(path.corners[i], path.corners[i + 1]);
+                }
+            }
         }
     }
 

@@ -8,14 +8,18 @@ using UnityEngine.Events;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(MeshRenderer))]
-[RequireComponent(typeof(NavMeshAgent))]
+//[RequireComponent(typeof(NavMeshAgent))]
 public class Attractor : MonoBehaviour
 {
 	[Header("Variables")]
 	[SerializeField] private bool positive = true;
 	[SerializeField] private bool magnetic = true;
-	[SerializeField] private Vector2 walkEverySeconds = new Vector2(1, 3);
-	[SerializeField] private int walkRadius = 3;
+	//[SerializeField] private Vector2 walkEverySeconds = new Vector2(1, 3);
+	//[SerializeField] private int walkRadius = 3;
+
+	[Header("Magnetize")]
+	[SerializeField] private UnityEvent magnetizeEvent;
+	[SerializeField] private UnityEvent demagnetizeEvent;
 
 	[Header("Materials")]
 	[SerializeField] private Material idleMaterial;
@@ -32,15 +36,15 @@ public class Attractor : MonoBehaviour
 	public static List<Attractor> attractors;
 	private Rigidbody rb;
 	private MeshRenderer meshRenderer;
-	private NavMeshAgent agent;
-	private float debouncingTimeCurrent = 0f;
+	//private NavMeshAgent agent;
+	//private float debouncingTimeCurrent = 0f;
 	//public CinemachineTargetGroup ctg;
 
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
-		this.agent = this.GetComponent<NavMeshAgent>();
-		StartCoroutine(MoveRandomOverTime());
+		//this.agent = this.GetComponent<NavMeshAgent>();
+		//StartCoroutine(MoveRandomOverTime());
 		this.meshRenderer = this.GetComponent<MeshRenderer>();
 		SetMagnetic(magnetic);
 	}
@@ -54,10 +58,10 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
-	private void Update()
+	/*private void Update()
 	{
 		debouncingTimeCurrent += Time.deltaTime;
-	}
+	}*/
 
 	void Attract(Attractor objToAttract)
 	{
@@ -107,7 +111,7 @@ public class Attractor : MonoBehaviour
 		//TODO: Remove this to CinemachineTargetGroup 
 	}
 
-	IEnumerator MoveRandomOverTime()
+	/*IEnumerator MoveRandomOverTime()
 	{
 		while(true)
 		{
@@ -124,7 +128,7 @@ public class Attractor : MonoBehaviour
 		NavMeshHit hit;
 		NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
 		agent.destination = hit.position;
-	}
+	}*/
 
 	public bool IsPositive()
 	{
@@ -139,18 +143,17 @@ public class Attractor : MonoBehaviour
 	public void SetMagnetic(bool _magnetic) // Called from AttractorManager
 	{
 		this.magnetic = _magnetic;
-		this.agent.enabled = !_magnetic;
+		//this.agent.enabled = !_magnetic;
 		this.rb.isKinematic = !_magnetic;
 		SetMaterial();
+		if(_magnetic) { magnetizeEvent.Invoke(); }
+		else { demagnetizeEvent.Invoke(); }
 	}
 
 	public void SetPositive(bool _positive) // Called from AttractorManager
 	{
-		this.magnetic = true;
-		this.agent.enabled = !this.magnetic;
-		this.rb.isKinematic = !this.magnetic;
 		this.positive = _positive;
-		SetMaterial();
+		SetMagnetic(true);
 	}
 
 	void SetMaterial()
@@ -162,8 +165,8 @@ public class Attractor : MonoBehaviour
 
 	private void OnDrawGizmosSelected()
 	{
-		Gizmos.color = Color.red;
-		Gizmos.DrawWireSphere(this.transform.position, walkRadius);
+		//Gizmos.color = Color.red;
+		//Gizmos.DrawWireSphere(this.transform.position, walkRadius);
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireSphere(this.transform.position, minDistance);
 	}
