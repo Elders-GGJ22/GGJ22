@@ -2,21 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using Assets.Scrips;
 using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.Events;
 //using Cinemachine;
 
 [RequireComponent(typeof(Rigidbody))]
-//[RequireComponent(typeof(MeshRenderer))]
-//[RequireComponent(typeof(NavMeshAgent))]
 public class Attractor : MonoBehaviour
 {
 	[Header("Variables")]
 	[SerializeField] private bool positive = true;
 	[SerializeField] private bool magnetic = true;
 	[SerializeField] private bool cinematic = false;
-	//[SerializeField] private Vector2 walkEverySeconds = new Vector2(1, 3);
-	//[SerializeField] private int walkRadius = 3;
 
 	[Header("Magnetize")]
 	[SerializeField] private UnityEvent magnetizeEvent;
@@ -36,7 +31,6 @@ public class Attractor : MonoBehaviour
 	const float G = 667.4f;
 	public static List<Attractor> attractors;
 	private Rigidbody rb;
-	private MeshRenderer meshRenderer;
 	//private NavMeshAgent agent;
 	//private float debouncingTimeCurrent = 0f;
 	//public CinemachineTargetGroup ctg;
@@ -44,9 +38,6 @@ public class Attractor : MonoBehaviour
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
-		//this.agent = this.GetComponent<NavMeshAgent>();
-		//StartCoroutine(MoveRandomOverTime());
-		this.meshRenderer = this.GetComponent<MeshRenderer>();
 		SetMagnetic(magnetic);
 	}
 
@@ -112,25 +103,6 @@ public class Attractor : MonoBehaviour
 		//TODO: Remove this to CinemachineTargetGroup 
 	}
 
-	/*IEnumerator MoveRandomOverTime()
-	{
-		while(true)
-		{
-			yield return new WaitForSeconds(Random.Range(walkEverySeconds.x, walkEverySeconds.y));
-			MoveRandom();
-		}
-	}
-
-	void MoveRandom()
-	{
-		if(!agent.enabled) { return; }
-		Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
-		randomDirection += transform.position;
-		NavMeshHit hit;
-		NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
-		agent.destination = hit.position;
-	}*/
-
 	public bool IsPositive()
 	{
 		return this.positive;
@@ -162,15 +134,10 @@ public class Attractor : MonoBehaviour
 		this.idleGFX.SetActive(!this.magnetic);
 		this.positiveGFX.SetActive(this.magnetic && this.positive);
 		this.negativeGFX.SetActive(this.magnetic && !this.positive);
-		/*if(!this.magnetic) { this.meshRenderer.material = idleMaterial; }
-		else if(this.positive) { this.meshRenderer.material = positiveMaterial; }
-		else { this.meshRenderer.material = negativeMaterial; }*/
 	}
 
 	private void OnDrawGizmosSelected()
 	{
-		//Gizmos.color = Color.red;
-		//Gizmos.DrawWireSphere(this.transform.position, walkRadius);
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireSphere(this.transform.position, minDistance);
 	}

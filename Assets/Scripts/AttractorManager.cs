@@ -7,6 +7,8 @@ public class AttractorManager : MonoBehaviour
 {
     [SerializeField] private int positiveCharges = 1;
     [SerializeField] private int negativeCharges = 1;
+    [SerializeField] private float maxDistance = 50f;
+    [SerializeField] private LayerMask layerMask;
 
     void Update()
     {
@@ -15,64 +17,66 @@ public class AttractorManager : MonoBehaviour
         if (leftClick || rightClick)
         {
             RaycastHit hitInfo = new RaycastHit();
-            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo);
+            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, maxDistance, layerMask);
             if (hit)
             {
-                //Debug.Log("Hit " + hitInfo.transform.gameObject.name);
-                if (hitInfo.transform.gameObject.tag == "Attractable")
+                Debug.Log("Hit " + hitInfo.transform.gameObject.name);
+                //Debug.Log("Tag " + hitInfo.transform.gameObject.tag);
+                //if (hitInfo.transform.gameObject.tag == "Attractable")
+                //{
+                Attractor attractor = hitInfo.transform.GetComponent<Attractor>();
+                if(!attractor) { return; }
+                if(leftClick)
                 {
-                    Attractor attractor = hitInfo.transform.GetComponent<Attractor>();
-                    if(leftClick)
+                    if(attractor.IsMagnetic())
                     {
-                        if(attractor.IsMagnetic())
+                        if (attractor.IsPositive())
                         {
-                            if (attractor.IsPositive())
-                            {
-                                attractor.SetMagnetic(false);
-                                positiveCharges++;
-                            }
-                            else if(!attractor.IsPositive())
-                            {
-                                attractor.SetMagnetic(false);
-                                negativeCharges++;
-                            }
+                            attractor.SetMagnetic(false);
+                            positiveCharges++;
                         }
-                        else if(positiveCharges > 0)
+                        else if(!attractor.IsPositive())
                         {
-                            attractor.SetPositive(true);
-                            positiveCharges--;
+                            attractor.SetMagnetic(false);
+                            negativeCharges++;
                         }
-                        else
-                        {
-                            //TODO: some animation for understanding no ammo
-                        }
+                    }
+                    else if(positiveCharges > 0)
+                    {
+                        attractor.SetPositive(true);
+                        positiveCharges--;
                     }
                     else
                     {
-                        if (attractor.IsMagnetic())
-                        {
-                            if (!attractor.IsPositive())
-                            {
-                                attractor.SetMagnetic(false);
-                                negativeCharges++;
-                            }
-                            else if (attractor.IsPositive())
-                            {
-                                attractor.SetMagnetic(false);
-                                positiveCharges++;
-                            }
-                        }
-                        else if (negativeCharges > 0)
-                        {
-                            attractor.SetPositive(false);
-                            negativeCharges--;
-                        }
-                        else
-                        {
-                            //TODO: some animation for understanding no ammo
-                        }
+                        //TODO: some animation for understanding no ammo
                     }
                 }
+                else
+                {
+                    if (attractor.IsMagnetic())
+                    {
+                        if (!attractor.IsPositive())
+                        {
+                            attractor.SetMagnetic(false);
+                            negativeCharges++;
+                        }
+                        else if (attractor.IsPositive())
+                        {
+                            attractor.SetMagnetic(false);
+                            positiveCharges++;
+                        }
+                    }
+                    else if (negativeCharges > 0)
+                    {
+                        attractor.SetPositive(false);
+                        negativeCharges--;
+                    }
+                    else
+                    {
+                        //TODO: some animation for understanding no ammo
+                    }
+                }
+                //}
             }
         }
     }

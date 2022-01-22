@@ -14,8 +14,6 @@ namespace Assets.Scrips
         
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
-
- 
         
         public void Start()
         {

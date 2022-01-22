@@ -140,7 +140,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 9571f3b057835d14393086b0018853c7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -290,9 +290,10 @@ GameObject:
   - component: {fileID: 7660030595763387266}
   - component: {fileID: 7660030595763387267}
   - component: {fileID: 1355356613}
-  m_Layer: 0
+  - component: {fileID: 368831727}
+  m_Layer: 6
   m_Name: Hamster
-  m_TagString: Attractable
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -339,6 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positive: 1
   magnetic: 0
+  cinematic: 0
   magnetizeEvent:
     m_PersistentCalls:
       m_Calls:
@@ -386,11 +388,11 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 0.5
+  m_Speed: 3
   m_Acceleration: 8
-  avoidancePriority: 50
+  avoidancePriority: 0
   m_AngularSpeed: 120
-  m_StoppingDistance: 0
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -430,3 +432,17 @@ MonoBehaviour:
   walkRadius: 3
   goal: {fileID: 0}
   GFX: {fileID: 1294393940}
+--- !u!114 &368831727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7660030595763387276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67b2c3f5fa759646b1c777d71ab3618, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HType: 0
+  HState: 0
