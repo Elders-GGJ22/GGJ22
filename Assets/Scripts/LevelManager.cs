@@ -1,0 +1,74 @@
+﻿using Assets.Scrips.Criceti;
+using UnityEngine;
+
+namespace Assets.Scrips
+{
+    /// <summary>
+    /// Classe che gestice le regole di vittoria/sconfitta per ogni livello 
+    /// </summary>
+    public class LevelManager : MonoBehaviour
+    {
+        private int _hamsterOnLevel;
+        private LevelStats _levelStats;
+        
+        public void Start()
+        {
+            // conto quanti hamster ci sono nel livello 
+            // quando questo contatore arriverà a 0 avremo finito il livello
+            _hamsterOnLevel = FindObjectsOfType<Hamster>().Length;
+            
+            // ascolto gli eventi di morte e successo degli hamster
+            EventsManager.Instance.OnHamsterDieEvent.AddListener(OnHamsterDie);
+            EventsManager.Instance.OnHamsterReachHouseEvent.AddListener(OnHamsterReachHouse);
+
+            // preparo l'oggetto statistiche da inviare a fine livello
+            _levelStats = new LevelStats(_hamsterOnLevel);
+        }
+
+        private void OnHamsterDie()
+        {
+            _hamsterOnLevel--;
+            _levelStats.HamstersDead++;
+            CheckIfLevelIsCompleted();
+        }
+
+        private void OnHamsterReachHouse()
+        {
+            _hamsterOnLevel--;
+            _levelStats.HamstersSave++;
+            CheckIfLevelIsCompleted();
+        }
+
+        private void CheckIfLevelIsCompleted()
+        {
+            if (_hamsterOnLevel <= 0)
+            {
+                EventsManager.Instance.OnLevelFinished(_levelStats);
+            }
+        }
+    }
+
+    /// <summary>
+    /// oggetto che contiene le informazioni necessarie a fine livello per ui e statistiche
+    /// </summary>
+    public class LevelStats
+    {
+        public int TotalHamsters { get; set; }
+        public int HamstersDead { get; set; }
+        public int HamstersSave { get; set; }
+
+        public LevelStats()
+        {
+            TotalHamsters = 0;
+            HamstersDead = 0;
+            HamstersSave = 0;
+        }
+
+        public LevelStats(int totalHamsters)
+        {
+            TotalHamsters = totalHamsters;
+            HamstersDead = 0;
+            HamstersSave = 0;
+        }
+    }
+}

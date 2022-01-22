@@ -38,6 +38,10 @@ namespace Assets.Scrips
 
         [Header("Custom Events")] 
         public GameOverEvent OnGameOverEvent;
+
+        public HamsterDiedEvent OnHamsterDieEvent;
+        public HamsterReachHouseEvent OnHamsterReachHouseEvent;
+        public LevelFinished OnLevelFinishedEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
@@ -45,12 +49,23 @@ namespace Assets.Scrips
         public void OnHamsterDie()
         {
             SfxEvent_HamsterDead.Post(this.gameObject);
+            OnHamsterDieEvent?.Invoke();
+        }
+
+        public void OnHamsterReachHouse()
+        {
+            OnHamsterReachHouseEvent?.Invoke();
         }
 
         public void OnGameOver()
         {
             SfxEvent_GameOver.Post(this.gameObject);
             OnGameOverEvent?.Invoke();
+        }
+
+        public void OnLevelFinished(LevelStats statistiche)
+        {
+            OnLevelFinishedEvent?.Invoke(statistiche);
         }
         
         // etc..
@@ -62,6 +77,14 @@ namespace Assets.Scrips
 
     [System.Serializable]
     public class GameOverEvent : UnityEvent { }
-
+    
+    [System.Serializable]
+    public class HamsterDiedEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class HamsterReachHouseEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class LevelFinished : UnityEvent<LevelStats> { }
     #endregion
 }

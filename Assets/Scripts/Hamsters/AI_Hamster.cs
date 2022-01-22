@@ -85,7 +85,7 @@ namespace Assets.Scrips.Criceti
                         break;
                     case 2:
                         Debug.Log("scuoto");
-                        GFX.transform.DOShakePosition(waiting, 0.3f);
+                        GFX.transform.DOShakePosition(waiting, 0.1f);
                         //yield return Shake(2f);
                         break;
                 }
