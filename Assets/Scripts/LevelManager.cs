@@ -53,6 +53,7 @@ namespace Assets.Scrips
                 if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
                 {
                     _levelStats.PlayerWin = true;
+                    Debug.Log("Ho vinto");
                 }
                 EventsManager.Instance.OnLevelFinished(_levelStats);
             }
