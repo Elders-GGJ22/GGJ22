@@ -7,7 +7,7 @@ using UnityEngine.Events;
 //using Cinemachine;
 
 [RequireComponent(typeof(Rigidbody))]
-[RequireComponent(typeof(MeshRenderer))]
+//[RequireComponent(typeof(MeshRenderer))]
 //[RequireComponent(typeof(NavMeshAgent))]
 public class Attractor : MonoBehaviour
 {
@@ -21,10 +21,10 @@ public class Attractor : MonoBehaviour
 	[SerializeField] private UnityEvent magnetizeEvent;
 	[SerializeField] private UnityEvent demagnetizeEvent;
 
-	[Header("Materials")]
-	[SerializeField] private Material idleMaterial;
-	[SerializeField] private Material positiveMaterial;
-	[SerializeField] private Material negativeMaterial;
+	[Header("GFX")]
+	[SerializeField] private GameObject idleGFX;
+	[SerializeField] private GameObject positiveGFX;
+	[SerializeField] private GameObject negativeGFX;
 
 	[Header("Touching")]
 	[SerializeField] private float minDistance = 1.5f;
@@ -145,7 +145,7 @@ public class Attractor : MonoBehaviour
 		this.magnetic = _magnetic;
 		//this.agent.enabled = !_magnetic;
 		this.rb.isKinematic = !_magnetic;
-		SetMaterial();
+		SetGFX();
 		if(_magnetic) { magnetizeEvent.Invoke(); }
 		else { demagnetizeEvent.Invoke(); }
 	}
@@ -156,11 +156,14 @@ public class Attractor : MonoBehaviour
 		SetMagnetic(true);
 	}
 
-	void SetMaterial()
+	void SetGFX()
 	{
-		if(!this.magnetic) { this.meshRenderer.material = idleMaterial; }
+		this.idleGFX.SetActive(!this.magnetic);
+		this.positiveGFX.SetActive(this.magnetic && this.positive);
+		this.negativeGFX.SetActive(this.magnetic && !this.positive);
+		/*if(!this.magnetic) { this.meshRenderer.material = idleMaterial; }
 		else if(this.positive) { this.meshRenderer.material = positiveMaterial; }
-		else { this.meshRenderer.material = negativeMaterial; }
+		else { this.meshRenderer.material = negativeMaterial; }*/
 	}
 
 	private void OnDrawGizmosSelected()

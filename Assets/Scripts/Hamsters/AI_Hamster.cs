@@ -25,6 +25,7 @@ namespace Assets.Scrips.Criceti
         [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
         [SerializeField] private float walkRadius = 3f;
         [SerializeField] private Transform goal;
+        [SerializeField] private Transform GFX;
 
         private NavMeshAgent agent;
         private NavMeshPath path;
@@ -84,7 +85,7 @@ namespace Assets.Scrips.Criceti
                         break;
                     case 2:
                         Debug.Log("scuoto");
-                        this.transform.DOShakePosition(waiting, 0.3f);
+                        GFX.transform.DOShakePosition(waiting, 0.3f);
                         //yield return Shake(2f);
                         break;
                 }
