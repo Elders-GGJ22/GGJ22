@@ -65,12 +65,9 @@ namespace Assets.Scrips
 
         public void OnLevelFinished(LevelStats statistiche)
         {
+            Debug.Log("Ho finito il livello!!");
             OnLevelFinishedEvent?.Invoke(statistiche);
         }
-        
-        // etc..
-        
-        
     }
     
     #region custom unity events

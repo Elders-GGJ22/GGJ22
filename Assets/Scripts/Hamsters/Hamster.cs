@@ -33,5 +33,17 @@ namespace Assets.Scrips.Criceti
         {
             
         }
+
+        // su cosa ho sbattuto?
+        void OnTriggerEnter(Collider collision)
+        {
+            // raggiunto la casetta.
+            if (collision.gameObject.tag == HamsterUtils.TAG_GOAL)
+            {
+                EventsManager.Instance.OnHamsterReachHouse();
+                
+                // ora che fo? lo distruggo? 
+            }
+        }
     }
 }

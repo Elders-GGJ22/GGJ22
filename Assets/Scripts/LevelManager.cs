@@ -8,8 +8,14 @@ namespace Assets.Scrips
     /// </summary>
     public class LevelManager : MonoBehaviour
     {
+        [Header("Win condition")] 
+        public int MinHamsterAlive;
+        public bool AllAlive;
+        
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
+
+ 
         
         public void Start()
         {
@@ -43,6 +49,11 @@ namespace Assets.Scrips
         {
             if (_hamsterOnLevel <= 0)
             {
+                // il giocatore vince solo con le condizioni indicate sopra (tutti salvi se specificato, o almeno il numero minimo
+                if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
+                {
+                    _levelStats.PlayerWin = true;
+                }
                 EventsManager.Instance.OnLevelFinished(_levelStats);
             }
         }
@@ -56,12 +67,15 @@ namespace Assets.Scrips
         public int TotalHamsters { get; set; }
         public int HamstersDead { get; set; }
         public int HamstersSave { get; set; }
+        
+        public bool PlayerWin { get; set; }
 
         public LevelStats()
         {
             TotalHamsters = 0;
             HamstersDead = 0;
             HamstersSave = 0;
+            PlayerWin = false;
         }
 
         public LevelStats(int totalHamsters)
@@ -69,6 +83,7 @@ namespace Assets.Scrips
             TotalHamsters = totalHamsters;
             HamstersDead = 0;
             HamstersSave = 0;
+            PlayerWin = false;
         }
     }
 }
