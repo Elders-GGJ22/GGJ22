@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] humsters;
+    [SerializeField] private Attractor[] humsters;
+    [SerializeField] private Transform spawnPoint;
+    [SerializeField] private float minHeight = -5f;
 
     // Start is called before the first frame update
     void Start()
@@ -12,9 +14,15 @@ public class GameManager : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        foreach(Attractor humster in humsters)
+        {
+            if(humster.transform.position.y < minHeight)
+            {
+                humster.transform.position = spawnPoint.position;
+                humster.SetMagnetic(false);
+            }
+        }
     }
 }
