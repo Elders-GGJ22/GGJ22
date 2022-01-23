@@ -74,10 +74,10 @@
           </e>
           <e p="HamsterUtils.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
-          <e p="LoadPrefs.cs" t="Include" />
-          <e p="MenuController.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="EndOfLevelPanel.cs" t="Include" />
+            <e p="LoadPrefs.cs" t="Include" />
+            <e p="MenuController.cs" t="Include" />
           </e>
         </e>
         <e p="StreamingAssets" t="Include">
