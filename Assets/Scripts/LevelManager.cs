@@ -1,4 +1,5 @@
 ﻿using Assets.Scrips.Criceti;
+using Assets.Scrips.UI;
 using UnityEngine;
 
 namespace Assets.Scrips
@@ -14,7 +15,10 @@ namespace Assets.Scrips
         
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
-        
+
+        [Header("Canvas Control")]
+        [SerializeField] private GameObject _canvasWin;
+        [SerializeField] private EndOfLevelPanel _endOfLevel;
         public void Start()
         {
             // conto quanti hamster ci sono nel livello 
@@ -51,7 +55,8 @@ namespace Assets.Scrips
                 if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
                 {
                     _levelStats.PlayerWin = true;
-                    Debug.Log("Ho vinto");
+                    _canvasWin.SetActive(true);
+                    _endOfLevel.Draw(_levelStats);
                 }
                 EventsManager.Instance.OnLevelFinished(_levelStats);
             }
