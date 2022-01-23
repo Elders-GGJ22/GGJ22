@@ -40,7 +40,6 @@ namespace Assets.Scrips.Hamsters
         {
             if (agent.enabled && waiting < 0)
             {
-                
                 // TODO aggiungere qui le azioni possibili
                 switch (Random.Range(1, 3))
                 {
@@ -53,6 +52,11 @@ namespace Assets.Scrips.Hamsters
                 }
             }
             waiting -= Time.deltaTime;
+        }
+
+        public Transform GetGoal()
+        {
+            return goal;
         }
 
         public void SetDestinationPoint(Vector3 destination)
@@ -115,6 +119,7 @@ namespace Assets.Scrips.Hamsters
         {
             Debug.Log("scuoto");
             waiting = Random.Range(timeToWait.x, timeToWait.y);
+            agent.destination = this.transform.position;
             GFX.transform.DOShakePosition(waiting, strenght);
         }
         

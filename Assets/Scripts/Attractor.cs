@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Assets.Scrips;
 using UnityEngine;
 using UnityEngine.Events;
-//using Cinemachine;
 
 [RequireComponent(typeof(Rigidbody))]
 public class Attractor : MonoBehaviour
@@ -24,16 +23,14 @@ public class Attractor : MonoBehaviour
 
 	[Header("Touching")]
 	[SerializeField] private float minDistance = 1.5f;
-	//[SerializeField] private float debouncingTime = 0.5f;
+	[SerializeField] private float debouncingTime = 0.5f;
 	[SerializeField] private UnityEvent touchEvent;
 	private bool hitted = false;
 
 	const float G = 667.4f;
 	public static List<Attractor> attractors;
 	private Rigidbody rb;
-	//private NavMeshAgent agent;
-	//private float debouncingTimeCurrent = 0f;
-	//public CinemachineTargetGroup ctg;
+	private float debouncingTimeCurrent = 0f;
 
 	private void Start()
 	{
@@ -50,10 +47,10 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
-	/*private void Update()
+	private void Update()
 	{
 		debouncingTimeCurrent += Time.deltaTime;
-	}*/
+	}
 
 	void Attract(Attractor objToAttract)
 	{
@@ -75,7 +72,7 @@ public class Attractor : MonoBehaviour
 
 	void SoundEvent(float distance)
 	{
-		//if(debouncingTimeCurrent < debouncingTime) { return; }
+		if(debouncingTimeCurrent < debouncingTime) { return; }
 		if (!hitted && distance < minDistance)
 		{
 			hitted = true;
