@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Assets.Scrips.Criceti
+namespace Assets.Scrips.Hamsters
 {
     [RequireComponent(typeof(AI_Hamster))]
     public class Hamster : MonoBehaviour

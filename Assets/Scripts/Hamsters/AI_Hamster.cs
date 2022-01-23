@@ -6,7 +6,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace Assets.Scrips.Criceti
+namespace Assets.Scrips.Hamsters
 {
     [RequireComponent(typeof(NavMeshAgent))]
     public class AI_Hamster : MonoBehaviour
@@ -34,29 +34,67 @@ namespace Assets.Scrips.Criceti
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-            //StartCoroutine(Brain());
         }
-        
-        private Vector3 AngentDestinationPoint()
+
+        void Update()
         {
-            if(goal)
+            if (agent.enabled && waiting < 0)
+            {
+                
+                // TODO aggiungere qui le azioni possibili
+                switch (Random.Range(1, 3))
+                {
+                    case 1:
+                        SetDestinationPoint();
+                        break;
+                    case 2:
+                        Shake();
+                        break;
+                }
+            }
+            waiting -= Time.deltaTime;
+        }
+
+        public void SetDestinationPoint(Vector3 destination)
+        {
+            #if UNITY_EDITOR
+            path = new NavMeshPath();
+            agent.CalculatePath(goal.position, path);
+            #endif
+            agent.destination = destination;
+            Debug.Log("vado a spawn point");
+        }
+
+        void SetDestinationPoint()
+        {
+            waiting = Random.Range(timeToWait.x, timeToWait.y);
+
+            if (goal)
             {
                 path = new NavMeshPath();
                 agent.CalculatePath(goal.position, path);
 
                 if (path.status == NavMeshPathStatus.PathComplete)
                 {
+                    //TODO (maybe) calculate waiting = distance for goal (speed * distance)
+
                     /*foreach (Vector3 corner in path.corners)
                     {
                         if ((corner - this.transform.position).magnitude > walkRadius)
                         {
-                            Debug.Log("vado a punto");   
-                            return (corner - this.transform.position).normalized * walkRadius;
+                            Debug.Log("vado a punto calcolato da corner");
+                            Vector3 point = (corner - this.transform.position).normalized * walkRadius;
+                            #if UNITY_EDITOR
+                            path = new NavMeshPath();
+                            agent.CalculatePath(point, path);
+                            #endif
+                            return;
                         }
                     }*/
 
                     Debug.Log("vado a punto preciso");
-                    return goal.position;
+                    agent.destination = goal.position;
+                    return;
                 }
             }
 
@@ -65,42 +103,20 @@ namespace Assets.Scrips.Criceti
             randomDirection += transform.position;
             NavMeshHit hit;
             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
-            return hit.position;
+            agent.destination = hit.position;
+
+            #if UNITY_EDITOR
+            path = new NavMeshPath();
+            agent.CalculatePath(hit.position, path);
+            #endif
         }
 
-        // al posto di update, utilizzo una coroutine in modo da avere molto più controllo su quando e come intervenire
-        //private IEnumerator Brain()
-        void Update()
+        public void Shake(float strenght = 0.3f)
         {
-            //while (true)
-            //{
-            if (agent.enabled && waiting < 0)
-            {
-                waiting = Random.Range(timeToWait.x, timeToWait.y);
-                // TODO aggiungere qui le azioni possibili
-                switch (Random.Range(1, 3))
-                {
-                    case 1:
-                        agent.destination = AngentDestinationPoint();
-                        break;
-                    case 2:
-                        Debug.Log("scuoto");
-                        GFX.transform.DOShakePosition(waiting, 0.1f);
-                        //yield return Shake(2f);
-                        break;
-                }
-            }
-
-            //yield return new WaitForSeconds(Random.Range(timeToWait.x, timeToWait.y));
-            //}
-            waiting -= Time.deltaTime;
+            Debug.Log("scuoto");
+            waiting = Random.Range(timeToWait.x, timeToWait.y);
+            GFX.transform.DOShakePosition(waiting, strenght);
         }
-
-        /*private IEnumerator Shake(float duration, float strenght = 0.3f)
-        {
-            this.transform.DOShakePosition(duration, strenght);
-            yield return new WaitForSeconds(duration);
-        }*/
         
         private void OnDrawGizmosSelected()
         {

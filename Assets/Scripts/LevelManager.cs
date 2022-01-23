@@ -1,4 +1,4 @@
-﻿using Assets.Scrips.Criceti;
+﻿using Assets.Scrips.Hamsters;
 using Assets.Scrips.UI;
 using UnityEngine;
 
