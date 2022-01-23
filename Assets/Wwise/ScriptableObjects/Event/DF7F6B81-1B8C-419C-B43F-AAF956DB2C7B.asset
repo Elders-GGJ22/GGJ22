@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c0671e8b05d33384d9b7f7b47e406bc4, type: 3}
-  m_Name: 0478E4CD-82BF-444B-8311-34BF1E8987CC
+  m_Script: {fileID: 11500000, guid: ac01224be71dfdc4ca5fefb4ae288b67, type: 3}
+  m_Name: DF7F6B81-1B8C-419C-B43F-AAF956DB2C7B
   m_EditorClassIdentifier: 
-  objectName: Obj_Magnetize
-  id: 750376681
-  guid: 0478E4CD-82BF-444B-8311-34BF1E8987CC
+  objectName: Play_Object_Magnetized
+  id: 947296022
+  guid: DF7F6B81-1B8C-419C-B43F-AAF956DB2C7B
