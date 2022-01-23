@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿
+using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using System.Net;
 using System.Runtime.CompilerServices;
@@ -6,7 +8,6 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
-
 namespace Assets.Scrips.Hamsters
 {
     [RequireComponent(typeof(NavMeshAgent))]
@@ -31,7 +32,7 @@ namespace Assets.Scrips.Hamsters
         private NavMeshAgent agent;
         private NavMeshPath path;
         private float waiting = 0;
-
+        [SerializeField] private Animator anim;
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
@@ -48,18 +49,21 @@ namespace Assets.Scrips.Hamsters
                         SetDestinationPoint();
                         break;
                     case 2:
-                        Shake();
+                        //Shake();
                         break;
                 }
             }
             waiting -= Time.deltaTime;
-            
+
+            anim.SetFloat("Velocity", agent.velocity.magnitude);
+
             // Wwise
             float speed = wwiseFootStepCounter;
             //GetInput(out speed);
             // TODO calcola runtime la velocità del criceto
             ProgressStepCycle(speed);
         }
+
 
         public Transform GetGoal()
         {
@@ -68,10 +72,10 @@ namespace Assets.Scrips.Hamsters
 
         public void SetDestinationPoint(Vector3 destination)
         {
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
             path = new NavMeshPath();
             agent.CalculatePath(goal.position, path);
-            #endif
+#endif
             agent.destination = destination;
             Debug.Log("vado a spawn point");
         }
@@ -116,10 +120,10 @@ namespace Assets.Scrips.Hamsters
             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
             agent.destination = hit.position;
 
-            #if UNITY_EDITOR
+#if UNITY_EDITOR
             path = new NavMeshPath();
             agent.CalculatePath(hit.position, path);
-            #endif
+#endif
         }
 
         public void Shake(float strenght = 0.3f)
@@ -129,13 +133,13 @@ namespace Assets.Scrips.Hamsters
             agent.destination = this.transform.position;
             GFX.transform.DOShakePosition(waiting, strenght);
         }
-        
+
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(this.transform.position, walkRadius);
 
-            if(path != null)
+            if (path != null)
             {
                 Gizmos.color = Color.magenta;
                 for (int i = 0; i < path.corners.Length - 1; i++)
@@ -144,14 +148,14 @@ namespace Assets.Scrips.Hamsters
                 }
             }
         }
-        
-        
+
+
         #region Wwise audio
         //Wwise Footstep Audio
 
         [Header("WWise")]
         public float wwiseFootStepCounter = 50;
-        
+
         private void PlayFootstepAudio()
         {
             /*if (!m_CharacterController.isGrounded)
@@ -190,16 +194,16 @@ namespace Assets.Scrips.Hamsters
         void ProgressStepCycle(float speed)
         {
             nextFootstep += agent.velocity.magnitude;
-            
+
             Debug.Log("footstep?? " + agent.velocity.magnitude);
             if (nextFootstep <= speed) return;
 
             nextFootstep = 0;
             PlayFootstepAudio();
         }
-        
-        
-        
+
+
+
         #endregion
     }
 
