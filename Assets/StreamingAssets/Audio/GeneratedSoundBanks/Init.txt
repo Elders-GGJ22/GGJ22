@@ -1,3 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	177892307	Obj_Magnetized_Negative			\Default Work Unit\Obj_Magnetized_Negative	
+	271749397	Obj_Magnetize_Positive			\Default Work Unit\Obj_Magnetize_Positive	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Obj_Magnetized_Negative			
+	930712164	off	Obj_Magnetized_Negative			
+	1651971902	on	Obj_Magnetized_Negative			
+	748895195	None	Obj_Magnetize_Positive			
+	930712164	off	Obj_Magnetize_Positive			
+	1651971902	on	Obj_Magnetize_Positive			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 

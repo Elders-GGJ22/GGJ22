@@ -1,10 +1,75 @@
 Event	ID	Name			Wwise Object Path	Notes
-	973569650	Play_Impact_Box			\Default Work Unit\Play_Impact_Box	
-	1637986760	Play_Magnetismo			\Default Work Unit\Play_Magnetismo	
+	1224237682	Play_Obj_Magnetized_Negative			\Default Work Unit\Play_Obj_Magnetized_Negative	
+	2655563858	Play_Hamster_Squits			\Default Work Unit\Play_Hamster_Squits	
+	3054066693	Play_Hamsters_Save			\Default Work Unit\Play_Hamsters_Save	
+	3140575938	Play_Gun_Positive			\Default Work Unit\Play_Gun_Positive	
+	3344139506	Play_Obj_Magnetized_Positive			\Default Work Unit\Play_Obj_Magnetized_Positive	
+	3754677826	Play_Gun_Negative			\Default Work Unit\Play_Gun_Negative	
+	3998189881	Play_Hamster_Footstep			\Default Work Unit\Play_Hamster_Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1143874978	Material_Footsteps			\Default Work Unit\Material_Footsteps	
+
+Switch	ID	Name	Switch Group			Notes
+	782826392	Default	Material_Footsteps			
+	803837735	Sand	Material_Footsteps			
+	2058049674	Wood	Material_Footsteps			
+	3176523514	Hard_Wood	Material_Footsteps			
+
+State Group	ID	Name			Wwise Object Path	Notes
+	177892307	Obj_Magnetized_Negative			\Default Work Unit\Obj_Magnetized_Negative	
+	271749397	Obj_Magnetize_Positive			\Default Work Unit\Obj_Magnetize_Positive	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Obj_Magnetized_Negative			
+	930712164	off	Obj_Magnetized_Negative			
+	1651971902	on	Obj_Magnetized_Negative			
+	748895195	None	Obj_Magnetize_Positive			
+	930712164	off	Obj_Magnetize_Positive			
+	1651971902	on	Obj_Magnetize_Positive			
+
+Custom State	ID	Name	State Group	Owner		Notes
+	47669902	off	Obj_Magnetize_Positive	\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized_Positive		
+	878846325	off	Obj_Magnetized_Negative	\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized_Negative		
+
+Effect plug-ins	ID	Name	Type				Notes
+	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	119744232	_ Impact_metal_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_metal_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_metal_3		529264
-	186127481	_ Impact_Metal_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_Metal_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_Metal_1		529264
-	542621630	Magnetismo	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Attrazione 1_666DD319.wem		\Actor-Mixer Hierarchy\Default Work Unit\Magnetismo		618728
-	1023022279	_ Impact_Metal_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\BOXES\_ Impact_Metal_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Impact_Box\_ Impact_Metal_2		529264
+	436051	_ Hamster_Save_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_2\_ Hamster_Save_2		596348
+	59845594	_ Hamster_Save_3_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_3_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_3\_ Hamster_Save_3_Squit		596348
+	65869930	Magnetizzato_Positive	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato +_9A29BF9B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized_Positive\Magnetizzato_Positive		749220
+	173870524	_ Hamster_Footsteps_Hard_Wood_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1		149136
+	222786278	Mouse_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_3		237632
+	227730366	_ Hamster_Footstep_Hard_Wood_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2		149136
+	249327601	_ Hamster_Footstep_Default_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\DEFAULT\_ Hamster_Footstep_Default_2		149136
+	271460873	_ Hamster_Footstep_Wood_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\WOOD\_ Hamster_Footstep_Wood_2		149136
+	279207376	_ Hamster_Footstep_Sand_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_1		149136
+	315214619	Mouse_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_4		137280
+	393407488	_ Hamster_Save_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_4\_ Hamster_Save_4		596348
+	480398602	_ Hamster_Save_5_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_5_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_5\_ Hamster_Save_5_Squit		596348
+	491050347	Mouse_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_1		139328
+	505186553	_ Hamster_Footstep_Wood_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\WOOD\_ Hamster_Footstep_Wood_1		149136
+	564543840	_ Pistola (+) 2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (+) 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun_Positive\Gun_Positive\_ Pistola (+) 2		2822464
+	633068771	_ Hamster_Footstep_Sand_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_4		149136
+	641738254	_ Hamster_Save_5	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_5\_ Hamster_Save_5		596348
+	666224650	_ Hamster_Footstep_Default_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\DEFAULT\_ Hamster_Footstep_Default_4		149136
+	690322441	_ Hamster_Save_4_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_4_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_4\_ Hamster_Save_4_Squit		596348
+	692112234	_ Hamster_Save_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_1\_ Hamster_Save_1		596348
+	696365877	_ Hamster_Footstep_Deafault_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\DEFAULT\_ Hamster_Footstep_Deafault_1		149136
+	736105152	Mouse_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_2_FC433FA1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_2		197748
+	767892954	_ Hamster_Save_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_3\_ Hamster_Save_3		596348
+	785827672	_ Pistola (+)	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (+)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun_Positive\Gun_Positive\_ Pistola (+)		2822464
+	788315250	_ Hamster_Footstep_Wood_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\WOOD\_ Hamster_Footstep_Wood_3		149136
+	789777257	_ Hamster_Save_2_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_2_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_2\_ Hamster_Save_2_Squit		596348
+	790953535	_ Hamster_Footstep_Hard_Wood_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3		149136
+	797795490	_ Hamster_Footstep_Default_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\DEFAULT\_ Hamster_Footstep_Default_3		149136
+	948751287	_ Hamster_Footstep_Sand_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_3		149136
+	969911899	Magnetizzato_Negative	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato -_AF3AF4D1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized_Negative\Magnetizzato_Negative		851144
+	1012430974	_ Pistola (-)	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (-)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun_Negative\Gun_Negative\_ Pistola (-)		2822464
+	1038825265	_ Hamster_Footstep_Sand_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_2		149136
+	1042466446	Mouse_6	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_6		137280
+	1063255614	_ Pistola (-) 2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (-) 2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun_Negative\Gun_Negative\_ Pistola (-) 2		2822464
+	1069981656	_Bullet_Hit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_Bullet_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun_Negative\_Bullet_Hit		503180
+	1070363741	_ Hamster_Save_1_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_1_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_1\_ Hamster_Save_1_Squit		596348
 
