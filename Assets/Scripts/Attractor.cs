@@ -131,9 +131,9 @@ public class Attractor : MonoBehaviour
 
 	void SetGFX()
 	{
-		this.idleGFX.SetActive(!this.magnetic);
-		this.positiveGFX.SetActive(this.magnetic && this.positive);
-		this.negativeGFX.SetActive(this.magnetic && !this.positive);
+		if (idleGFX) { this.idleGFX.SetActive(!this.magnetic); }
+		if (positiveGFX) { this.positiveGFX.SetActive(this.magnetic && this.positive); }
+		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }
 	}
 
 	private void OnDrawGizmosSelected()
