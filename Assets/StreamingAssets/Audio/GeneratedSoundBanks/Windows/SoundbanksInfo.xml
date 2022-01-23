@@ -11,72 +11,237 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2186044830">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1237849506">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1744705891">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3716975285">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2339399990" Name="Play_Criceto_Impact" ObjectPath="\Events\Default Work Unit\Play_Criceto_Impact">
+				<Event Id="3754677826" Name="Play_Gun_Negative" ObjectPath="\Events\Default Work Unit\Play_Gun_Negative" DurationType="OneShot" DurationMin="14.672065" DurationMax="17.448124">
 					<IncludedMemoryFiles>
-						<File Id="315214619" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_4_6C257B70.wem</Path>
+						<File Id="1012430974" Language="SFX">
+							<ShortName>_ Pistola (-).wav</ShortName>
+							<Path>SFX\_ Pistola (-)_10C4C929.wem</Path>
 						</File>
-						<File Id="491050347" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_1_F927B38C.wem</Path>
+						<File Id="1063255614" Language="SFX">
+							<ShortName>_ Pistola (-) 2.wav</ShortName>
+							<Path>SFX\_ Pistola (-) 2_10C4C929.wem</Path>
 						</File>
-						<File Id="1042466446" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_6_E0421EBC.wem</Path>
+						<File Id="1069981656" Language="SFX">
+							<ShortName>_Bullet_Hit.wav</ShortName>
+							<Path>SFX\_Bullet_Hit_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1031767396" Name="Play_Criceto_Start" ObjectPath="\Events\Default Work Unit\Play_Criceto_Start">
+				<Event Id="3140575938" Name="Play_Gun_Positive" ObjectPath="\Events\Default Work Unit\Play_Gun_Positive" DurationType="OneShot" DurationMin="14.672065" DurationMax="17.448124">
+					<IncludedMemoryFiles>
+						<File Id="564543840" Language="SFX">
+							<ShortName>_ Pistola (+) 2.wav</ShortName>
+							<Path>SFX\_ Pistola (+) 2_10C4C929.wem</Path>
+						</File>
+						<File Id="785827672" Language="SFX">
+							<ShortName>_ Pistola (+).wav</ShortName>
+							<Path>SFX\_ Pistola (+)_10C4C929.wem</Path>
+						</File>
+						<File Id="1069981656" Language="SFX">
+							<ShortName>_Bullet_Hit.wav</ShortName>
+							<Path>SFX\_Bullet_Hit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3998189881" Name="Play_Hamster_Footstep" ObjectPath="\Events\Default Work Unit\Play_Hamster_Footstep" DurationType="OneShot" DurationMin="0.774941" DurationMax="0.921566">
+					<IncludedMemoryFiles>
+						<File Id="173870524" Language="SFX">
+							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1_10C4C929.wem</Path>
+						</File>
+						<File Id="227730366" Language="SFX">
+							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_10C4C929.wem</Path>
+						</File>
+						<File Id="249327601" Language="SFX">
+							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_2_10C4C929.wem</Path>
+						</File>
+						<File Id="271460873" Language="SFX">
+							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2_10C4C929.wem</Path>
+						</File>
+						<File Id="279207376" Language="SFX">
+							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1_10C4C929.wem</Path>
+						</File>
+						<File Id="505186553" Language="SFX">
+							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1_10C4C929.wem</Path>
+						</File>
+						<File Id="633068771" Language="SFX">
+							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem</Path>
+						</File>
+						<File Id="666224650" Language="SFX">
+							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_4.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_4_10C4C929.wem</Path>
+						</File>
+						<File Id="696365877" Language="SFX">
+							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1_10C4C929.wem</Path>
+						</File>
+						<File Id="788315250" Language="SFX">
+							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3_10C4C929.wem</Path>
+						</File>
+						<File Id="790953535" Language="SFX">
+							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_10C4C929.wem</Path>
+						</File>
+						<File Id="797795490" Language="SFX">
+							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_3_10C4C929.wem</Path>
+						</File>
+						<File Id="948751287" Language="SFX">
+							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3_10C4C929.wem</Path>
+						</File>
+						<File Id="1038825265" Language="SFX">
+							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2.wav</ShortName>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{807C8E46-730F-446C-8011-99923672C6BC}">
+							<Media>
+								<File Id="271460873"/>
+								<File Id="505186553"/>
+								<File Id="788315250"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{957F404B-99F4-473F-8D72-D922BD46AE66}">
+							<Media>
+								<File Id="173870524"/>
+								<File Id="227730366"/>
+								<File Id="790953535"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{42479A5C-8526-485D-95E9-15F380E9272A}">
+							<Media>
+								<File Id="279207376"/>
+								<File Id="633068771"/>
+								<File Id="948751287"/>
+								<File Id="1038825265"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}">
+							<Media>
+								<File Id="249327601"/>
+								<File Id="666224650"/>
+								<File Id="696365877"/>
+								<File Id="797795490"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="2655563858" Name="Play_Hamster_Squits" ObjectPath="\Events\Default Work Unit\Play_Hamster_Squits" DurationType="OneShot" DurationMin="24.421608" DurationMax="36.421608">
 					<IncludedMemoryFiles>
 						<File Id="222786278" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_3_CA651061.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem</Path>
+						</File>
+						<File Id="315214619" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_4_10C4C929.wem</Path>
+						</File>
+						<File Id="491050347" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem</Path>
 						</File>
 						<File Id="736105152" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_2_6C257A96.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_2_FC433FA1.wem</Path>
+						</File>
+						<File Id="1042466446" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="973569650" Name="Play_Impact_Box" ObjectPath="\Events\Default Work Unit\Play_Impact_Box">
+				<Event Id="3054066693" Name="Play_Hamsters_Save" ObjectPath="\Events\Default Work Unit\Play_Hamsters_Save" DurationType="OneShot" DurationMin="3.380295" DurationMax="3.380295">
 					<IncludedMemoryFiles>
-						<File Id="119744232" Language="SFX">
-							<ShortName>BOXES\_ Impact_metal_3.wav</ShortName>
-							<Path>SFX\BOXES\_ Impact_metal_3_10C4C929.wem</Path>
+						<File Id="436051" Language="SFX">
+							<ShortName>_ Hamster_Save_2.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_2_10C4C929.wem</Path>
 						</File>
-						<File Id="186127481" Language="SFX">
-							<ShortName>BOXES\_ Impact_Metal_1.wav</ShortName>
-							<Path>SFX\BOXES\_ Impact_Metal_1_10C4C929.wem</Path>
+						<File Id="59845594" Language="SFX">
+							<ShortName>_ Hamster_Save_3_Squit.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_3_Squit_10C4C929.wem</Path>
 						</File>
-						<File Id="1023022279" Language="SFX">
-							<ShortName>BOXES\_ Impact_Metal_2.wav</ShortName>
-							<Path>SFX\BOXES\_ Impact_Metal_2_10C4C929.wem</Path>
+						<File Id="393407488" Language="SFX">
+							<ShortName>_ Hamster_Save_4.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_4_10C4C929.wem</Path>
+						</File>
+						<File Id="480398602" Language="SFX">
+							<ShortName>_ Hamster_Save_5_Squit.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_5_Squit_10C4C929.wem</Path>
+						</File>
+						<File Id="641738254" Language="SFX">
+							<ShortName>_ Hamster_Save_5.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_5_10C4C929.wem</Path>
+						</File>
+						<File Id="690322441" Language="SFX">
+							<ShortName>_ Hamster_Save_4_Squit.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_4_Squit_10C4C929.wem</Path>
+						</File>
+						<File Id="692112234" Language="SFX">
+							<ShortName>_ Hamster_Save_1.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_1_10C4C929.wem</Path>
+						</File>
+						<File Id="767892954" Language="SFX">
+							<ShortName>_ Hamster_Save_3.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_3_10C4C929.wem</Path>
+						</File>
+						<File Id="789777257" Language="SFX">
+							<ShortName>_ Hamster_Save_2_Squit.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_2_Squit_10C4C929.wem</Path>
+						</File>
+						<File Id="1070363741" Language="SFX">
+							<ShortName>_ Hamster_Save_1_Squit.wav</ShortName>
+							<Path>SFX\_ Hamster_Save_1_Squit_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1637986760" Name="Play_Magnetismo" ObjectPath="\Events\Default Work Unit\Play_Magnetismo">
+				<Event Id="1224237682" Name="Play_Obj_Magnetized_Negative" ObjectPath="\Events\Default Work Unit\Play_Obj_Magnetized_Negative" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="542621630" Language="SFX">
-							<ShortName>_ Attrazione 1.wav</ShortName>
-							<Path>SFX\_ Attrazione 1_8B064675.wem</Path>
+						<File Id="969911899" Language="SFX">
+							<ShortName>_ Magnetizzato -.wav</ShortName>
+							<Path>SFX\_ Magnetizzato -_AF3AF4D1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3344139506" Name="Play_Obj_Magnetized_Positive" ObjectPath="\Events\Default Work Unit\Play_Obj_Magnetized_Positive" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="65869930" Language="SFX">
+							<ShortName>_ Magnetizzato +.wav</ShortName>
+							<Path>SFX\_ Magnetizzato +_9A29BF9B.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4178633038" Name="Stop_obj_Magnetized" ObjectPath="\Events\Default Work Unit\Stop_obj_Magnetized" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
-			<GameParameters>
-				<GameParameter Id="3788238483" Name="Magnetismo_Distance" ObjectPath="\Game Parameters\Default Work Unit\Magnetismo_Distance"/>
-			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="1143874978" Name="Material_Footsteps" ObjectPath="\Switches\Default Work Unit\Material_Footsteps" GUID="{B6B109DF-3CCE-4190-BE21-8950A24F3DF5}">
+					<Switches>
+						<Switch Id="782826392" Name="Default" ObjectPath="\Switches\Default Work Unit\Material_Footsteps\Default" GUID="{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}"/>
+						<Switch Id="803837735" Name="Sand" ObjectPath="\Switches\Default Work Unit\Material_Footsteps\Sand" GUID="{42479A5C-8526-485D-95E9-15F380E9272A}"/>
+						<Switch Id="2058049674" Name="Wood" ObjectPath="\Switches\Default Work Unit\Material_Footsteps\Wood" GUID="{807C8E46-730F-446C-8011-99923672C6BC}"/>
+						<Switch Id="3176523514" Name="Hard_Wood" ObjectPath="\Switches\Default Work Unit\Material_Footsteps\Hard_Wood" GUID="{957F404B-99F4-473F-8D72-D922BD46AE66}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
