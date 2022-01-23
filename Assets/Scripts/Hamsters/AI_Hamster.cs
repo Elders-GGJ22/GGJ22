@@ -55,7 +55,7 @@ namespace Assets.Scrips.Hamsters
             waiting -= Time.deltaTime;
             
             // Wwise
-            float speed = 10;
+            float speed = wwiseFootStepCounter;
             //GetInput(out speed);
             // TODO calcola runtime la velocità del criceto
             ProgressStepCycle(speed);
@@ -148,6 +148,9 @@ namespace Assets.Scrips.Hamsters
         
         #region Wwise audio
         //Wwise Footstep Audio
+
+        [Header("WWise")]
+        public float wwiseFootStepCounter = 50;
         
         private void PlayFootstepAudio()
         {
@@ -187,14 +190,16 @@ namespace Assets.Scrips.Hamsters
         void ProgressStepCycle(float speed)
         {
             nextFootstep += agent.velocity.magnitude;
-
-            Debug.Log("footstep?? " + nextFootstep);
+            
+            Debug.Log("footstep?? " + agent.velocity.magnitude);
             if (nextFootstep <= speed) return;
 
+            nextFootstep = 0;
             PlayFootstepAudio();
         }
-
-
+        
+        
+        
         #endregion
     }
 
