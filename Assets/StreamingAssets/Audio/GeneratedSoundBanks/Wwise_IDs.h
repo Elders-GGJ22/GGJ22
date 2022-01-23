@@ -20,33 +20,23 @@ namespace AK
         static const AkUniqueID PLAY_HAMSTERS_SAVE = 3054066693U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_NEGATIVE = 1224237682U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_POSITIVE = 3344139506U;
+        static const AkUniqueID STOP_OBJ_MAGNETIZED = 4178633038U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace OBJ_MAGNETIZE_POSITIVE
+        namespace OBJ_MAGNETIZE
         {
-            static const AkUniqueID GROUP = 271749397U;
+            static const AkUniqueID GROUP = 750376681U;
 
             namespace STATE
             {
+                static const AkUniqueID NEGATIVE = 4219547688U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
+                static const AkUniqueID POSITIVE = 1192865152U;
             } // namespace STATE
-        } // namespace OBJ_MAGNETIZE_POSITIVE
-
-        namespace OBJ_MAGNETIZED_NEGATIVE
-        {
-            static const AkUniqueID GROUP = 177892307U;
-
-            namespace STATE
-            {
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
-            } // namespace STATE
-        } // namespace OBJ_MAGNETIZED_NEGATIVE
+        } // namespace OBJ_MAGNETIZE
 
     } // namespace STATES
 
