@@ -23,23 +23,6 @@ namespace AK
         static const AkUniqueID STOP_OBJ_MAGNETIZED = 4178633038U;
     } // namespace EVENTS
 
-    namespace STATES
-    {
-        namespace OBJ_MAGNETIZE
-        {
-            static const AkUniqueID GROUP = 750376681U;
-
-            namespace STATE
-            {
-                static const AkUniqueID NEGATIVE = 4219547688U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID POSITIVE = 1192865152U;
-            } // namespace STATE
-        } // namespace OBJ_MAGNETIZE
-
-    } // namespace STATES
-
     namespace SWITCHES
     {
         namespace MATERIAL_FOOTSTEPS

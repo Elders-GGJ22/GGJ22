@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: fd10f6e5a090e24b968b1be1339d8833
     GuidInternal: 
-    m_lastTime: -8585586566423000430
+    m_lastTime: -8585586476723444410
     List:
     - name: Main
       guid: 7d44178dc04c414cb807d01d7dd41c42
@@ -94,42 +94,24 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1858724dd5c98a42b89402b3eac7db45
     GuidInternal: 
-    m_lastTime: -8585586537216936571
+    m_lastTime: -8585586476723534482
+    List: []
+  - PhysicalPath: Events\Hamster.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1858724dd5c98a42b89402b3eac7db45
+    - ElementName: Hamster
+      ObjectType: 12
+      guid: d0c185d032586d4da6db5b9105a7f0d9
+    ParentPath: Events\Default Work Unit\Hamster
+    guid: d0c185d032586d4da6db5b9105a7f0d9
+    GuidInternal: 
+    m_lastTime: -8585586498322957801
     List:
-    - name: Play_Gun_Negative
-      guid: b3e484421e7ba54db341bc2ddedae27f
-      id: 3754677826
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1858724dd5c98a42b89402b3eac7db45
-      - ElementName: Play_Gun_Negative
-        ObjectType: 3
-        guid: b3e484421e7ba54db341bc2ddedae27f
-      Path: Events\Default Work Unit\Play_Gun_Negative
-      maxAttenuation: 0
-      maxDuration: 17.448124
-      minDuration: 14.672065
-    - name: Play_Gun_Positive
-      guid: 1b366cea992991438874c1a76aa6a014
-      id: 3140575938
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 1858724dd5c98a42b89402b3eac7db45
-      - ElementName: Play_Gun_Positive
-        ObjectType: 3
-        guid: 1b366cea992991438874c1a76aa6a014
-      Path: Events\Default Work Unit\Play_Gun_Positive
-      maxAttenuation: 0
-      maxDuration: 17.448124
-      minDuration: 14.672065
     - name: Play_Hamster_Footstep
       guid: 444fcd9ae1c1db418a509bff6b1d4a94
       id: 3998189881
@@ -140,10 +122,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Hamster
+        ObjectType: 12
+        guid: d0c185d032586d4da6db5b9105a7f0d9
       - ElementName: Play_Hamster_Footstep
         ObjectType: 3
         guid: 444fcd9ae1c1db418a509bff6b1d4a94
-      Path: Events\Default Work Unit\Play_Hamster_Footstep
+      Path: Events\Default Work Unit\Hamster\Play_Hamster_Footstep
       maxAttenuation: 0
       maxDuration: 0.921566
       minDuration: 0.774941
@@ -157,10 +142,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Hamster
+        ObjectType: 12
+        guid: d0c185d032586d4da6db5b9105a7f0d9
       - ElementName: Play_Hamster_Squits
         ObjectType: 3
         guid: 286e92ef12136b4ca1427730cf8924a9
-      Path: Events\Default Work Unit\Play_Hamster_Squits
+      Path: Events\Default Work Unit\Hamster\Play_Hamster_Squits
       maxAttenuation: 0
       maxDuration: 36.421608
       minDuration: 24.421608
@@ -174,13 +162,32 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Hamster
+        ObjectType: 12
+        guid: d0c185d032586d4da6db5b9105a7f0d9
       - ElementName: Play_Hamsters_Save
         ObjectType: 3
         guid: fa93160ca5a6ad46838abfd48888fc35
-      Path: Events\Default Work Unit\Play_Hamsters_Save
+      Path: Events\Default Work Unit\Hamster\Play_Hamsters_Save
       maxAttenuation: 0
       maxDuration: 3.380295
       minDuration: 3.380295
+  - PhysicalPath: Events\Objects.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1858724dd5c98a42b89402b3eac7db45
+    - ElementName: Objects
+      ObjectType: 12
+      guid: a4ac5ff08b9c8c40af375d77495c2960
+    ParentPath: Events\Default Work Unit\Objects
+    guid: a4ac5ff08b9c8c40af375d77495c2960
+    GuidInternal: 
+    m_lastTime: -8585586461873719187
+    List:
     - name: Play_Obj_Magnetized_Negative
       guid: 083481ccb4914b4089ce54d8a3c38f99
       id: 1224237682
@@ -191,10 +198,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Objects
+        ObjectType: 12
+        guid: a4ac5ff08b9c8c40af375d77495c2960
       - ElementName: Play_Obj_Magnetized_Negative
         ObjectType: 3
         guid: 083481ccb4914b4089ce54d8a3c38f99
-      Path: Events\Default Work Unit\Play_Obj_Magnetized_Negative
+      Path: Events\Default Work Unit\Objects\Play_Obj_Magnetized_Negative
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -208,10 +218,13 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Objects
+        ObjectType: 12
+        guid: a4ac5ff08b9c8c40af375d77495c2960
       - ElementName: Play_Obj_Magnetized_Positive
         ObjectType: 3
         guid: ee434d8f2613c24991420c41c8169842
-      Path: Events\Default Work Unit\Play_Obj_Magnetized_Positive
+      Path: Events\Default Work Unit\Objects\Play_Obj_Magnetized_Positive
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -225,13 +238,72 @@ MonoBehaviour:
       - ElementName: Default Work Unit
         ObjectType: 12
         guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Objects
+        ObjectType: 12
+        guid: a4ac5ff08b9c8c40af375d77495c2960
       - ElementName: Stop_obj_Magnetized
         ObjectType: 3
         guid: 169804dac5311946984172154bc4520a
-      Path: Events\Default Work Unit\Stop_obj_Magnetized
+      Path: Events\Default Work Unit\Objects\Stop_obj_Magnetized
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+  - PhysicalPath: Events\Player Gun.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1858724dd5c98a42b89402b3eac7db45
+    - ElementName: Player Gun
+      ObjectType: 12
+      guid: 50e84c4ee9e93c4681d7a1e630374c67
+    ParentPath: Events\Default Work Unit\Player Gun
+    guid: 50e84c4ee9e93c4681d7a1e630374c67
+    GuidInternal: 
+    m_lastTime: -8585586498323057892
+    List:
+    - name: Play_Gun_Negative
+      guid: b3e484421e7ba54db341bc2ddedae27f
+      id: 3754677826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Player Gun
+        ObjectType: 12
+        guid: 50e84c4ee9e93c4681d7a1e630374c67
+      - ElementName: Play_Gun_Negative
+        ObjectType: 3
+        guid: b3e484421e7ba54db341bc2ddedae27f
+      Path: Events\Default Work Unit\Player Gun\Play_Gun_Negative
+      maxAttenuation: 0
+      maxDuration: 17.448124
+      minDuration: 14.672065
+    - name: Play_Gun_Positive
+      guid: 1b366cea992991438874c1a76aa6a014
+      id: 3140575938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Player Gun
+        ObjectType: 12
+        guid: 50e84c4ee9e93c4681d7a1e630374c67
+      - ElementName: Play_Gun_Positive
+        ObjectType: 3
+        guid: 1b366cea992991438874c1a76aa6a014
+      Path: Events\Default Work Unit\Player Gun\Play_Gun_Positive
+      maxAttenuation: 0
+      maxDuration: 17.448124
+      minDuration: 14.672065
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -258,90 +330,8 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 2983a294e376f641a7dcd57793f28cde
     GuidInternal: 
-    m_lastTime: -8585586541670619564
-    List:
-    - name: Obj_Magnetize
-      guid: cde47804bf824b44831134bf1e8987cc
-      id: 750376681
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 2983a294e376f641a7dcd57793f28cde
-      - ElementName: Obj_Magnetize
-        ObjectType: 9
-        guid: cde47804bf824b44831134bf1e8987cc
-      Path: States\Default Work Unit\Obj_Magnetize
-      values:
-      - name: negative
-        guid: 0db6547fa83b2649a97799f5d900892c
-        id: 4219547688
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2983a294e376f641a7dcd57793f28cde
-        - ElementName: Obj_Magnetize
-          ObjectType: 9
-          guid: cde47804bf824b44831134bf1e8987cc
-        - ElementName: negative
-          ObjectType: 8
-          guid: 0db6547fa83b2649a97799f5d900892c
-      - name: None
-        guid: 42f5d5af37a6ec439728181aaa02a01f
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2983a294e376f641a7dcd57793f28cde
-        - ElementName: Obj_Magnetize
-          ObjectType: 9
-          guid: cde47804bf824b44831134bf1e8987cc
-        - ElementName: None
-          ObjectType: 8
-          guid: 42f5d5af37a6ec439728181aaa02a01f
-      - name: off
-        guid: b02373d71b1b82408f14a3cac32b605e
-        id: 930712164
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2983a294e376f641a7dcd57793f28cde
-        - ElementName: Obj_Magnetize
-          ObjectType: 9
-          guid: cde47804bf824b44831134bf1e8987cc
-        - ElementName: off
-          ObjectType: 8
-          guid: b02373d71b1b82408f14a3cac32b605e
-      - name: positive
-        guid: 22578e00eb44084580df64edd37df395
-        id: 1192865152
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 2983a294e376f641a7dcd57793f28cde
-        - ElementName: Obj_Magnetize
-          ObjectType: 9
-          guid: cde47804bf824b44831134bf1e8987cc
-        - ElementName: positive
-          ObjectType: 8
-          guid: 22578e00eb44084580df64edd37df395
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
+    m_lastTime: -8585586476723864794
+    List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     PathAndIcons:
@@ -354,7 +344,7 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 7140a187516809448f8d6390b02b02ec
     GuidInternal: 
-    m_lastTime: -8585586633368812029
+    m_lastTime: -8585586471255506103
     List:
     - name: Material_Footsteps
       guid: df09b1b6ce3c9041be218950a24f3df5
@@ -453,7 +443,7 @@ MonoBehaviour:
     m_lastTime: -8585591481729577733
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000120000001300000014000000
+  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000f0000001000000011000000120000001300000014000000150000008f00000090000000c0000000c100000003010000040100000601000026360100
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
