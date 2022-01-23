@@ -11,25 +11,33 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1237849506">
+		<SoundBank Id="1355168291" Language="SFX" Hash="752638603">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3716975285">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3314414869">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="3754677826" Name="Play_Gun_Negative" ObjectPath="\Events\Default Work Unit\Play_Gun_Negative" DurationType="OneShot" DurationMin="14.672065" DurationMax="17.448124">
+				<Event Id="3754677826" Name="Play_Gun_Negative" ObjectPath="\Events\Default Work Unit\Player Gun\Play_Gun_Negative" DurationType="OneShot" DurationMin="2.852132" DurationMax="2.944543">
 					<IncludedMemoryFiles>
+						<File Id="938523553" Language="SFX">
+							<ShortName>_ Pistola (-).wav</ShortName>
+							<Path>SFX\_ Pistola (-)_2281F63D.wem</Path>
+						</File>
+						<File Id="977429043" Language="SFX">
+							<ShortName>_ Pistola (-) 2.wav</ShortName>
+							<Path>SFX\_ Pistola (-) 2_957750EB.wem</Path>
+						</File>
 						<File Id="1012430974" Language="SFX">
 							<ShortName>_ Pistola (-).wav</ShortName>
-							<Path>SFX\_ Pistola (-)_10C4C929.wem</Path>
+							<Path>SFX\_ Pistola (-)_09E23850.wem</Path>
 						</File>
 						<File Id="1063255614" Language="SFX">
 							<ShortName>_ Pistola (-) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (-) 2_10C4C929.wem</Path>
+							<Path>SFX\_ Pistola (-) 2_F4DF299B.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
@@ -37,15 +45,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3140575938" Name="Play_Gun_Positive" ObjectPath="\Events\Default Work Unit\Play_Gun_Positive" DurationType="OneShot" DurationMin="14.672065" DurationMax="17.448124">
+				<Event Id="3140575938" Name="Play_Gun_Positive" ObjectPath="\Events\Default Work Unit\Player Gun\Play_Gun_Positive" DurationType="OneShot" DurationMin="2.016762" DurationMax="17.460087">
 					<IncludedMemoryFiles>
+						<File Id="482845930" Language="SFX">
+							<ShortName>_ Pistola (+) 2.wav</ShortName>
+							<Path>SFX\_ Pistola (+) 2_FB2A4C85.wem</Path>
+						</File>
 						<File Id="564543840" Language="SFX">
 							<ShortName>_ Pistola (+) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (+) 2_10C4C929.wem</Path>
+							<Path>SFX\_ Pistola (+) 2_F78F3FC4.wem</Path>
 						</File>
 						<File Id="785827672" Language="SFX">
 							<ShortName>_ Pistola (+).wav</ShortName>
-							<Path>SFX\_ Pistola (+)_10C4C929.wem</Path>
+							<Path>SFX\_ Pistola (+)_9723D8C7.wem</Path>
+						</File>
+						<File Id="1033587246" Language="SFX">
+							<ShortName>_ Pistola (+).wav</ShortName>
+							<Path>SFX\_ Pistola (+)_6C42A4AB.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
@@ -53,7 +69,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3998189881" Name="Play_Hamster_Footstep" ObjectPath="\Events\Default Work Unit\Play_Hamster_Footstep" DurationType="OneShot" DurationMin="0.774941" DurationMax="0.921566">
+				<Event Id="3998189881" Name="Play_Hamster_Footstep" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Footstep" DurationType="OneShot" DurationMin="0.774941" DurationMax="0.921566">
 					<IncludedMemoryFiles>
 						<File Id="173870524" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1.wav</ShortName>
@@ -82,10 +98,6 @@
 						<File Id="633068771" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem</Path>
-						</File>
-						<File Id="666224650" Language="SFX">
-							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_4.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_4_10C4C929.wem</Path>
 						</File>
 						<File Id="696365877" Language="SFX">
 							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1.wav</ShortName>
@@ -139,14 +151,13 @@
 						<SwitchContainer SwitchValue="{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}">
 							<Media>
 								<File Id="249327601"/>
-								<File Id="666224650"/>
 								<File Id="696365877"/>
 								<File Id="797795490"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2655563858" Name="Play_Hamster_Squits" ObjectPath="\Events\Default Work Unit\Play_Hamster_Squits" DurationType="OneShot" DurationMin="24.421608" DurationMax="36.421608">
+				<Event Id="2655563858" Name="Play_Hamster_Squits" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Squits" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="24.421608" DurationMax="36.421608">
 					<IncludedMemoryFiles>
 						<File Id="222786278" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
@@ -170,7 +181,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3054066693" Name="Play_Hamsters_Save" ObjectPath="\Events\Default Work Unit\Play_Hamsters_Save" DurationType="OneShot" DurationMin="3.380295" DurationMax="3.380295">
+				<Event Id="3054066693" Name="Play_Hamsters_Save" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamsters_Save" DurationType="OneShot" DurationMin="3.380295" DurationMax="3.380295">
 					<IncludedMemoryFiles>
 						<File Id="436051" Language="SFX">
 							<ShortName>_ Hamster_Save_2.wav</ShortName>
@@ -214,7 +225,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1224237682" Name="Play_Obj_Magnetized_Negative" ObjectPath="\Events\Default Work Unit\Play_Obj_Magnetized_Negative" DurationType="Infinite">
+				<Event Id="1224237682" Name="Play_Obj_Magnetized_Negative" ObjectPath="\Events\Default Work Unit\Objects\Play_Obj_Magnetized_Negative" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="969911899" Language="SFX">
 							<ShortName>_ Magnetizzato -.wav</ShortName>
@@ -222,7 +233,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3344139506" Name="Play_Obj_Magnetized_Positive" ObjectPath="\Events\Default Work Unit\Play_Obj_Magnetized_Positive" DurationType="Infinite">
+				<Event Id="3344139506" Name="Play_Obj_Magnetized_Positive" ObjectPath="\Events\Default Work Unit\Objects\Play_Obj_Magnetized_Positive" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="65869930" Language="SFX">
 							<ShortName>_ Magnetizzato +.wav</ShortName>
@@ -230,7 +241,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4178633038" Name="Stop_obj_Magnetized" ObjectPath="\Events\Default Work Unit\Stop_obj_Magnetized" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="4178633038" Name="Stop_obj_Magnetized" ObjectPath="\Events\Default Work Unit\Objects\Stop_obj_Magnetized" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
 			<SwitchGroups>
 				<SwitchGroup Id="1143874978" Name="Material_Footsteps" ObjectPath="\Switches\Default Work Unit\Material_Footsteps" GUID="{B6B109DF-3CCE-4190-BE21-8950A24F3DF5}">

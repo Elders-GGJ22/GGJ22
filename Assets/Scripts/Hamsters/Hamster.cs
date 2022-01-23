@@ -33,6 +33,8 @@ namespace Assets.Scrips.Hamsters
         {
             
         }
+        
+        
 
         // su cosa ho sbattuto?
         void OnTriggerEnter(Collider collision)

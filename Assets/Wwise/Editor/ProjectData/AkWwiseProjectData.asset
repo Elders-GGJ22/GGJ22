@@ -149,7 +149,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 286e92ef12136b4ca1427730cf8924a9
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Squits
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 36.421608
       minDuration: 24.421608
     - name: Play_Hamsters_Save
@@ -282,8 +282,8 @@ MonoBehaviour:
         guid: b3e484421e7ba54db341bc2ddedae27f
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Negative
       maxAttenuation: 0
-      maxDuration: 17.448124
-      minDuration: 14.672065
+      maxDuration: 2.944543
+      minDuration: 2.852132
     - name: Play_Gun_Positive
       guid: 1b366cea992991438874c1a76aa6a014
       id: 3140575938
@@ -302,8 +302,8 @@ MonoBehaviour:
         guid: 1b366cea992991438874c1a76aa6a014
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Positive
       maxAttenuation: 0
-      maxDuration: 17.448124
-      minDuration: 14.672065
+      maxDuration: 17.460087
+      minDuration: 2.016762
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_lastTime: -8585591481729577733
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 01000000050000000600000007000000090000000f0000001000000011000000120000001300000014000000150000008f00000090000000c0000000c100000003010000040100000601000026360100
+  ExpandedWaapiItemIds: 
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
