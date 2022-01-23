@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 307992c12d609eb4dbb9759b21727828
+guid: dac3816f5c902914b92423c368def21f
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: criceto_lowpoly2Mat
-    second: {fileID: 2100000, guid: 6eb1adc2e004ba547b09f04d2bb96d72, type: 2}
+      name: lambert1
+    second: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -90,7 +90,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 20
+    globalScale: 0.19999999
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
