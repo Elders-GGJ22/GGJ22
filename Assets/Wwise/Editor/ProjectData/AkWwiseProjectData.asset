@@ -12,16 +12,448 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f16a9850e05e52241837c79ec3e63b63, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: d6430e7243b20b4cb59df67946ffbf92
+    ParentPath: Virtual Acoustics\Default Work Unit
+    guid: d6430e7243b20b4cb59df67946ffbf92
+    GuidInternal: 
+    m_lastTime: -8585591481729567726
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 4a4a60e196aefc409878afa9e4b0107c
+    ParentPath: Master-Mixer Hierarchy\Default Work Unit
+    guid: 4a4a60e196aefc409878afa9e4b0107c
+    GuidInternal: 
+    m_lastTime: -8585591481729737863
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 4a4a60e196aefc409878afa9e4b0107c
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: fd10f6e5a090e24b968b1be1339d8833
+    ParentPath: SoundBanks\Default Work Unit
+    guid: fd10f6e5a090e24b968b1be1339d8833
+    GuidInternal: 
+    m_lastTime: -8585586566423000430
+    List:
+    - name: Main
+      guid: 7d44178dc04c414cb807d01d7dd41c42
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: fd10f6e5a090e24b968b1be1339d8833
+      - ElementName: Main
+        ObjectType: 7
+        guid: 7d44178dc04c414cb807d01d7dd41c42
+      Path: SoundBanks\Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1858724dd5c98a42b89402b3eac7db45
+    ParentPath: Events\Default Work Unit
+    guid: 1858724dd5c98a42b89402b3eac7db45
+    GuidInternal: 
+    m_lastTime: -8585586537216936571
+    List:
+    - name: Play_Gun_Negative
+      guid: b3e484421e7ba54db341bc2ddedae27f
+      id: 3754677826
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Gun_Negative
+        ObjectType: 3
+        guid: b3e484421e7ba54db341bc2ddedae27f
+      Path: Events\Default Work Unit\Play_Gun_Negative
+      maxAttenuation: 0
+      maxDuration: 17.448124
+      minDuration: 14.672065
+    - name: Play_Gun_Positive
+      guid: 1b366cea992991438874c1a76aa6a014
+      id: 3140575938
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Gun_Positive
+        ObjectType: 3
+        guid: 1b366cea992991438874c1a76aa6a014
+      Path: Events\Default Work Unit\Play_Gun_Positive
+      maxAttenuation: 0
+      maxDuration: 17.448124
+      minDuration: 14.672065
+    - name: Play_Hamster_Footstep
+      guid: 444fcd9ae1c1db418a509bff6b1d4a94
+      id: 3998189881
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Hamster_Footstep
+        ObjectType: 3
+        guid: 444fcd9ae1c1db418a509bff6b1d4a94
+      Path: Events\Default Work Unit\Play_Hamster_Footstep
+      maxAttenuation: 0
+      maxDuration: 0.921566
+      minDuration: 0.774941
+    - name: Play_Hamster_Squits
+      guid: 286e92ef12136b4ca1427730cf8924a9
+      id: 2655563858
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Hamster_Squits
+        ObjectType: 3
+        guid: 286e92ef12136b4ca1427730cf8924a9
+      Path: Events\Default Work Unit\Play_Hamster_Squits
+      maxAttenuation: 0
+      maxDuration: 36.421608
+      minDuration: 24.421608
+    - name: Play_Hamsters_Save
+      guid: fa93160ca5a6ad46838abfd48888fc35
+      id: 3054066693
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Hamsters_Save
+        ObjectType: 3
+        guid: fa93160ca5a6ad46838abfd48888fc35
+      Path: Events\Default Work Unit\Play_Hamsters_Save
+      maxAttenuation: 0
+      maxDuration: 3.380295
+      minDuration: 3.380295
+    - name: Play_Obj_Magnetized_Negative
+      guid: 083481ccb4914b4089ce54d8a3c38f99
+      id: 1224237682
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Obj_Magnetized_Negative
+        ObjectType: 3
+        guid: 083481ccb4914b4089ce54d8a3c38f99
+      Path: Events\Default Work Unit\Play_Obj_Magnetized_Negative
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Obj_Magnetized_Positive
+      guid: ee434d8f2613c24991420c41c8169842
+      id: 3344139506
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Obj_Magnetized_Positive
+        ObjectType: 3
+        guid: ee434d8f2613c24991420c41c8169842
+      Path: Events\Default Work Unit\Play_Obj_Magnetized_Positive
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_obj_Magnetized
+      guid: 169804dac5311946984172154bc4520a
+      id: 4178633038
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Stop_obj_Magnetized
+        ObjectType: 3
+        guid: 169804dac5311946984172154bc4520a
+      Path: Events\Default Work Unit\Stop_obj_Magnetized
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2a12e14064080b47acbdf299e5046b4c
+    ParentPath: Game Parameters\Default Work Unit
+    guid: 2a12e14064080b47acbdf299e5046b4c
+    GuidInternal: 
+    m_lastTime: -8585586633368561806
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 2983a294e376f641a7dcd57793f28cde
+    ParentPath: States\Default Work Unit
+    guid: 2983a294e376f641a7dcd57793f28cde
+    GuidInternal: 
+    m_lastTime: -8585586541670619564
+    List:
+    - name: Obj_Magnetize
+      guid: cde47804bf824b44831134bf1e8987cc
+      id: 750376681
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 2983a294e376f641a7dcd57793f28cde
+      - ElementName: Obj_Magnetize
+        ObjectType: 9
+        guid: cde47804bf824b44831134bf1e8987cc
+      Path: States\Default Work Unit\Obj_Magnetize
+      values:
+      - name: negative
+        guid: 0db6547fa83b2649a97799f5d900892c
+        id: 4219547688
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Obj_Magnetize
+          ObjectType: 9
+          guid: cde47804bf824b44831134bf1e8987cc
+        - ElementName: negative
+          ObjectType: 8
+          guid: 0db6547fa83b2649a97799f5d900892c
+      - name: None
+        guid: 42f5d5af37a6ec439728181aaa02a01f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Obj_Magnetize
+          ObjectType: 9
+          guid: cde47804bf824b44831134bf1e8987cc
+        - ElementName: None
+          ObjectType: 8
+          guid: 42f5d5af37a6ec439728181aaa02a01f
+      - name: off
+        guid: b02373d71b1b82408f14a3cac32b605e
+        id: 930712164
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Obj_Magnetize
+          ObjectType: 9
+          guid: cde47804bf824b44831134bf1e8987cc
+        - ElementName: off
+          ObjectType: 8
+          guid: b02373d71b1b82408f14a3cac32b605e
+      - name: positive
+        guid: 22578e00eb44084580df64edd37df395
+        id: 1192865152
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 2983a294e376f641a7dcd57793f28cde
+        - ElementName: Obj_Magnetize
+          ObjectType: 9
+          guid: cde47804bf824b44831134bf1e8987cc
+        - ElementName: positive
+          ObjectType: 8
+          guid: 22578e00eb44084580df64edd37df395
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 7140a187516809448f8d6390b02b02ec
+    ParentPath: Switches\Default Work Unit
+    guid: 7140a187516809448f8d6390b02b02ec
+    GuidInternal: 
+    m_lastTime: -8585586633368812029
+    List:
+    - name: Material_Footsteps
+      guid: df09b1b6ce3c9041be218950a24f3df5
+      id: 1143874978
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 7140a187516809448f8d6390b02b02ec
+      - ElementName: Material_Footsteps
+        ObjectType: 11
+        guid: df09b1b6ce3c9041be218950a24f3df5
+      Path: Switches\Default Work Unit\Material_Footsteps
+      values:
+      - name: Default
+        guid: bcb6e7cb0ebb3540bb2b48e87ef10f9a
+        id: 782826392
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7140a187516809448f8d6390b02b02ec
+        - ElementName: Material_Footsteps
+          ObjectType: 11
+          guid: df09b1b6ce3c9041be218950a24f3df5
+        - ElementName: Default
+          ObjectType: 10
+          guid: bcb6e7cb0ebb3540bb2b48e87ef10f9a
+      - name: Hard_Wood
+        guid: 4b407f95f4993f478d72d922bd46ae66
+        id: 3176523514
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7140a187516809448f8d6390b02b02ec
+        - ElementName: Material_Footsteps
+          ObjectType: 11
+          guid: df09b1b6ce3c9041be218950a24f3df5
+        - ElementName: Hard_Wood
+          ObjectType: 10
+          guid: 4b407f95f4993f478d72d922bd46ae66
+      - name: Sand
+        guid: 5c9a474226855d4895e915f380e9272a
+        id: 803837735
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7140a187516809448f8d6390b02b02ec
+        - ElementName: Material_Footsteps
+          ObjectType: 11
+          guid: df09b1b6ce3c9041be218950a24f3df5
+        - ElementName: Sand
+          ObjectType: 10
+          guid: 5c9a474226855d4895e915f380e9272a
+      - name: Wood
+        guid: 468e7c800f736c44801199923672c6bc
+        id: 2058049674
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 7140a187516809448f8d6390b02b02ec
+        - ElementName: Material_Footsteps
+          ObjectType: 11
+          guid: df09b1b6ce3c9041be218950a24f3df5
+        - ElementName: Wood
+          ObjectType: 10
+          guid: 468e7c800f736c44801199923672c6bc
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: ecdb30bd6839824db707deaf48b3f649
+    ParentPath: Triggers\Default Work Unit
+    guid: ecdb30bd6839824db707deaf48b3f649
+    GuidInternal: 
+    m_lastTime: -8585591481729577733
+    List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 
+  ExpandedWaapiItemIds: 010000000500000006000000070000000f0000001000000011000000120000001300000014000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

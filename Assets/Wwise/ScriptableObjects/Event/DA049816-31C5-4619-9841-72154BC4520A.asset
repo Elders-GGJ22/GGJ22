@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac01224be71dfdc4ca5fefb4ae288b67, type: 3}
-  m_Name: 67D09E7B-2401-4B46-B80C-0EF3B7641FA2
+  m_Name: DA049816-31C5-4619-9841-72154BC4520A
   m_EditorClassIdentifier: 
-  objectName: Play_Magnetismo
-  id: 1637986760
-  guid: 67D09E7B-2401-4B46-B80C-0EF3B7641FA2
+  objectName: Stop_obj_Magnetized
+  id: 4178633038
+  guid: DA049816-31C5-4619-9841-72154BC4520A

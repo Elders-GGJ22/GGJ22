@@ -13,32 +13,49 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_CRICETO_IMPACT = 2339399990U;
-        static const AkUniqueID PLAY_CRICETO_START = 1031767396U;
-        static const AkUniqueID PLAY_IMPACT_BOX = 973569650U;
-        static const AkUniqueID PLAY_MAGNETISMO = 1637986760U;
+        static const AkUniqueID PLAY_GUN_NEGATIVE = 3754677826U;
+        static const AkUniqueID PLAY_GUN_POSITIVE = 3140575938U;
+        static const AkUniqueID PLAY_HAMSTER_FOOTSTEP = 3998189881U;
+        static const AkUniqueID PLAY_HAMSTER_SQUITS = 2655563858U;
+        static const AkUniqueID PLAY_HAMSTERS_SAVE = 3054066693U;
+        static const AkUniqueID PLAY_OBJ_MAGNETIZED_NEGATIVE = 1224237682U;
+        static const AkUniqueID PLAY_OBJ_MAGNETIZED_POSITIVE = 3344139506U;
+        static const AkUniqueID STOP_OBJ_MAGNETIZED = 4178633038U;
     } // namespace EVENTS
 
     namespace STATES
     {
-        namespace CRICETO_DEATH
+        namespace OBJ_MAGNETIZE
         {
-            static const AkUniqueID GROUP = 2902505743U;
+            static const AkUniqueID GROUP = 750376681U;
 
             namespace STATE
             {
+                static const AkUniqueID NEGATIVE = 4219547688U;
                 static const AkUniqueID NONE = 748895195U;
                 static const AkUniqueID OFF = 930712164U;
-                static const AkUniqueID ON = 1651971902U;
+                static const AkUniqueID POSITIVE = 1192865152U;
             } // namespace STATE
-        } // namespace CRICETO_DEATH
+        } // namespace OBJ_MAGNETIZE
 
     } // namespace STATES
 
-    namespace GAME_PARAMETERS
+    namespace SWITCHES
     {
-        static const AkUniqueID MAGNETISMO_DISTANCE = 3788238483U;
-    } // namespace GAME_PARAMETERS
+        namespace MATERIAL_FOOTSTEPS
+        {
+            static const AkUniqueID GROUP = 1143874978U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DEFAULT = 782826392U;
+                static const AkUniqueID HARD_WOOD = 3176523514U;
+                static const AkUniqueID SAND = 803837735U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace MATERIAL_FOOTSTEPS
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

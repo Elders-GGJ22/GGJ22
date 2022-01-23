@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ac01224be71dfdc4ca5fefb4ae288b67, type: 3}
-  m_Name: EEFB7DA6-B567-451C-A3B6-00B4B38A559F
+  m_Name: CC813408-91B4-404B-89CE-54D8A3C38F99
   m_EditorClassIdentifier: 
-  objectName: Play_Criceto_Start
-  id: 1031767396
-  guid: EEFB7DA6-B567-451C-A3B6-00B4B38A559F
+  objectName: Play_Obj_Magnetized_Negative
+  id: 1224237682
+  guid: CC813408-91B4-404B-89CE-54D8A3C38F99
