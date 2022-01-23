@@ -17,7 +17,7 @@ namespace Assets.Scrips
         private LevelStats _levelStats;
 
         [Header("Canvas Control")]
-        [SerializeField] private GameObject _canvas;
+        [SerializeField] private GameObject _canvasWin;
         [SerializeField] private EndOfLevelPanel _endOfLevel;
         public void Start()
         {
@@ -55,8 +55,7 @@ namespace Assets.Scrips
                 if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
                 {
                     _levelStats.PlayerWin = true;
-                    Debug.Log("Ho vinto");
-                    _canvas.SetActive(true);
+                    _canvasWin.SetActive(true);
                     _endOfLevel.Draw(_levelStats);
                 }
                 EventsManager.Instance.OnLevelFinished(_levelStats);
