@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Assets.Scrips.Hamsters;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private Attractor[] humsters;
+    [SerializeField] private Attractor[] hamsters;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform targetSpawnPoint;
     [SerializeField] private float minHeight = -5f;
 
     // Start is called before the first frame update
@@ -16,12 +18,25 @@ public class GameManager : MonoBehaviour
 
     void FixedUpdate()
     {
-        foreach(Attractor humster in humsters)
+        foreach(Attractor hamster in hamsters)
         {
-            if(humster.transform.position.y < minHeight)
+            if(hamster.transform.position.y < minHeight)
             {
-                humster.transform.position = spawnPoint.position;
-                humster.SetMagnetic(false);
+                if(spawnPoint)
+                {
+                    hamster.transform.position = spawnPoint.position;
+                    hamster.SetMagnetic(false);
+
+                    AI_Hamster ai = hamster.GetComponent<AI_Hamster>();
+                    if (ai && targetSpawnPoint)
+                    {
+                        ai.SetDestinationPoint(targetSpawnPoint.position);
+                    }
+                }
+                else
+                {
+                    //DEATH OF HAMSTER!
+                }
             }
         }
     }
