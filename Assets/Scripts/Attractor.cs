@@ -16,6 +16,10 @@ public class Attractor : MonoBehaviour
 	[SerializeField] private UnityEvent magnetizeEvent;
 	[SerializeField] private UnityEvent demagnetizeEvent;
 
+	[Header("Particles")]
+	[SerializeField] private ParticleSystem positiveParticles;
+	[SerializeField] private ParticleSystem negativeParticles;
+
 	[Header("GFX")]
 	[SerializeField] private GameObject idleGFX;
 	[SerializeField] private GameObject positiveGFX;
@@ -131,6 +135,14 @@ public class Attractor : MonoBehaviour
 		if (idleGFX) { this.idleGFX.SetActive(!this.magnetic); }
 		if (positiveGFX) { this.positiveGFX.SetActive(this.magnetic && this.positive); }
 		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }
+		if(positiveParticles) {
+			if(this.magnetic && this.positive) { positiveParticles.Play(); }
+			else { positiveParticles.Stop(); }
+		}
+		if(negativeParticles) {
+			if(this.magnetic && !this.positive) { negativeParticles.Play(); }
+			else { negativeParticles.Stop(); }
+		}
 	}
 
 	private void OnDrawGizmosSelected()

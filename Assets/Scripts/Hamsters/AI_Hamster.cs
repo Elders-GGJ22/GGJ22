@@ -1,5 +1,4 @@
-﻿
-using DG.Tweening;
+﻿using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -8,6 +7,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.AI;
+
 namespace Assets.Scrips.Hamsters
 {
     [RequireComponent(typeof(NavMeshAgent))]
@@ -26,13 +26,17 @@ namespace Assets.Scrips.Hamsters
         [Header("Variables")]
         [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
         [SerializeField] private float walkRadius = 3f;
+
+        [Header("Components")]
         [SerializeField] private Transform goal;
         [SerializeField] private Transform GFX;
+        [SerializeField] private Animator anim;
 
         private NavMeshAgent agent;
         private NavMeshPath path;
         private float waiting = 0;
-        [SerializeField] private Animator anim;
+        private int oldAction;
+
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
@@ -43,12 +47,18 @@ namespace Assets.Scrips.Hamsters
             if (agent.enabled && waiting < 0)
             {
                 // TODO aggiungere qui le azioni possibili
-                switch (Random.Range(1, 3))
+                int rand = Random.Range(1, 3);
+                while(rand == oldAction) {
+                    rand = Random.Range(1, 3);
+                }
+                switch (rand)
                 {
                     case 1:
+                        oldAction = rand;
                         SetDestinationPoint();
                         break;
                     case 2:
+                        oldAction = rand;
                         //Shake();
                         break;
                 }
@@ -149,7 +159,6 @@ namespace Assets.Scrips.Hamsters
             }
         }
 
-
         #region Wwise audio
         //Wwise Footstep Audio
 
@@ -201,9 +210,6 @@ namespace Assets.Scrips.Hamsters
             nextFootstep = 0;
             PlayFootstepAudio();
         }
-
-
-
         #endregion
     }
 
