@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     [Header("Cinemachine")]
     [SerializeField] private CinemachineTargetGroup targetGroup;
+    [Header("Managers")]
+	[SerializeField] private AttractorManager attractorManager;
 
     [Header("Hamsters")]
     [SerializeField] private Attractor[] hamsters;
@@ -16,6 +18,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private Transform targetSpawnPoint;
     [SerializeField] private float minHeight = -5f;
+
+    [Header("Variables")]
+    [SerializeField] private bool reloadWhenRespan = true;
 
     void Awake()
     {
@@ -31,15 +36,20 @@ public class GameManager : MonoBehaviour
     {
         foreach (Attractor hamster in hamsters)
         {
-            targetGroup.AddMember(hamster.transform, 1, 1);
-            AI_Hamster ai = hamster.GetComponent<AI_Hamster>();
-            if (ai)
+            AddHamster(hamster.transform);
+        }
+    }
+
+    public void AddHamster(Transform hamster)
+    {
+        targetGroup.AddMember(hamster, 1, 1);
+        AI_Hamster ai = hamster.GetComponent<AI_Hamster>();
+        if (ai)
+        {
+            Transform goal = ai.GetGoal();
+            if(goal != null)
             {
-                Transform goal = ai.GetGoal();
-                if(goal != null)
-                {
-                    targetGroup.AddMember(goal, 1, 1);
-                }
+                targetGroup.AddMember(goal, 1, 1);
             }
         }
     }
@@ -64,22 +74,31 @@ public class GameManager : MonoBehaviour
         {
             if(hamster.transform.position.y < minHeight)
             {
-                if(spawnPoint)
-                {
-                    hamster.transform.position = spawnPoint.position;
-                    hamster.SetMagnetic(false);
-
-                    AI_Hamster ai = hamster.GetComponent<AI_Hamster>();
-                    if (ai && targetSpawnPoint)
-                    {
-                        ai.SetDestinationPoint(targetSpawnPoint.position);
-                    }
-                }
-                else
-                {
-                    //TODO: DEATH OF HAMSTER!
-                }
+                Respawn(hamster);
             }
+        }
+    }
+
+    void Respawn(Attractor hamster)
+    {
+        if(spawnPoint)
+        {
+            hamster.transform.position = spawnPoint.position;
+            hamster.SetMagnetic(false);
+
+            if(reloadWhenRespan) {
+                attractorManager.AddCharge(hamster.IsPositive());
+            }
+
+            AI_Hamster ai = hamster.GetComponent<AI_Hamster>();
+            if (ai && targetSpawnPoint)
+            {
+                ai.SetDestinationPoint(targetSpawnPoint.position);
+            }
+        }
+        else
+        {
+            //TODO: DEATH OF HAMSTER!
         }
     }
 }

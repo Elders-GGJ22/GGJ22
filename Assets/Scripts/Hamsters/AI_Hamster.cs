@@ -47,33 +47,24 @@ namespace Assets.Scrips.Hamsters
             if (agent.enabled && waiting < 0)
             {
                 // TODO aggiungere qui le azioni possibili
-                int rand = Random.Range(1, 3);
+                int rand = Random.Range(1, 6);
                 while(rand == oldAction) {
-                    rand = Random.Range(1, 3);
+                    rand = Random.Range(1, 6);
                 }
                 switch (rand)
                 {
                     case 1:
                         oldAction = rand;
-                        SetDestinationPoint();
-                        break;
-                    case 2:
-                        oldAction = rand;
                         //Shake();
+                        break;
+                    default:
+                        oldAction = rand;
+                        SetDestinationPoint();
                         break;
                 }
             }
             waiting -= Time.deltaTime;
-
-            anim.SetFloat("Velocity", agent.velocity.magnitude);
-
-            // Wwise
-            float speed = wwiseFootStepCounter;
-            //GetInput(out speed);
-            // TODO calcola runtime la velocità del criceto
-            ProgressStepCycle(speed);
         }
-
 
         public Transform GetGoal()
         {
@@ -128,7 +119,9 @@ namespace Assets.Scrips.Hamsters
             randomDirection += transform.position;
             NavMeshHit hit;
             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
-            agent.destination = hit.position;
+            if(hit.position != Vector3.positiveInfinity) {
+                agent.destination = hit.position;
+            }
 
 #if UNITY_EDITOR
             path = new NavMeshPath();
@@ -144,6 +137,7 @@ namespace Assets.Scrips.Hamsters
             GFX.transform.DOShakePosition(waiting, strenght);
         }
 
+#if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
@@ -158,59 +152,6 @@ namespace Assets.Scrips.Hamsters
                 }
             }
         }
-
-        #region Wwise audio
-        //Wwise Footstep Audio
-
-        [Header("WWise")]
-        public float wwiseFootStepCounter = 50;
-
-        private void PlayFootstepAudio()
-        {
-            /*if (!m_CharacterController.isGrounded)
-            {
-                return;
-            }
-
-            // Make a ray-cast from player to ground and return RaycastHit to hit variable
-            if (Physics.Raycast(transform.position, -Vector3.up, out hit, Mathf.Infinity))
-            {
-                PhysMat_Last = PhysMat;
-
-                // Get the Tag from the collider and send it to PhysMat variable
-                PhysMat = hit.collider.tag;
-
-                // Avoid Unity to send Wwise Switch if the PhysMat variable has not changed
-                if (PhysMat != PhysMat_Last)
-                {
-                    //Send the Switch "Material" to Wwise
-                    AkSoundEngine.SetSwitch("Materials", PhysMat, gameObject);
-
-                    // debugging purpose : log the PhysMat in Unity console
-                    print(PhysMat);
-                }
-		
-                // Post the Wwise AKEvent each time player step onto the ground
-                AkSoundEngine.PostEvent("Play_FS_Pawn", gameObject);
-	    
-            }*/
-            // Post the Wwise AKEvent each time player step onto the ground
-            AkSoundEngine.PostEvent("Play_Hamster_Footstep", gameObject);
-            Debug.Log("suono?");
-        }
-
-        private float nextFootstep = 0;
-        void ProgressStepCycle(float speed)
-        {
-            nextFootstep += agent.velocity.magnitude;
-
-            Debug.Log("footstep?? " + agent.velocity.magnitude);
-            if (nextFootstep <= speed) return;
-
-            nextFootstep = 0;
-            PlayFootstepAudio();
-        }
-        #endregion
+#endif
     }
-
 }

@@ -20,15 +20,17 @@ public class Attractor : MonoBehaviour
 	[SerializeField] private ParticleSystem positiveParticles;
 	[SerializeField] private ParticleSystem negativeParticles;
 
-	[Header("GFX")]
-	[SerializeField] private GameObject idleGFX;
-	[SerializeField] private GameObject positiveGFX;
-	[SerializeField] private GameObject negativeGFX;
+	[Header("Materials")]
+	[SerializeField] private SkinnedMeshRenderer meshRenderer;
+	[SerializeField] private Material positiveMaterial;
+	[SerializeField] private Material negativeMaterial;
 
 	[Header("Touching")]
 	[SerializeField] private float minDistance = 1.5f;
 	[SerializeField] private float debouncingTime = 0.5f;
 	[SerializeField] private UnityEvent touchEvent;
+	
+	private Material idleMaterial;
 	private bool hitted = false;
 
 	const float G = 667.4f;
@@ -39,6 +41,7 @@ public class Attractor : MonoBehaviour
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
+		this.idleMaterial = this.meshRenderer.material;
 		SetMagnetic(magnetic);
 	}
 
@@ -132,9 +135,16 @@ public class Attractor : MonoBehaviour
 
 	void SetGFX()
 	{
-		if (idleGFX) { this.idleGFX.SetActive(!this.magnetic); }
+		/*if (idleGFX) { this.idleGFX.SetActive(!this.magnetic); }
 		if (positiveGFX) { this.positiveGFX.SetActive(this.magnetic && this.positive); }
-		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }
+		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }*/
+		if(!this.magnetic) {
+			this.meshRenderer.material = this.idleMaterial;
+		}
+		else {
+			this.meshRenderer.material = (this.positive ? this.positiveMaterial : this.negativeMaterial); 
+		}
+		
 		if(positiveParticles) {
 			if(this.magnetic && this.positive) { positiveParticles.Play(); }
 			else { positiveParticles.Stop(); }

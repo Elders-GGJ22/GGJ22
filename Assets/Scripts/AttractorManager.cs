@@ -34,17 +34,18 @@ public class AttractorManager : MonoBehaviour
                         {
                             attractor.SetMagnetic(false);
                             positiveCharges++;
+                            AddCharge(true);
                         }
                         else if(!attractor.IsPositive())
                         {
                             attractor.SetMagnetic(false);
-                            negativeCharges++;
+                            AddCharge(false);
                         }
                     }
                     else if(positiveCharges > 0)
                     {
                         attractor.SetPositive(true);
-                        positiveCharges--;
+                        AddCharge(true, -1);
                     }
                     else
                     {
@@ -58,18 +59,18 @@ public class AttractorManager : MonoBehaviour
                         if (!attractor.IsPositive())
                         {
                             attractor.SetMagnetic(false);
-                            negativeCharges++;
+                            AddCharge(false);
                         }
                         else if (attractor.IsPositive())
                         {
                             attractor.SetMagnetic(false);
-                            positiveCharges++;
+                            AddCharge(true);
                         }
                     }
                     else if (negativeCharges > 0)
                     {
                         attractor.SetPositive(false);
-                        negativeCharges--;
+                        AddCharge(false, -1);
                     }
                     else
                     {
@@ -78,6 +79,18 @@ public class AttractorManager : MonoBehaviour
                 }
                 //}
             }
+        }
+    }
+
+    public void AddCharge(bool positive, int quantity = 1)
+    {
+        if(positive)
+        {
+            positiveCharges += quantity;
+        }
+        else
+        {
+            negativeCharges += quantity;
         }
     }
 }

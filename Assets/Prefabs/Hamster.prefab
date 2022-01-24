@@ -151,7 +151,7 @@ NavMeshAgent:
   m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 0
-  m_AngularSpeed: 120
+  m_AngularSpeed: 500
   m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -193,7 +193,6 @@ MonoBehaviour:
   goal: {fileID: 0}
   GFX: {fileID: 1294393940}
   anim: {fileID: 0}
-  wwiseFootStepCounter: 50
 --- !u!114 &368831727
 MonoBehaviour:
   m_ObjectHideFlags: 0
