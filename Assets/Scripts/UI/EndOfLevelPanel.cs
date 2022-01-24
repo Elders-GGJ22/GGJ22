@@ -11,7 +11,7 @@ namespace Assets.Scrips.UI
         [Header("End Stats")]
         [SerializeField] private TMP_Text _statsAliveTextValue = null;
         [SerializeField] private TMP_Text _statsDeadTextValue = null;
-
+        
         // TODO
         public void Draw(LevelStats stats)
         {

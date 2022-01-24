@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform targetSpawnPoint;
     [SerializeField] private float minHeight = -5f;
 
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
+    
     void Start()
     {
         AssignTargetsToTargetGroup();

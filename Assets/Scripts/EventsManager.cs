@@ -28,6 +28,10 @@ namespace Assets.Scrips
         void Awake()
         {
             DontDestroyOnLoad(gameObject);
+            
+            OnHamsterDieEvent = new HamsterDiedEvent();
+            OnLevelFinishedEvent = new LevelFinishedEvent();
+            OnHamsterReachHouseEvent = new HamsterReachHouseEvent();
         }
 
         [Header("AK Wwise Events")] 
@@ -41,7 +45,7 @@ namespace Assets.Scrips
 
         public HamsterDiedEvent OnHamsterDieEvent;
         public HamsterReachHouseEvent OnHamsterReachHouseEvent;
-        public LevelFinished OnLevelFinishedEvent;
+        public LevelFinishedEvent OnLevelFinishedEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
@@ -82,6 +86,6 @@ namespace Assets.Scrips
     public class HamsterReachHouseEvent : UnityEvent { }
     
     [System.Serializable]
-    public class LevelFinished : UnityEvent<LevelStats> { }
+    public class LevelFinishedEvent : UnityEvent<LevelStats> { }
     #endregion
 }
