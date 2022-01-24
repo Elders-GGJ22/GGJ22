@@ -402,8 +402,8 @@ MonoBehaviour:
         guid: b3e484421e7ba54db341bc2ddedae27f
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Negative
       maxAttenuation: 0
-      maxDuration: 2.944543
-      minDuration: 2.852132
+      maxDuration: 17.448124
+      minDuration: 14.672065
     - name: Play_Gun_Positive
       guid: 1b366cea992991438874c1a76aa6a014
       id: 3140575938
@@ -422,8 +422,8 @@ MonoBehaviour:
         guid: 1b366cea992991438874c1a76aa6a014
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Positive
       maxAttenuation: 0
-      maxDuration: 17.460087
-      minDuration: 2.016762
+      maxDuration: 17.448124
+      minDuration: 14.672065
     - name: Play_No_Gun_Charge
       guid: 91d97e1df4d09a4bb027c06f1ec70618
       id: 1740526775
@@ -597,7 +597,7 @@ MonoBehaviour:
     m_lastTime: -8585591481729577733
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000800000009000000
+  ExpandedWaapiItemIds: 050000000600000007000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
