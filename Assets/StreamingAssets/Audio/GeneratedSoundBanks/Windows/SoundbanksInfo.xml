@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="752638603">
+		<SoundBank Id="1355168291" Language="SFX" Hash="2325592519">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3314414869">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2839717945">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -25,19 +25,19 @@
 					<IncludedMemoryFiles>
 						<File Id="938523553" Language="SFX">
 							<ShortName>_ Pistola (-).wav</ShortName>
-							<Path>SFX\_ Pistola (-)_2281F63D.wem</Path>
+							<Path>SFX\_ Pistola (-)_B4123602.wem</Path>
 						</File>
 						<File Id="977429043" Language="SFX">
 							<ShortName>_ Pistola (-) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (-) 2_957750EB.wem</Path>
+							<Path>SFX\_ Pistola (-) 2_06E4D873.wem</Path>
 						</File>
 						<File Id="1012430974" Language="SFX">
 							<ShortName>_ Pistola (-).wav</ShortName>
-							<Path>SFX\_ Pistola (-)_09E23850.wem</Path>
+							<Path>SFX\_ Pistola (-)_CCF8A6B3.wem</Path>
 						</File>
 						<File Id="1063255614" Language="SFX">
 							<ShortName>_ Pistola (-) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (-) 2_F4DF299B.wem</Path>
+							<Path>SFX\_ Pistola (-) 2_C8B7D0F5.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
@@ -49,23 +49,39 @@
 					<IncludedMemoryFiles>
 						<File Id="482845930" Language="SFX">
 							<ShortName>_ Pistola (+) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (+) 2_FB2A4C85.wem</Path>
+							<Path>SFX\_ Pistola (+) 2_7D2256F8.wem</Path>
 						</File>
 						<File Id="564543840" Language="SFX">
 							<ShortName>_ Pistola (+) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (+) 2_F78F3FC4.wem</Path>
+							<Path>SFX\_ Pistola (+) 2_F5004D4D.wem</Path>
 						</File>
 						<File Id="785827672" Language="SFX">
 							<ShortName>_ Pistola (+).wav</ShortName>
-							<Path>SFX\_ Pistola (+)_9723D8C7.wem</Path>
+							<Path>SFX\_ Pistola (+)_4E41B852.wem</Path>
 						</File>
 						<File Id="1033587246" Language="SFX">
 							<ShortName>_ Pistola (+).wav</ShortName>
-							<Path>SFX\_ Pistola (+)_6C42A4AB.wem</Path>
+							<Path>SFX\_ Pistola (+)_E2299181.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
 							<Path>SFX\_Bullet_Hit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2986090087" Name="Play_Hamster_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Death" DurationType="OneShot" DurationMin="1.050948" DurationMax="2.812137">
+					<IncludedMemoryFiles>
+						<File Id="75759534" Language="SFX">
+							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3_10C4C929.wem</Path>
+						</File>
+						<File Id="536273062" Language="SFX">
+							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1_10C4C929.wem</Path>
+						</File>
+						<File Id="927752348" Language="SFX">
+							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2_BF326A68.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -78,10 +94,6 @@
 						<File Id="227730366" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_10C4C929.wem</Path>
-						</File>
-						<File Id="249327601" Language="SFX">
-							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_2.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_2_10C4C929.wem</Path>
 						</File>
 						<File Id="271460873" Language="SFX">
 							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2.wav</ShortName>
@@ -99,10 +111,6 @@
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem</Path>
 						</File>
-						<File Id="696365877" Language="SFX">
-							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Deafault_1_10C4C929.wem</Path>
-						</File>
 						<File Id="788315250" Language="SFX">
 							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3_10C4C929.wem</Path>
@@ -110,10 +118,6 @@
 						<File Id="790953535" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3.wav</ShortName>
 							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_10C4C929.wem</Path>
-						</File>
-						<File Id="797795490" Language="SFX">
-							<ShortName>FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_3.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\DEFAULT\_ Hamster_Footstep_Default_3_10C4C929.wem</Path>
 						</File>
 						<File Id="948751287" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3.wav</ShortName>
@@ -150,9 +154,10 @@
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}">
 							<Media>
-								<File Id="249327601"/>
-								<File Id="696365877"/>
-								<File Id="797795490"/>
+								<File Id="279207376"/>
+								<File Id="633068771"/>
+								<File Id="948751287"/>
+								<File Id="1038825265"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
@@ -173,7 +178,7 @@
 						</File>
 						<File Id="736105152" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_2_FC433FA1.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_2_75F64918.wem</Path>
 						</File>
 						<File Id="1042466446" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
@@ -225,11 +230,23 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1740526775" Name="Play_No_Gun_Charge" ObjectPath="\Events\Default Work Unit\Player Gun\Play_No_Gun_Charge" DurationType="OneShot" DurationMin="0.505125" DurationMax="0.505125">
+					<IncludedMemoryFiles>
+						<File Id="419793055" Language="SFX">
+							<ShortName>Bleeps_Blops_Clicks_DDM29.wav</ShortName>
+							<Path>SFX\Bleeps_Blops_Clicks_DDM29_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1224237682" Name="Play_Obj_Magnetized_Negative" ObjectPath="\Events\Default Work Unit\Objects\Play_Obj_Magnetized_Negative" DurationType="Infinite">
 					<IncludedMemoryFiles>
+						<File Id="654844902" Language="SFX">
+							<ShortName>_ Elettroshock_1.wav</ShortName>
+							<Path>SFX\_ Elettroshock_1_C5245674.wem</Path>
+						</File>
 						<File Id="969911899" Language="SFX">
 							<ShortName>_ Magnetizzato -.wav</ShortName>
-							<Path>SFX\_ Magnetizzato -_AF3AF4D1.wem</Path>
+							<Path>SFX\_ Magnetizzato -_D2F767C8.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -237,12 +254,79 @@
 					<IncludedMemoryFiles>
 						<File Id="65869930" Language="SFX">
 							<ShortName>_ Magnetizzato +.wav</ShortName>
-							<Path>SFX\_ Magnetizzato +_9A29BF9B.wem</Path>
+							<Path>SFX\_ Magnetizzato +_8ABC7C62.wem</Path>
+						</File>
+						<File Id="654844902" Language="SFX">
+							<ShortName>_ Elettroshock_1.wav</ShortName>
+							<Path>SFX\_ Elettroshock_1_C5245674.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2353563817" Name="Play_Pallina_Alluminio_Impact" ObjectPath="\Events\Default Work Unit\Objects\Play_Pallina_Alluminio_Impact" DurationType="OneShot" DurationMin="0.678063" DurationMax="0.879339">
+					<IncludedMemoryFiles>
+						<File Id="210304411" Language="SFX">
+							<ShortName>PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2.wav</ShortName>
+							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2_10C4C929.wem</Path>
+						</File>
+						<File Id="466685136" Language="SFX">
+							<ShortName>PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact.wav</ShortName>
+							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="444434914" Name="Play_Routa_Destroy" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Destroy" DurationType="OneShot" DurationMin="2.330341" DurationMax="2.512436">
+					<IncludedMemoryFiles>
+						<File Id="293380285" Language="SFX">
+							<ShortName>Blast Laser 4.wav</ShortName>
+							<Path>SFX\Blast Laser 4_9BAE2E0B.wem</Path>
+						</File>
+						<File Id="728435171" Language="SFX">
+							<ShortName>RUOTA\Routa_Destroy.wav</ShortName>
+							<Path>SFX\RUOTA\Routa_Destroy_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4128702423" Name="Play_Routa_Gira" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Gira" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="163792938" Language="SFX">
+							<ShortName>RUOTA\_ Cigolio.wav</ShortName>
+							<Path>SFX\RUOTA\_ Cigolio_D79FB2B7.wem</Path>
+						</File>
+						<File Id="614249706" Language="SFX">
+							<ShortName>RUOTA\_ ruota.wav</ShortName>
+							<Path>SFX\RUOTA\_ ruota_D79FB2B7.wem</Path>
+						</File>
+						<File Id="631209540" Language="SFX">
+							<ShortName>ms_insp124_ourtime_reverse.wav</ShortName>
+							<Path>SFX\ms_insp124_ourtime_reverse_8AC63170.wem</Path>
+						</File>
+						<File Id="981146523" Language="SFX">
+							<ShortName>RUOTA\_ Rotation Fidget.wav</ShortName>
+							<Path>SFX\RUOTA\_ Rotation Fidget_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="592787016" Name="Play_Tagliola_Shake" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Shake" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1003120525" Language="SFX">
+							<ShortName>Tagliola.wav</ShortName>
+							<Path>SFX\Tagliola_429E5DC5.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="928546414" Name="Play_Tagliola_Snap" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Snap" DurationType="OneShot" DurationMin="1.267619" DurationMax="1.267619">
+					<IncludedMemoryFiles>
+						<File Id="814232710" Language="SFX">
+							<ShortName>Tagliola_Snap.wav</ShortName>
+							<Path>SFX\Tagliola_Snap_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="4178633038" Name="Stop_obj_Magnetized" ObjectPath="\Events\Default Work Unit\Objects\Stop_obj_Magnetized" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="4144375616" Name="Routa_Speed" ObjectPath="\Game Parameters\Default Work Unit\Routa_Speed"/>
+			</GameParameters>
 			<SwitchGroups>
 				<SwitchGroup Id="1143874978" Name="Material_Footsteps" ObjectPath="\Switches\Default Work Unit\Material_Footsteps" GUID="{B6B109DF-3CCE-4190-BE21-8950A24F3DF5}">
 					<Switches>
