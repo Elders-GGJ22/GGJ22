@@ -15,11 +15,18 @@ namespace AK
     {
         static const AkUniqueID PLAY_GUN_NEGATIVE = 3754677826U;
         static const AkUniqueID PLAY_GUN_POSITIVE = 3140575938U;
+        static const AkUniqueID PLAY_HAMSTER_DEATH = 2986090087U;
         static const AkUniqueID PLAY_HAMSTER_FOOTSTEP = 3998189881U;
         static const AkUniqueID PLAY_HAMSTER_SQUITS = 2655563858U;
         static const AkUniqueID PLAY_HAMSTERS_SAVE = 3054066693U;
+        static const AkUniqueID PLAY_NO_GUN_CHARGE = 1740526775U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_NEGATIVE = 1224237682U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_POSITIVE = 3344139506U;
+        static const AkUniqueID PLAY_PALLINA_ALLUMINIO_IMPACT = 2353563817U;
+        static const AkUniqueID PLAY_ROUTA_DESTROY = 444434914U;
+        static const AkUniqueID PLAY_ROUTA_GIRA = 4128702423U;
+        static const AkUniqueID PLAY_TAGLIOLA_SHAKE = 592787016U;
+        static const AkUniqueID PLAY_TAGLIOLA_SNAP = 928546414U;
         static const AkUniqueID STOP_OBJ_MAGNETIZED = 4178633038U;
     } // namespace EVENTS
 
@@ -39,6 +46,11 @@ namespace AK
         } // namespace MATERIAL_FOOTSTEPS
 
     } // namespace SWITCHES
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID ROUTA_SPEED = 4144375616U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {
