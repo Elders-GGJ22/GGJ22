@@ -17,7 +17,7 @@ public class AgentLocomotionStart : MonoBehaviour
     //--
     public bool PullAvatarTowardsAgent, PullAgentTowardsAvatar;
 
-    void Start()
+    private void Start()
     {
         anim = GetComponent<Animator>();
         agent = GetComponent<NavMeshAgent>();

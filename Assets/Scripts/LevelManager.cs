@@ -16,9 +16,6 @@ namespace Assets.Scrips
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
 
-        [Header("Canvas Control")]
-        [SerializeField] private GameObject _canvasWin;
-        [SerializeField] private EndOfLevelPanel _endOfLevel;
         public void Start()
         {
             // conto quanti hamster ci sono nel livello 
@@ -54,10 +51,7 @@ namespace Assets.Scrips
                 // il giocatore vince solo con le condizioni indicate sopra (tutti salvi se specificato, o almeno il numero minimo
                 if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
                 {
-                    Debug.Log("ciao");
                     _levelStats.PlayerWin = true;
-                    _canvasWin.SetActive(true);
-                    _endOfLevel.Draw(_levelStats);
                 }
                 EventsManager.Instance.OnLevelFinished(_levelStats);
             }

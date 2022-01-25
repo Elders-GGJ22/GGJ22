@@ -41,7 +41,7 @@ public class Attractor : MonoBehaviour
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
-		this.idleMaterial = this.meshRenderer.material;
+		if (meshRenderer) this.idleMaterial = this.meshRenderer.material;
 		SetMagnetic(magnetic);
 	}
 
@@ -124,13 +124,20 @@ public class Attractor : MonoBehaviour
 		this.rb.isKinematic = cinematic ? true : !_magnetic;
 		SetGFX();
 		if(_magnetic) { magnetizeEvent.Invoke(); }
-		else { demagnetizeEvent.Invoke(); }
+		else
+		{
+			demagnetizeEvent.Invoke();
+			AkSoundEngine.PostEvent("Stop_obj_Magnetized", gameObject);
+		}
 	}
 
 	public void SetPositive(bool _positive) // Called from AttractorManager
 	{
 		this.positive = _positive;
 		SetMagnetic(true);
+
+		var soundClip = _positive ? "Play_Obj_Magnetized_Positive" : "Play_Obj_Magnetized_Negative";
+		AkSoundEngine.PostEvent(soundClip, gameObject);
 	}
 
 	void SetGFX()
@@ -139,10 +146,10 @@ public class Attractor : MonoBehaviour
 		if (positiveGFX) { this.positiveGFX.SetActive(this.magnetic && this.positive); }
 		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }*/
 		if(!this.magnetic) {
-			this.meshRenderer.material = this.idleMaterial;
+			if (meshRenderer) this.meshRenderer.material = this.idleMaterial;
 		}
 		else {
-			this.meshRenderer.material = (this.positive ? this.positiveMaterial : this.negativeMaterial); 
+			if (meshRenderer) this.meshRenderer.material = (this.positive ? this.positiveMaterial : this.negativeMaterial); 
 		}
 		
 		if(positiveParticles) {

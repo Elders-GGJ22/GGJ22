@@ -7,7 +7,9 @@ namespace Assets.Scrips.Utili
     {
         void Start()
         {
+#if UNITY_EDITOR
             EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
+#endif
         }
     }
 }
