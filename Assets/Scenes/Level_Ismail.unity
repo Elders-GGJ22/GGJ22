@@ -2326,6 +2326,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 803351287}
   targetSpawnPoint: {fileID: 366341338}
   minHeight: -5
+  reloadWhenRespan: 1
 --- !u!4 &768872631
 Transform:
   m_ObjectHideFlags: 0
@@ -3320,8 +3321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MinHamsterAlive: 0
   AllAlive: 1
-  _canvasWin: {fileID: 62299633}
-  _endOfLevel: {fileID: 1083882153}
 --- !u!4 &891717609
 Transform:
   m_ObjectHideFlags: 0
@@ -6033,7 +6032,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3623253326896067295}
   m_LocalRotation: {x: 0.40937018, y: -0.000000029802322, z: 0.000000029802322, w: 0.9123684}
-  m_LocalPosition: {x: 0.18801244, y: -0.1469334, z: 0.0703876}
+  m_LocalPosition: {x: 0.1880121, y: -0.14693351, z: 0.070387125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5715994622146321385}
