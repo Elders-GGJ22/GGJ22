@@ -4,7 +4,10 @@ Event	ID	Name			Wwise Object Path	Notes
 	928546414	Play_Tagliola_Snap			\Default Work Unit\Objects\Play_Tagliola_Snap	
 	1224237682	Play_Obj_Magnetized_Negative			\Default Work Unit\Objects\Play_Obj_Magnetized_Negative	
 	1740526775	Play_No_Gun_Charge			\Default Work Unit\Player Gun\Play_No_Gun_Charge	
+	2003795032	Play_Gun_Reload			\Default Work Unit\Player Gun\Play_Gun_Reload	
+	2093550265	Play_Hamster_Death_Fall			\Default Work Unit\Hamster\Play_Hamster_Death_Fall	
 	2353563817	Play_Pallina_Alluminio_Impact			\Default Work Unit\Objects\Play_Pallina_Alluminio_Impact	
+	2465610634	Play_Hamster_Death_Blood			\Default Work Unit\Hamster\Play_Hamster_Death_Blood	
 	2655563858	Play_Hamster_Squits			\Default Work Unit\Hamster\Play_Hamster_Squits	
 	2986090087	Play_Hamster_Death			\Default Work Unit\Hamster\Play_Hamster_Death	
 	3054066693	Play_Hamsters_Save			\Default Work Unit\Hamster\Play_Hamsters_Save	
@@ -29,15 +32,17 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Effect plug-ins	ID	Name	Type				Notes
 	1008402193	Low_Pass_20KHz	Wwise Parametric EQ			
+	2791153688	Hall_Small	Wwise RoomVerb			
 	3604890626	High_Pass_60Hz	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	436051	_ Hamster_Save_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_2\_ Hamster_Save_2		596348
 	59845594	_ Hamster_Save_3_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_3_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_3\_ Hamster_Save_3_Squit		596348
-	65869930	Magnetizzato_Positive	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato +_8ABC7C62.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetised_Pos\Magnetizzato_Positive		749220
+	65869930	Magnetizzato_Positive	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato +_94B9E54D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetised_Pos\Magnetizzato_Positive		749220
 	75759534	_ Criceto_Base_Death_Blood3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Blood\_ Criceto_Base_Death_Blood3		705664
 	163792938	_ Cigolio	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\RUOTA\_ Cigolio_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Routa\Routa_Gira\_ Cigolio		1192632
 	173870524	_ Hamster_Footsteps_Hard_Wood_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1		149136
+	202722580	Mouse_Death_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH\Mouse_Death_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Fall\Mouse_Death_4		178240
 	210304411	_ Pallina_Metallo_Impact2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pallina_Alluminio\_ Pallina_Metallo_Impact2		130500
 	222786278	Mouse_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_3		237632
 	227730366	_ Hamster_Footstep_Hard_Wood_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2		149136
@@ -52,15 +57,18 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	482845930	Pistole P Head 2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (+) 2_7D2256F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Positive\Pistola Pos\Pistola P Head\Pistole P Head 2		32412
 	491050347	Mouse_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_1		139328
 	505186553	_ Hamster_Footstep_Wood_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\WOOD\_ Hamster_Footstep_Wood_1		149136
+	509859197	Gun_Reload	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Reload		87380
 	536273062	_ Criceto_Base_Death_Blood1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Blood\_ Criceto_Base_Death_Blood1		705664
 	564543840	_ Pistola (+) 2_01	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (+) 2_F5004D4D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Positive\Pistola Pos\Pistola P Tail\_ Pistola (+) 2_01		287368
 	614249706	_ ruota	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\RUOTA\_ ruota_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Routa\Routa_Gira\_ ruota		1192632
 	631209540	ms_insp124_ourtime_reverse	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\ms_insp124_ourtime_reverse_8AC63170.wem		\Actor-Mixer Hierarchy\Default Work Unit\Routa\Routa_Gira\ms_insp124_ourtime_reverse		180324
 	633068771	_ Hamster_Footstep_Sand_4	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_4		149136
 	641738254	_ Hamster_Save_5	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_5_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_5\_ Hamster_Save_5		596348
-	654844902	_ Elettroshock_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Elettroshock_1_C5245674.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetised_Pos\_ Elettroshock_1		2822464
+	654844902	_ Elettroshock_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Elettroshock_1_05C917E5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetized_Neg\_ Elettroshock_1		2822528
 	690322441	_ Hamster_Save_4_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_4_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_4\_ Hamster_Save_4_Squit		596348
 	692112234	_ Hamster_Save_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_1\_ Hamster_Save_1		596348
+	699027466	Mouse_death_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH\Mouse_death_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Fall\Mouse_death_2		342080
+	714538673	Mouse_death_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH\Mouse_death_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Fall\Mouse_death_1		161856
 	728435171	Routa_Destroy	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\RUOTA\Routa_Destroy_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Routa\Routa_Destroy\Routa_Destroy		372744
 	736105152	Mouse_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_2_75F64918.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_2		197748
 	767892954	_ Hamster_Save_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_3\_ Hamster_Save_3		596348
@@ -69,10 +77,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	789777257	_ Hamster_Save_2_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_2_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_2\_ Hamster_Save_2_Squit		596348
 	790953535	_ Hamster_Footstep_Hard_Wood_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3		149136
 	814232710	Tagliola_Snap	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\Tagliola_Snap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tagliola\Tagliola_Snap		223672
+	824903264	_ Elettroshock_1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Elettroshock_1_0DA3C1C1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetised_Pos\_ Elettroshock_1		2822528
 	927752348	_ Criceto_Base_Death_Blood2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2_BF326A68.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death_Blood\_ Criceto_Base_Death_Blood2		336160
 	938523553	Pistola N Head 1	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (-)_B4123602.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Negative\Gun_Negative\Pistola Neg 1\Pistola N Head\Pistola N Head 1		22760
 	948751287	_ Hamster_Footstep_Sand_3	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_3		149136
-	969911899	Magnetizzato_Negative	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato -_D2F767C8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetized_Neg\Magnetizzato_Negative		851144
+	952712436	Mouse_death_3_electric	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_DEATH\Mouse_death_3_electric_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Death\Mouse_death_3_electric		342080
+	969911899	Magnetizzato_Negative	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Magnetizzato -_B5170048.wem		\Actor-Mixer Hierarchy\Default Work Unit\Obj_Magnetized\Obj_Magnetized_Neg\Magnetizzato_Negative		851144
 	977429043	Pistola N head 2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (-) 2_06E4D873.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Negative\Gun_Negative\Pistola Neg 1\Pistola N Head\Pistola N head 2		37508
 	981146523	_ Rotation Fidget	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\RUOTA\_ Rotation Fidget_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Routa\Routa_Gira\_ Rotation Fidget		1192632
 	1003120525	Tagliola	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\Tagliola_429E5DC5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Tagliola\Tagliola		3875960
@@ -81,6 +91,6 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	1038825265	_ Hamster_Footstep_Sand_2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Footstep\SAND\_ Hamster_Footstep_Sand_2		149136
 	1042466446	Mouse_6	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamster_Squits\Mouse_6		137280
 	1063255614	Pistola N Tail 2	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Pistola (-) 2_C8B7D0F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Negative\Gun_Negative\Pistola Neg 1\Pistola N Tail\Pistola N Tail 2		438928
-	1069981656	_Bullet_Hit_01	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_Bullet_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Positive\_Bullet_Hit_01		503180
+	1069981656	_Bullet_Hit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_Bullet_Hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Gun\Gun_Negative\_Bullet_Hit		503180
 	1070363741	_ Hamster_Save_1_Squit	C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\.cache\Windows\SFX\_ Hamster_Save_1_Squit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Hamsters_Save\Hamster_Save_1\_ Hamster_Save_1_Squit		596348
 

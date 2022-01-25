@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2325592519">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1417623442">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2839717945">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2993378616">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -69,7 +69,35 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2986090087" Name="Play_Hamster_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Death" DurationType="OneShot" DurationMin="1.050948" DurationMax="2.812137">
+				<Event Id="2003795032" Name="Play_Gun_Reload" ObjectPath="\Events\Default Work Unit\Player Gun\Play_Gun_Reload" DurationType="OneShot" DurationMin="0.858503" DurationMax="0.963637">
+					<IncludedMemoryFiles>
+						<File Id="509859197" Language="SFX">
+							<ShortName>PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION.wav</ShortName>
+							<Path>SFX\PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2986090087" Name="Play_Hamster_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Death" DurationType="OneShot" DurationMin="0.772729" DurationMax="1.942558">
+					<IncludedMemoryFiles>
+						<File Id="202722580" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_Death_4.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_10C4C929.wem</Path>
+						</File>
+						<File Id="699027466" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_death_2.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_2_10C4C929.wem</Path>
+						</File>
+						<File Id="714538673" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_death_1.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_1_10C4C929.wem</Path>
+						</File>
+						<File Id="952712436" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_death_3_electric.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_3_electric_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2465610634" Name="Play_Hamster_Death_Blood" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Death_Blood" DurationType="OneShot" DurationMin="1.050948" DurationMax="2.812137">
 					<IncludedMemoryFiles>
 						<File Id="75759534" Language="SFX">
 							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3.wav</ShortName>
@@ -82,6 +110,22 @@
 						<File Id="927752348" Language="SFX">
 							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2.wav</ShortName>
 							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2_BF326A68.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2093550265" Name="Play_Hamster_Death_Fall" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Death_Fall" DurationType="OneShot" DurationMin="0.772729" DurationMax="1.942558">
+					<IncludedMemoryFiles>
+						<File Id="202722580" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_Death_4.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_10C4C929.wem</Path>
+						</File>
+						<File Id="699027466" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_death_2.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_2_10C4C929.wem</Path>
+						</File>
+						<File Id="714538673" Language="SFX">
+							<ShortName>CRICETO_DEATH\Mouse_death_1.wav</ShortName>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_1_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -242,11 +286,11 @@
 					<IncludedMemoryFiles>
 						<File Id="654844902" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_C5245674.wem</Path>
+							<Path>SFX\_ Elettroshock_1_05C917E5.wem</Path>
 						</File>
 						<File Id="969911899" Language="SFX">
 							<ShortName>_ Magnetizzato -.wav</ShortName>
-							<Path>SFX\_ Magnetizzato -_D2F767C8.wem</Path>
+							<Path>SFX\_ Magnetizzato -_B5170048.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -254,11 +298,11 @@
 					<IncludedMemoryFiles>
 						<File Id="65869930" Language="SFX">
 							<ShortName>_ Magnetizzato +.wav</ShortName>
-							<Path>SFX\_ Magnetizzato +_8ABC7C62.wem</Path>
+							<Path>SFX\_ Magnetizzato +_94B9E54D.wem</Path>
 						</File>
-						<File Id="654844902" Language="SFX">
+						<File Id="824903264" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_C5245674.wem</Path>
+							<Path>SFX\_ Elettroshock_1_0DA3C1C1.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

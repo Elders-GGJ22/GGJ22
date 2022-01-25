@@ -15,7 +15,10 @@ namespace AK
     {
         static const AkUniqueID PLAY_GUN_NEGATIVE = 3754677826U;
         static const AkUniqueID PLAY_GUN_POSITIVE = 3140575938U;
+        static const AkUniqueID PLAY_GUN_RELOAD = 2003795032U;
         static const AkUniqueID PLAY_HAMSTER_DEATH = 2986090087U;
+        static const AkUniqueID PLAY_HAMSTER_DEATH_BLOOD = 2465610634U;
+        static const AkUniqueID PLAY_HAMSTER_DEATH_FALL = 2093550265U;
         static const AkUniqueID PLAY_HAMSTER_FOOTSTEP = 3998189881U;
         static const AkUniqueID PLAY_HAMSTER_SQUITS = 2655563858U;
         static const AkUniqueID PLAY_HAMSTERS_SAVE = 3054066693U;
