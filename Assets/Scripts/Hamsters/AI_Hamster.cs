@@ -23,12 +23,12 @@ namespace Assets.Scrips.Hamsters
             Annusa
         }*/
 
-        [Header("Variables")]
-        [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
+        [Header("Variables")] [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
         [SerializeField] private float walkRadius = 3f;
 
-        [Header("Components")]
-        [SerializeField] private Transform goal;
+        [Header("Components")] [SerializeField]
+        private Transform goal;
+
         [SerializeField] private Transform GFX;
         [SerializeField] private Animator anim;
 
@@ -48,9 +48,11 @@ namespace Assets.Scrips.Hamsters
             {
                 // TODO aggiungere qui le azioni possibili
                 int rand = Random.Range(1, 6);
-                while(rand == oldAction) {
+                while (rand == oldAction)
+                {
                     rand = Random.Range(1, 6);
                 }
+
                 switch (rand)
                 {
                     case 1:
@@ -63,6 +65,7 @@ namespace Assets.Scrips.Hamsters
                         break;
                 }
             }
+            
             waiting -= Time.deltaTime;
         }
 
@@ -77,56 +80,71 @@ namespace Assets.Scrips.Hamsters
             path = new NavMeshPath();
             agent.CalculatePath(goal.position, path);
 #endif
-            agent.destination = destination;
+             agent.destination = destination;
             Debug.Log("vado a spawn point");
         }
 
         void SetDestinationPoint()
         {
             waiting = Random.Range(timeToWait.x, timeToWait.y);
-
-            if (goal)
+            path = new NavMeshPath();
+            agent.CalculatePath(goal.position, path);
+            
+            if (path.status != NavMeshPathStatus.PathComplete)
             {
-                path = new NavMeshPath();
-                agent.CalculatePath(goal.position, path);
-
-                if (path.status == NavMeshPathStatus.PathComplete)
+                Vector3 randomDirection = transform.position + Random.insideUnitSphere * walkRadius;
+                NavMeshHit hit;
+                if (NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1))
                 {
-                    //TODO (maybe) calculate waiting = distance for goal (speed * distance)
-
-                    /*foreach (Vector3 corner in path.corners)
-                    {
-                        if ((corner - this.transform.position).magnitude > walkRadius)
-                        {
-                            Debug.Log("vado a punto calcolato da corner");
-                            Vector3 point = (corner - this.transform.position).normalized * walkRadius;
-                            #if UNITY_EDITOR
-                            path = new NavMeshPath();
-                            agent.CalculatePath(point, path);
-                            #endif
-                            return;
-                        }
-                    }*/
-
-                    Debug.Log("vado a punto preciso");
-                    agent.destination = goal.position;
-                    return;
+                    agent.CalculatePath(hit.position, path);
+                    agent.path = path;
                 }
             }
+            agent.path = path;
+            #region Old
 
-            Debug.Log("vado a caso");
-            Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
-            randomDirection += transform.position;
-            NavMeshHit hit;
-            NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
-            if(hit.position != Vector3.positiveInfinity) {
-                agent.destination = hit.position;
-            }
+          //  if (goal)
+           // {
+                // if (agent.path.status == NavMeshPathStatus.PathComplete)
+                // {
+                //     //TODO (maybe) calculate waiting = distance for goal (speed * distance)
+                //
+                //     /*foreach (Vector3 corner in path.corners)
+                //     {
+                //         if ((corner - this.transform.position).magnitude > walkRadius)
+                //         {
+                //             Debug.Log("vado a punto calcolato da corner");
+                //             Vector3 point = (corner - this.transform.position).normalized * walkRadius;
+                //             #if UNITY_EDITOR
+                //             path = new NavMeshPath();
+                //             agent.CalculatePath(point, path);
+                //             #endif
+                //             return;
+                //         }
+                //     }*/
+                //
+                //     Debug.Log("vado a punto preciso");
+                //     agent.destination = goal.position;
+                //     return;
+                // }
+           // }
 
-#if UNITY_EDITOR
-            path = new NavMeshPath();
-            agent.CalculatePath(hit.position, path);
-#endif
+//             Debug.Log("vado a caso");
+//             Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
+//             randomDirection += transform.position;
+//             NavMeshHit hit;
+//             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
+//             // if(hit.position != Vector3.positiveInfinity) {
+//             //     agent.destination = hit.position;
+//             // }
+//
+// #if UNITY_EDITOR
+//             path = new NavMeshPath();
+//             agent.CalculatePath(hit.position, path);
+//             agent.path = path;
+// #endif
+
+            #endregion
         }
 
         public void Shake(float strenght = 0.3f)
