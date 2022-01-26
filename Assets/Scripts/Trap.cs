@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using Assets.Scrips;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(BoxCollider))]
@@ -22,12 +23,15 @@ public class Trap : MonoBehaviour
     [SerializeField] private Vector3 angle = new Vector3(-60f, 0f, 0f);
     [SerializeField] private Vector3 buttonPress = new Vector3(0f, -0.23f, 0f);
     [SerializeField] private float choppingSpeed = 5f;
+    [SerializeField] private float restartSpeed = 0.2f;
+    [SerializeField] private float restartWaitingTime = 2f;
     [SerializeField] private float vanishTime = 2f;
     [SerializeField] private float destroyTime = 2f;
     [SerializeField] private bool slerp = true;
 
     [Header("Events")]
     [SerializeField] private UnityEvent onChopEvent;
+    [SerializeField] private UnityEvent onDechopEvent;
     [SerializeField] private UnityEvent onExplodeEvent;
 
 #if UNITY_EDITOR
@@ -48,6 +52,8 @@ public class Trap : MonoBehaviour
     private Quaternion finalRightRotation;
     private Vector3 finalButtonPosition;
 
+    private float restartCurrentSpeed = 0;
+    private float restartWaitingCurrentTime = 0;
     private float choppingCurrentSpeed = 0;
     private bool blood;
 
@@ -101,12 +107,34 @@ public class Trap : MonoBehaviour
             }
             case TrapState.Chopped:
             {
-                vanishTime -= Time.deltaTime;
-                if(vanishTime <= 0)
+                restartCurrentSpeed += Time.deltaTime * restartSpeed;
+                /*if(restartCurrentSpeed <= 0)
                 {
-                    status = TrapState.End;
+                    status = TrapState.Waiting;
                     rb.isKinematic = false;
                     boxCollider.enabled = false;
+                }*/
+
+                if(slerp) {
+                    leftClamp.rotation = Quaternion.Slerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
+                    rightClamp.rotation = Quaternion.Slerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
+                    button.position = Vector3.Slerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
+                } else {
+                    leftClamp.rotation = Quaternion.Lerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
+                    rightClamp.rotation = Quaternion.Lerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
+                    button.position = Vector3.Lerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
+                }
+
+                if(restartCurrentSpeed >= 1f)
+                {
+                    restartWaitingCurrentTime += Time.deltaTime;
+                    if(restartWaitingCurrentTime >= restartWaitingTime)
+                    {
+                        onDechopEvent.Invoke();
+                        restartWaitingCurrentTime = 0;
+                        restartCurrentSpeed = 0;
+                        status = TrapState.Waiting;
+                    }
                 }
                 break;
             }
@@ -125,6 +153,7 @@ public class Trap : MonoBehaviour
 
                 if(choppingCurrentSpeed >= 1f)
                 {
+                    choppingCurrentSpeed = 0;
                     status = TrapState.Chopped;
                     SetBloodMaterial();
                 }
@@ -158,7 +187,7 @@ public class Trap : MonoBehaviour
         status = TrapState.Chopping;
         blood = _blood;
         onChopEvent.Invoke();
-        //TODO: Play chop sound
+        AkSoundEngine.PostEvent("PLAY_TAGLIOLA_SNAP", this.gameObject);
     }
 
     private void SetBloodMaterial()
@@ -202,12 +231,13 @@ public class Trap : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Hamster")
+        if(status != TrapState.Waiting) { return; }
+        if (other.gameObject.tag == HamsterUtils.TAG_HAMSTER)
         {
             Chop();
             //TODO: Get component of Hamster and set death
         }
-        else if(other.gameObject.tag == "Magnet" || other.gameObject.tag == "Trap")
+        else if(other.gameObject.tag == HamsterUtils.TAG_MAGNET || other.gameObject.tag == HamsterUtils.TAG_TRAP)
         {
             Explode();
         }
