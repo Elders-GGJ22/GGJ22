@@ -16,11 +16,27 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2993378616">
+		<SoundBank Id="3161908922" Language="SFX" Hash="878401777">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="168179343" Name="Play_Explosive_Hamster_Death" ObjectPath="\Events\Default Work Unit\Play_Explosive_Hamster_Death" DurationType="OneShot" DurationMin="2.292510" DurationMax="2.726269">
+					<IncludedMemoryFiles>
+						<File Id="58274880" Language="SFX">
+							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1.wav</ShortName>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1_10C4C929.wem</Path>
+						</File>
+						<File Id="179064730" Language="SFX">
+							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_3.wav</ShortName>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_3_10C4C929.wem</Path>
+						</File>
+						<File Id="963660213" Language="SFX">
+							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_2.wav</ShortName>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3754677826" Name="Play_Gun_Negative" ObjectPath="\Events\Default Work Unit\Player Gun\Play_Gun_Negative" DurationType="OneShot" DurationMin="2.852132" DurationMax="2.944543">
 					<IncludedMemoryFiles>
 						<File Id="938523553" Language="SFX">
@@ -286,11 +302,11 @@
 					<IncludedMemoryFiles>
 						<File Id="654844902" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_05C917E5.wem</Path>
+							<Path>SFX\_ Elettroshock_1_69D0A77C.wem</Path>
 						</File>
 						<File Id="969911899" Language="SFX">
 							<ShortName>_ Magnetizzato -.wav</ShortName>
-							<Path>SFX\_ Magnetizzato -_B5170048.wem</Path>
+							<Path>SFX\_ Magnetizzato -_E3849FF4.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -298,11 +314,11 @@
 					<IncludedMemoryFiles>
 						<File Id="65869930" Language="SFX">
 							<ShortName>_ Magnetizzato +.wav</ShortName>
-							<Path>SFX\_ Magnetizzato +_94B9E54D.wem</Path>
+							<Path>SFX\_ Magnetizzato +_1B6C32FA.wem</Path>
 						</File>
 						<File Id="824903264" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_0DA3C1C1.wem</Path>
+							<Path>SFX\_ Elettroshock_1_108CFB9E.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
