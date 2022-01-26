@@ -46,6 +46,7 @@ namespace Assets.Scrips
         public HamsterDiedEvent OnHamsterDieEvent;
         public HamsterReachHouseEvent OnHamsterReachHouseEvent;
         public LevelFinishedEvent OnLevelFinishedEvent;
+        public LevelStartedEvent OnLevelStartedEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
@@ -72,12 +73,24 @@ namespace Assets.Scrips
             Debug.Log("Ho finito il livello!!");
             OnLevelFinishedEvent?.Invoke(statistiche);
         }
+
+        /// <summary>
+        /// Lanciato dallo start del level manager
+        /// aggiusta ui, prepara gamemanager
+        /// </summary>
+        public void OnLevelStarted()
+        {
+            OnLevelStartedEvent.Invoke();
+        }
     }
     
     #region custom unity events
 
     [System.Serializable]
     public class GameOverEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class LevelStartedEvent : UnityEvent { }
     
     [System.Serializable]
     public class HamsterDiedEvent : UnityEvent { }

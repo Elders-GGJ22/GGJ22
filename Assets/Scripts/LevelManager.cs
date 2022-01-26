@@ -1,4 +1,5 @@
-﻿using Assets.Scrips.Hamsters;
+﻿using System;
+using Assets.Scrips.Hamsters;
 using Assets.Scrips.UI;
 using UnityEngine;
 
@@ -27,7 +28,10 @@ namespace Assets.Scrips
             EventsManager.Instance.OnHamsterReachHouseEvent.AddListener(OnHamsterReachHouse);
 
             // preparo l'oggetto statistiche da inviare a fine livello
-            _levelStats = new LevelStats(_hamsterOnLevel);
+            _levelStats = new LevelStats(_hamsterOnLevel, Time.realtimeSinceStartup);
+            
+            // comunica l'inizio del livello al mondo
+            EventsManager.Instance.OnLevelStarted();
         }
 
         private void OnHamsterDie()
@@ -53,6 +57,9 @@ namespace Assets.Scrips
                 {
                     _levelStats.PlayerWin = true;
                 }
+                
+                // aggiorno il tempo
+                _levelStats.SetTotalTime(Time.realtimeSinceStartup);
                 EventsManager.Instance.OnLevelFinished(_levelStats);
             }
         }
@@ -66,23 +73,34 @@ namespace Assets.Scrips
         public int TotalHamsters { get; set; }
         public int HamstersDead { get; set; }
         public int HamstersSave { get; set; }
-        
+        public float TotalTime { get; set; }
         public bool PlayerWin { get; set; }
 
+        // alla creazione classe salvo inizio tempo livello, alla fine, aggiorno facendo differenza col tempo conclusivo
+        private float _timeStart;
         public LevelStats()
         {
             TotalHamsters = 0;
             HamstersDead = 0;
             HamstersSave = 0;
+            TotalTime = 0;
             PlayerWin = false;
         }
 
-        public LevelStats(int totalHamsters)
+        public LevelStats(int totalHamsters, float timeStart)
         {
             TotalHamsters = totalHamsters;
             HamstersDead = 0;
             HamstersSave = 0;
+            TotalTime = 0;
+            _timeStart = timeStart;
             PlayerWin = false;
+        }
+
+        // imposto il totale in millisecondi di tempo trascorso dall'inizio del livello
+        public void SetTotalTime(float endTime)
+        {
+            TotalTime = endTime - _timeStart;
         }
     }
 }
