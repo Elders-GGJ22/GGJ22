@@ -20,6 +20,7 @@ public class Trap : MonoBehaviour
     [SerializeField] private MeshRenderer[] meshRenderers;
 
     [Header("Variables")]
+    //[SerializeField] private Vector3 closingForce = new Vector3(0f, 10f, 0f);
     [SerializeField] private Vector3 angle = new Vector3(-60f, 0f, 0f);
     [SerializeField] private Vector3 buttonPress = new Vector3(0f, -0.23f, 0f);
     [SerializeField] private float choppingSpeed = 5f;
@@ -107,33 +108,26 @@ public class Trap : MonoBehaviour
             }
             case TrapState.Chopped:
             {
-                restartCurrentSpeed += Time.deltaTime * restartSpeed;
-                /*if(restartCurrentSpeed <= 0)
-                {
-                    status = TrapState.Waiting;
-                    rb.isKinematic = false;
-                    boxCollider.enabled = false;
-                }*/
-
-                if(slerp) {
-                    leftClamp.rotation = Quaternion.Slerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
-                    rightClamp.rotation = Quaternion.Slerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
-                    button.position = Vector3.Slerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
-                } else {
-                    leftClamp.rotation = Quaternion.Lerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
-                    rightClamp.rotation = Quaternion.Lerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
-                    button.position = Vector3.Lerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
-                }
-
                 if(restartCurrentSpeed >= 1f)
                 {
-                    restartWaitingCurrentTime += Time.deltaTime;
-                    if(restartWaitingCurrentTime >= restartWaitingTime)
+                    restartWaitingCurrentTime -= Time.deltaTime;
+                    if(restartWaitingCurrentTime <= 0)
                     {
                         onDechopEvent.Invoke();
-                        restartWaitingCurrentTime = 0;
                         restartCurrentSpeed = 0;
                         status = TrapState.Waiting;
+                    }
+                }
+                else {
+                    restartCurrentSpeed += Time.deltaTime * restartSpeed;
+                    if(slerp) {
+                        leftClamp.rotation = Quaternion.Slerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
+                        rightClamp.rotation = Quaternion.Slerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
+                        button.position = Vector3.Slerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
+                    } else {
+                        leftClamp.rotation = Quaternion.Lerp(finalLeftRotation, startLeftRotation, restartCurrentSpeed);
+                        rightClamp.rotation = Quaternion.Lerp(finalRightRotation, startRightRotation, restartCurrentSpeed);
+                        button.position = Vector3.Lerp(finalButtonPosition, startButtonPosition, restartCurrentSpeed);
                     }
                 }
                 break;
@@ -154,6 +148,7 @@ public class Trap : MonoBehaviour
                 if(choppingCurrentSpeed >= 1f)
                 {
                     choppingCurrentSpeed = 0;
+                    restartWaitingCurrentTime = restartWaitingTime;
                     status = TrapState.Chopped;
                     SetBloodMaterial();
                 }
@@ -186,6 +181,7 @@ public class Trap : MonoBehaviour
     {
         status = TrapState.Chopping;
         blood = _blood;
+        //this.rb.AddForce(closingForce, ForceMode.Impulse);
         onChopEvent.Invoke();
         AkSoundEngine.PostEvent("PLAY_TAGLIOLA_SNAP", this.gameObject);
     }

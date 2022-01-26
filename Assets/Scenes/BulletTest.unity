@@ -683,6 +683,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7913460874701452434, guid: 23ef4b6fa2dfb2045b5806b016f16711, type: 3}
+      propertyPath: m_Mass
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 7913460874701452445, guid: 23ef4b6fa2dfb2045b5806b016f16711, type: 3}
       propertyPath: m_Name
       value: Big Positive Magnet
