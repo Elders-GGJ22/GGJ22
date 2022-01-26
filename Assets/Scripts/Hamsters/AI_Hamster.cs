@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using System;
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using System.Net;
@@ -21,20 +22,28 @@ namespace Assets.Scrips.Hamsters
 
         [SerializeField] private Transform GFX;
         [SerializeField] private Animator anim;
-
+        [SerializeField] private Transform[] targets;
         private NavMeshAgent agent;
         private NavMeshPath path;
         private float waiting = 0;
+        private float timer;
+        private int currWayPoints;
         
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-            if (agent.enabled) SetDestinationPoint();
+            timer = 0;
+            currWayPoints = 0;
         }
 
         public Transform GetGoal()
         {
             return goal;
+        }
+
+        private void Update()
+        {
+            if (agent.enabled) SetDestinationPoint();
         }
 
         public void SetDestinationPoint(Vector3 destination)
@@ -47,16 +56,85 @@ namespace Assets.Scrips.Hamsters
             Debug.Log("vado a spawn point");
         }
 
-        void SetDestinationPoint()
+         void SetDestinationPoint()
         {
-            path = new NavMeshPath();
-            if(goal) {
-                agent.CalculatePath(goal.position, path);
+            
+            if (timer < 5)
+            {
+                timer += Time.deltaTime;
+            }
+            else
+            {
+                if (targets[currWayPoints] == null)
+                {
+                    currWayPoints = (currWayPoints + 1) % targets.Length;
+                }
+
+                if (agent.destination != targets[currWayPoints].position)
+                {
+                    agent.destination = targets[currWayPoints].position;
+                }
+
+                if (agent.remainingDistance <= agent.stoppingDistance)
+                {
+                    timer = 0;
+                    currWayPoints = (currWayPoints + 1) % targets.Length;
+                }
             }
 
-            agent.path = path;
+            #region NewOldSystem
+
+            // path = new NavMeshPath();
+            //
+            // agent.CalculatePath(goal.position, path);
+            // agent.path = path;
+
+            // float closestTargetDistance = float.MaxValue;
+            // NavMeshPath Path = null;
+            //NavMeshPath ShortestPath = null;
+            //  if (path.status != NavMeshPathStatus.PathComplete)
+            //   {
+            //     for (int i = 0; i < targets.Length; i++)
+            //     {
+            //         if (targets[i] == null)
+            //         {
+            //             continue;
+            //         }
+            //
+            //         Path = new NavMeshPath();
+            //
+            //         if (NavMesh.CalculatePath(transform.position, targets[i].position, agent.areaMask, Path))
+            //         {
+            //             float distance = Vector3.Distance(transform.position, Path.corners[0]);
+            //
+            //             for (int j = 1; j < Path.corners.Length; j++)
+            //             {
+            //                 distance += Vector3.Distance(Path.corners[j - 1], Path.corners[j]);
+            //             }
+            //
+            //             if (distance < closestTargetDistance)
+            //             {
+            //                 closestTargetDistance = distance;
+            //                 ShortestPath = Path;
+            //             }
+            //         }
+            //     }
+            //     Debug.Log(Path.status);
+            //
+            //     if (ShortestPath != null && ShortestPath.status == NavMeshPathStatus.PathComplete)
+            //     {
+            //         agent.SetPath(ShortestPath);
+            //     }
+            // }
+
+            #endregion
 
             #region Old
+
+            // path = new NavMeshPath();
+            // agent.CalculatePath(goal.position, path);
+            //
+            // agent.path = path;
 
             // waiting = Random.Range(timeToWait.x, timeToWait.y);
 
@@ -113,7 +191,6 @@ namespace Assets.Scrips.Hamsters
 
             #endregion
         }
-
 
 #if UNITY_EDITOR
         private void OnDrawGizmosSelected()
