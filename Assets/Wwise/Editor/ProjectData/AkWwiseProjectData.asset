@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: fd10f6e5a090e24b968b1be1339d8833
     GuidInternal: 
-    m_lastTime: -8585585649992089897
+    m_lastTime: -8585584566809790332
     List:
     - name: Main
       guid: 7d44178dc04c414cb807d01d7dd41c42
@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 1858724dd5c98a42b89402b3eac7db45
     GuidInternal: 
-    m_lastTime: -8585585416122244094
-    List: []
+    m_lastTime: -8585584566809910439
+    List:
+    - name: Play_Explosive_Hamster_Death
+      guid: 1f92d6566ed26248901aa3919b44cef1
+      id: 168179343
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Play_Explosive_Hamster_Death
+        ObjectType: 3
+        guid: 1f92d6566ed26248901aa3919b44cef1
+      Path: Events\Default Work Unit\Play_Explosive_Hamster_Death
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Hamster.wwu
     PathAndIcons:
     - ElementName: Events
@@ -110,10 +127,10 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Hamster
     guid: d0c185d032586d4da6db5b9105a7f0d9
     GuidInternal: 
-    m_lastTime: -8585585416122174021
+    m_lastTime: -8585584790581922183
     List:
     - name: Play_Hamster_Death
-      guid: 998cfc3326ae034d88de551207450c58
+      guid: 0834f7d7ee607f4aa0738cf7bfe57e63
       id: 2986090087
       PathAndIcons:
       - ElementName: Events
@@ -127,11 +144,31 @@ MonoBehaviour:
         guid: d0c185d032586d4da6db5b9105a7f0d9
       - ElementName: Play_Hamster_Death
         ObjectType: 3
-        guid: 998cfc3326ae034d88de551207450c58
+        guid: 0834f7d7ee607f4aa0738cf7bfe57e63
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Death
       maxAttenuation: 0
-      maxDuration: 1.942558
-      minDuration: 0.772729
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Hamster_Death_Blood
+      guid: 998cfc3326ae034d88de551207450c58
+      id: 2465610634
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Hamster
+        ObjectType: 12
+        guid: d0c185d032586d4da6db5b9105a7f0d9
+      - ElementName: Play_Hamster_Death_Blood
+        ObjectType: 3
+        guid: 998cfc3326ae034d88de551207450c58
+      Path: Events\Default Work Unit\Hamster\Play_Hamster_Death_Blood
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Hamster_Death_Fall
       guid: f02d8ceaea16434ab618333e88107eb3
       id: 2093550265
@@ -150,8 +187,8 @@ MonoBehaviour:
         guid: f02d8ceaea16434ab618333e88107eb3
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Death_Fall
       maxAttenuation: 0
-      maxDuration: 1.942558
-      minDuration: 0.772729
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Hamster_Footstep
       guid: 444fcd9ae1c1db418a509bff6b1d4a94
       id: 3998189881
@@ -189,7 +226,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 286e92ef12136b4ca1427730cf8924a9
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Squits
-      maxAttenuation: 50
+      maxAttenuation: 0
       maxDuration: 36.421608
       minDuration: 24.421608
     - name: Play_Hamsters_Save
@@ -286,8 +323,8 @@ MonoBehaviour:
         guid: 7086b8fa3919e44b930ad08a15f864c2
       Path: Events\Default Work Unit\Objects\Play_Pallina_Alluminio_Impact
       maxAttenuation: 0
-      maxDuration: 0.879339
-      minDuration: 0.678063
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Routa_Destroy
       guid: f27060aced871d40bbc4a95ae7eadee9
       id: 444434914
@@ -306,8 +343,8 @@ MonoBehaviour:
         guid: f27060aced871d40bbc4a95ae7eadee9
       Path: Events\Default Work Unit\Objects\Play_Routa_Destroy
       maxAttenuation: 0
-      maxDuration: 2.512436
-      minDuration: 2.330341
+      maxDuration: -1
+      minDuration: -1
     - name: Play_Routa_Gira
       guid: c4abbe700c9c8443962d631348074356
       id: 4128702423
@@ -366,8 +403,8 @@ MonoBehaviour:
         guid: 5fe86afd03b7ae46a954cb5285a86030
       Path: Events\Default Work Unit\Objects\Play_Tagliola_Snap
       maxAttenuation: 0
-      maxDuration: 1.267619
-      minDuration: 1.267619
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_obj_Magnetized
       guid: 169804dac5311946984172154bc4520a
       id: 4178633038
@@ -386,8 +423,8 @@ MonoBehaviour:
         guid: 169804dac5311946984172154bc4520a
       Path: Events\Default Work Unit\Objects\Stop_obj_Magnetized
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   - PhysicalPath: Events\Player Gun.wwu
     PathAndIcons:
     - ElementName: Events
@@ -402,7 +439,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit\Player Gun
     guid: 50e84c4ee9e93c4681d7a1e630374c67
     GuidInternal: 
-    m_lastTime: -8585585649991389240
+    m_lastTime: -8585584790581832101
     List:
     - name: Play_Gun_Negative
       guid: b3e484421e7ba54db341bc2ddedae27f
@@ -422,8 +459,8 @@ MonoBehaviour:
         guid: b3e484421e7ba54db341bc2ddedae27f
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Negative
       maxAttenuation: 0
-      maxDuration: 2.944543
-      minDuration: 2.852132
+      maxDuration: 17.448124
+      minDuration: 14.672065
     - name: Play_Gun_Positive
       guid: 1b366cea992991438874c1a76aa6a014
       id: 3140575938
@@ -442,8 +479,28 @@ MonoBehaviour:
         guid: 1b366cea992991438874c1a76aa6a014
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Positive
       maxAttenuation: 0
-      maxDuration: 17.460087
-      minDuration: 2.016762
+      maxDuration: 17.448124
+      minDuration: 14.672065
+    - name: Play_Gun_Reload
+      guid: 10adf1a7300e0f4fb7f1cc7bfa102415
+      id: 2003795032
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 1858724dd5c98a42b89402b3eac7db45
+      - ElementName: Player Gun
+        ObjectType: 12
+        guid: 50e84c4ee9e93c4681d7a1e630374c67
+      - ElementName: Play_Gun_Reload
+        ObjectType: 3
+        guid: 10adf1a7300e0f4fb7f1cc7bfa102415
+      Path: Events\Default Work Unit\Player Gun\Play_Gun_Reload
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Play_No_Gun_Charge
       guid: 91d97e1df4d09a4bb027c06f1ec70618
       id: 1740526775
@@ -462,8 +519,8 @@ MonoBehaviour:
         guid: 91d97e1df4d09a4bb027c06f1ec70618
       Path: Events\Default Work Unit\Player Gun\Play_No_Gun_Charge
       maxAttenuation: 0
-      maxDuration: 0.505125
-      minDuration: 0.505125
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -617,7 +674,7 @@ MonoBehaviour:
     m_lastTime: -8585591481729577733
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000008f0000009000000091000000990000009a0000009b000000
+  ExpandedWaapiItemIds: 05000000060000008f0000009000000091000000990000009a0000009b000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0
