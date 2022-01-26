@@ -80,6 +80,16 @@
           </e>
           <e p="HamsterUtils.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
+          <e p="Noiser" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TerrainGeneratorEditor.cs" t="Include" />
+              <e p="TerrainNoiserEditor.cs" t="Include" />
+            </e>
+            <e p="TerrainGenerator.cs" t="Include" />
+            <e p="TerrainNoiser.cs" t="Include" />
+          </e>
+          <e p="Seed.cs" t="Include" />
+          <e p="Trap.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AgentLocomotionStart.cs" t="Include" />
             <e p="AgentLookAtStart.cs" t="Include" />
