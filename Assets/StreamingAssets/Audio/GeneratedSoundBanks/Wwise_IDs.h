@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_EXPLOSIVE_HAMSTER_DEATH = 168179343U;
         static const AkUniqueID PLAY_GUN_NEGATIVE = 3754677826U;
         static const AkUniqueID PLAY_GUN_POSITIVE = 3140575938U;
         static const AkUniqueID PLAY_GUN_RELOAD = 2003795032U;

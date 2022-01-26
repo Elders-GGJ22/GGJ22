@@ -41,7 +41,7 @@ namespace Assets.Scrips.Hamsters
             if (collision.gameObject.tag == HamsterUtils.TAG_GOAL)
             {
                 EventsManager.Instance.OnHamsterReachHouse();
-                
+                Debug.Log("arrivato?");
                 // ora che fo? lo distruggo? 
             }
         }
