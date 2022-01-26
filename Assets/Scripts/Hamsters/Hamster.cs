@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using UnityEngine;
 
 namespace Assets.Scrips.Hamsters
@@ -6,14 +7,6 @@ namespace Assets.Scrips.Hamsters
     [RequireComponent(typeof(AI_Hamster))]
     public class Hamster : MonoBehaviour
     {
-        public enum HamsterType
-        {
-            Comune,
-            Esplosivo,
-            Magnetico,
-            Puttana
-        }
-
         public enum HamsterState
         {
             Alive,
@@ -21,18 +14,10 @@ namespace Assets.Scrips.Hamsters
             Dead
         }
         
-        [SerializeField]
-        [Tooltip("Tipo di criceto")]
-        public HamsterType HType;
-        
+
         [SerializeField]
         [Tooltip("Stato del criceto")]
-        public HamsterType HState;
-
-        public void Start()
-        {
-            
-        }
+        private HamsterState HState;
 
         // su cosa ho sbattuto?
         void OnTriggerEnter(Collider collision)
@@ -41,8 +26,11 @@ namespace Assets.Scrips.Hamsters
             if (collision.gameObject.tag == HamsterUtils.TAG_GOAL)
             {
                 EventsManager.Instance.OnHamsterReachHouse();
-                Debug.Log("arrivato?");
-                // ora che fo? lo distruggo? 
+            }
+
+            if (collision.gameObject.tag == HamsterUtils.TAG_TRAP)
+            {
+                 
             }
         }
     }
