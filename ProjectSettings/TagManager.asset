@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Attractable
   - Goal
+  - Hamster
+  - Magnet
+  - Trap
   layers:
   - Default
   - TransparentFX

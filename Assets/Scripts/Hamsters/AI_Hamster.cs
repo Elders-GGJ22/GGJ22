@@ -25,13 +25,10 @@ namespace Assets.Scrips.Hamsters
         private NavMeshAgent agent;
         private NavMeshPath path;
         private float waiting = 0;
+        
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-        }
-
-        void Update()
-        {
             if (agent.enabled) SetDestinationPoint();
         }
 
@@ -53,7 +50,9 @@ namespace Assets.Scrips.Hamsters
         void SetDestinationPoint()
         {
             path = new NavMeshPath();
-            agent.CalculatePath(goal.position, path);
+            if(goal) {
+                agent.CalculatePath(goal.position, path);
+            }
 
             agent.path = path;
 
