@@ -19,12 +19,10 @@ namespace Assets.Scrips.Hamsters
         [Header("Variables")] [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
         [SerializeField] private float walkRadius = 3f;
 
-        [Header("Components")] [SerializeField]
-        private Transform goal;
-
+        [Header("Components")] 
+        [SerializeField]private Transform goal;
         [SerializeField] private Transform GFX;
         [SerializeField] private Animator anim;
-        [SerializeField] private Transform[] targets;
         private NavMeshAgent agent;
         private NavMeshPath path;
         private float waiting = 0;
@@ -94,7 +92,6 @@ namespace Assets.Scrips.Hamsters
                 {
                     timer = 0; 
                     canDo = false;
-                    Debug.Log("PORCODIDIO");
                     _targets.RemoveAt(_targets.FindIndex(x => x.position == target.position));
                 }
             }
