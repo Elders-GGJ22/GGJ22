@@ -56,6 +56,7 @@ namespace Assets.Scrips.Hamsters
         private void SetDestinationPoint()
         {
             Transform target = closestTarget();
+            if(target == null) { return; }
 
             // Play hears particles
             if(target != oldTarget)

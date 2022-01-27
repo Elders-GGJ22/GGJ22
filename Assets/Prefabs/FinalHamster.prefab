@@ -267,11 +267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8bc14554ca2e47438c4991d3b54f28d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToWait: {x: 1, y: 3}
-  walkRadius: 3
-  goal: {fileID: 0}
-  GFX: {fileID: 1638269195706421740}
-  anim: {fileID: 1638269195706421743}
+  heartParticles: {fileID: 537957290}
 --- !u!54 &1908722458794022447
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -938,5 +934,10 @@ PrefabInstance:
 --- !u!4 &537957301 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6635127794134188488, guid: 52c17f8b79cd23d40ba9de2b04df4c99, type: 3}
+  m_PrefabInstance: {fileID: 6635127794669982333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &537957290 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6635127794134188503, guid: 52c17f8b79cd23d40ba9de2b04df4c99, type: 3}
   m_PrefabInstance: {fileID: 6635127794669982333}
   m_PrefabAsset: {fileID: 0}
