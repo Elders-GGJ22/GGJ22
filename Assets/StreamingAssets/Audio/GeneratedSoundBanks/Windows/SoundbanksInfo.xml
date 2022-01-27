@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="1907140358">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1735601169">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -438,7 +438,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="444434914" Name="Play_Routa_Destroy" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Destroy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.330341" DurationMax="2.512436">
+				<Event Id="1164366714" Name="Play_Ruota_Destroy" ObjectPath="\Events\Default Work Unit\Objects\Play_Ruota_Destroy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.330341" DurationMax="2.512436">
 					<IncludedMemoryFiles>
 						<File Id="293380285" Language="SFX">
 							<ShortName>Blast Laser 4.wav</ShortName>
@@ -450,7 +450,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4128702423" Name="Play_Routa_Gira" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Gira" MaxAttenuation="50.000000" DurationType="Infinite">
+				<Event Id="616896207" Name="Play_Ruota_Gira" ObjectPath="\Events\Default Work Unit\Objects\Play_Ruota_Gira" MaxAttenuation="50.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="163792938" Language="SFX">
 							<ShortName>RUOTA\_ Cigolio.wav</ShortName>

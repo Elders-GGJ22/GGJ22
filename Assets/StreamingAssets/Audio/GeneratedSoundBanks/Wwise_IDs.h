@@ -37,8 +37,8 @@ namespace AK
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_NEGATIVE = 1224237682U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_POSITIVE = 3344139506U;
         static const AkUniqueID PLAY_PALLINA_ALLUMINIO_IMPACT = 2353563817U;
-        static const AkUniqueID PLAY_ROUTA_DESTROY = 444434914U;
-        static const AkUniqueID PLAY_ROUTA_GIRA = 4128702423U;
+        static const AkUniqueID PLAY_RUOTA_DESTROY = 1164366714U;
+        static const AkUniqueID PLAY_RUOTA_GIRA = 616896207U;
         static const AkUniqueID PLAY_TAGLIOLA_IMPACT = 1936083868U;
         static const AkUniqueID PLAY_TAGLIOLA_SHAKE = 592787016U;
         static const AkUniqueID PLAY_TAGLIOLA_SNAP = 928546414U;

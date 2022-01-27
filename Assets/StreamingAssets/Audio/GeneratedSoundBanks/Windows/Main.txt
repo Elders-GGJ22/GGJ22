@@ -1,10 +1,11 @@
 Event	ID	Name			Wwise Object Path	Notes
 	91805910	Play_Hamster_Ninfomane			\Default Work Unit\Hamster\Play_Hamster_Ninfomane	
 	168179343	Play_Explosive_Hamster_Death			\Default Work Unit\Hamster\Play_Explosive_Hamster_Death	
-	444434914	Play_Routa_Destroy			\Default Work Unit\Objects\Play_Routa_Destroy	
 	592787016	Play_Tagliola_Shake			\Default Work Unit\Objects\Play_Tagliola_Shake	
+	616896207	Play_Ruota_Gira			\Default Work Unit\Objects\Play_Ruota_Gira	
 	928546414	Play_Tagliola_Snap			\Default Work Unit\Objects\Play_Tagliola_Snap	
 	953475988	Play_Hamster_Ninfomane_Aura			\Default Work Unit\Hamster\Play_Hamster_Ninfomane_Aura	
+	1164366714	Play_Ruota_Destroy			\Default Work Unit\Objects\Play_Ruota_Destroy	
 	1224237682	Play_Obj_Magnetized_Negative			\Default Work Unit\Objects\Play_Obj_Magnetized_Negative	
 	1366837455	Play_Barriera_Elettrica_Active			\Default Work Unit\Play_Barriera_Elettrica_Active	
 	1486119118	Play_Circular_Saw_Stop			\Default Work Unit\Objects\Play_Circular_Saw_Stop	
@@ -25,7 +26,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3344139506	Play_Obj_Magnetized_Positive			\Default Work Unit\Objects\Play_Obj_Magnetized_Positive	
 	3754677826	Play_Gun_Negative			\Default Work Unit\Player Gun\Play_Gun_Negative	
 	3998189881	Play_Hamster_Footstep			\Default Work Unit\Hamster\Play_Hamster_Footstep	
-	4128702423	Play_Routa_Gira			\Default Work Unit\Objects\Play_Routa_Gira	
 	4178633038	Stop_obj_Magnetized			\Default Work Unit\Objects\Stop_obj_Magnetized	
 	4187156752	Play_Hamster_Cannibale_Hit			\Default Work Unit\Hamster\Play_Hamster_Cannibale_Hit	
 	4261671203	Play_Circular_Saw			\Default Work Unit\Objects\Play_Circular_Saw	
