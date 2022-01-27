@@ -6,8 +6,10 @@ using System.Net;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using DG.Tweening;
+using DG.Tweening.Plugins.Core.PathCore;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.Events;
 
 namespace Assets.Scrips.Hamsters
 {
@@ -28,19 +30,24 @@ namespace Assets.Scrips.Hamsters
         private float waiting = 0;
         private float timer;
         private int currWayPoints;
+        private GameObject[] _goal, _bitch, _trap, _seed;
+        private List<Transform> _targets;
+        private Vector3 targetsDist;
         
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
             timer = 0;
             currWayPoints = 0;
+            _targets = new List<Transform>();
+            path = new NavMeshPath();
+            AddTargets();
         }
 
         public Transform GetGoal()
         {
             return goal;
         }
-
         private void Update()
         {
             if (agent.enabled) SetDestinationPoint();
@@ -56,142 +63,78 @@ namespace Assets.Scrips.Hamsters
             Debug.Log("vado a spawn point");
         }
 
-         void SetDestinationPoint()
+        void SetDestinationPoint()
         {
+            float minDistance = Mathf.Infinity;
+            Transform target = null;
             
-            if (timer < 5)
+            for (int i = 0; i < _targets.Count; i++)
+            {
+                //targetsDist = Vector3.Distance(_targets[i].position, transform.position);
+                targetsDist = transform.position - _targets[i].position;
+                float curDistance = targetsDist.sqrMagnitude;
+
+                if (curDistance < minDistance)
+                {
+                    minDistance = curDistance;
+                    target = _targets[i];
+                }
+            }
+
+            bool canDo = false;
+            if (timer < 0.5f)
             {
                 timer += Time.deltaTime;
             }
             else
             {
-                if (targets[currWayPoints] == null)
+                canDo = true;
+                
+                if (agent.remainingDistance <= agent.stoppingDistance && agent.remainingDistance != 0 && canDo)
                 {
-                    currWayPoints = (currWayPoints + 1) % targets.Length;
-                }
-
-                if (agent.destination != targets[currWayPoints].position)
-                {
-                    agent.destination = targets[currWayPoints].position;
-                }
-
-                if (agent.remainingDistance <= agent.stoppingDistance)
-                {
-                    timer = 0;
-                    currWayPoints = (currWayPoints + 1) % targets.Length;
+                    timer = 0; 
+                    canDo = false;
+                    Debug.Log("PORCODIDIO");
+                    _targets.RemoveAt(_targets.FindIndex(x => x.position == target.position));
                 }
             }
-
-            #region NewOldSystem
-
-            // path = new NavMeshPath();
-            //
-            // agent.CalculatePath(goal.position, path);
-            // agent.path = path;
-
-            // float closestTargetDistance = float.MaxValue;
-            // NavMeshPath Path = null;
-            //NavMeshPath ShortestPath = null;
-            //  if (path.status != NavMeshPathStatus.PathComplete)
-            //   {
-            //     for (int i = 0; i < targets.Length; i++)
-            //     {
-            //         if (targets[i] == null)
-            //         {
-            //             continue;
-            //         }
-            //
-            //         Path = new NavMeshPath();
-            //
-            //         if (NavMesh.CalculatePath(transform.position, targets[i].position, agent.areaMask, Path))
-            //         {
-            //             float distance = Vector3.Distance(transform.position, Path.corners[0]);
-            //
-            //             for (int j = 1; j < Path.corners.Length; j++)
-            //             {
-            //                 distance += Vector3.Distance(Path.corners[j - 1], Path.corners[j]);
-            //             }
-            //
-            //             if (distance < closestTargetDistance)
-            //             {
-            //                 closestTargetDistance = distance;
-            //                 ShortestPath = Path;
-            //             }
-            //         }
-            //     }
-            //     Debug.Log(Path.status);
-            //
-            //     if (ShortestPath != null && ShortestPath.status == NavMeshPathStatus.PathComplete)
-            //     {
-            //         agent.SetPath(ShortestPath);
-            //     }
-            // }
-
-            #endregion
-
-            #region Old
-
-            // path = new NavMeshPath();
-            // agent.CalculatePath(goal.position, path);
-            //
-            // agent.path = path;
-
-            // waiting = Random.Range(timeToWait.x, timeToWait.y);
-
-            // if (path.status != NavMeshPathStatus.PathComplete)
-            // {
-            //     Vector3 randomDirection = transform.position + Random.insideUnitSphere * walkRadius;
-            //     NavMeshHit hit;
-            //     if (NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1))
-            //     {
-            //         agent.CalculatePath(hit.position, path);
-            //         agent.path = path;
-            //     }
-            // }
-            //  if (goal)
-            // {
-            // if (agent.path.status == NavMeshPathStatus.PathComplete)
-            // {
-            //     //TODO (maybe) calculate waiting = distance for goal (speed * distance)
-            //
-            //     /*foreach (Vector3 corner in path.corners)
-            //     {
-            //         if ((corner - this.transform.position).magnitude > walkRadius)
-            //         {
-            //             Debug.Log("vado a punto calcolato da corner");
-            //             Vector3 point = (corner - this.transform.position).normalized * walkRadius;
-            //             #if UNITY_EDITOR
-            //             path = new NavMeshPath();
-            //             agent.CalculatePath(point, path);
-            //             #endif
-            //             return;
-            //         }
-            //     }*/
-            //
-            //     Debug.Log("vado a punto preciso");
-            //     agent.destination = goal.position;
-            //     return;
-            // }
-            // }
-
-//             Debug.Log("vado a caso");
-//             Vector3 randomDirection = Random.insideUnitSphere * walkRadius;
-//             randomDirection += transform.position;
-//             NavMeshHit hit;
-//             NavMesh.SamplePosition(randomDirection, out hit, walkRadius, 1);
-//             // if(hit.position != Vector3.positiveInfinity) {
-//             //     agent.destination = hit.position;
-//             // }
-//
-// #if UNITY_EDITOR
-//             path = new NavMeshPath();
-//             agent.CalculatePath(hit.position, path);
-//             agent.path = path;
-// #endif
-
-            #endregion
+            agent.destination = target.position;
         }
-
+        private void AddTargets()
+        {
+            if (_goal == null)
+            {
+                _goal = GameObject.FindGameObjectsWithTag("Goal");
+                foreach (var obj in _goal)
+                {
+                    _targets.Add(obj.transform);
+                }
+            }
+            if (_bitch == null)
+            {
+                _bitch = GameObject.FindGameObjectsWithTag("Bitch");
+                foreach (var obj in _bitch)
+                {
+                    _targets.Add(obj.transform);
+                }
+            }
+            if (_trap == null)
+            {
+                _trap = GameObject.FindGameObjectsWithTag("Trap");
+                foreach (var obj in _trap)
+                {
+                    _targets.Add(obj.transform);
+                }
+            }
+            if (_seed == null)
+            {
+                _seed = GameObject.FindGameObjectsWithTag("Seed");
+                foreach (var obj in _seed)
+                {
+                    _targets.Add(obj.transform);
+                }
+            }
+        }
 #if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
