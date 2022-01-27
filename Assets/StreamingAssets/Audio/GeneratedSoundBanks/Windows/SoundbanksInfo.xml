@@ -11,17 +11,53 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1417623442">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4145638358">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="878401777">
+		<SoundBank Id="3161908922" Language="SFX" Hash="1907140358">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="168179343" Name="Play_Explosive_Hamster_Death" ObjectPath="\Events\Default Work Unit\Play_Explosive_Hamster_Death" DurationType="OneShot" DurationMin="2.292510" DurationMax="2.726269">
+				<Event Id="1366837455" Name="Play_Barriera_Elettrica_Active" ObjectPath="\Events\Default Work Unit\Play_Barriera_Elettrica_Active" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="295094156" Language="SFX">
+							<ShortName>ELETTROSHOCK\_ Elettroshock_1.wav</ShortName>
+							<Path>SFX\ELETTROSHOCK\_ Elettroshock_1_742F30A6.wem</Path>
+						</File>
+						<File Id="680285113" Language="SFX">
+							<ShortName>ELETTROSHOCK\_ Elettroshock_2.wav</ShortName>
+							<Path>SFX\ELETTROSHOCK\_ Elettroshock_2_0CC43FD9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1788800318" Name="Play_Barriera_Elettrica_Deactive" ObjectPath="\Events\Default Work Unit\Play_Barriera_Elettrica_Deactive" DurationType="OneShot" DurationMin="0.678063" DurationMax="0.806358">
+					<IncludedMemoryFiles>
+						<File Id="908349948" Language="SFX">
+							<ShortName>ELETTROSHOCK\Elettroshock_Stop.wav</ShortName>
+							<Path>SFX\ELETTROSHOCK\Elettroshock_Stop_19997055.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4261671203" Name="Play_Circular_Saw" ObjectPath="\Events\Default Work Unit\Objects\Play_Circular_Saw" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="29800757" Language="SFX">
+							<ShortName>CIRCULAR_SAW\_ Circular_Saw.wav</ShortName>
+							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_C3E58FC9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1486119118" Name="Play_Circular_Saw_Stop" ObjectPath="\Events\Default Work Unit\Objects\Play_Circular_Saw_Stop" DurationType="OneShot" DurationMin="2.034210" DurationMax="2.419097">
+					<IncludedMemoryFiles>
+						<File Id="573403769" Language="SFX">
+							<ShortName>CIRCULAR_SAW\_ Circular_Saw_Stop.wav</ShortName>
+							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_Stop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="168179343" Name="Play_Explosive_Hamster_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Explosive_Hamster_Death" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.292510" DurationMax="2.726269">
 					<IncludedMemoryFiles>
 						<File Id="58274880" Language="SFX">
 							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1.wav</ShortName>
@@ -90,6 +126,34 @@
 						<File Id="509859197" Language="SFX">
 							<ShortName>PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION.wav</ShortName>
 							<Path>SFX\PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1775747457" Name="Play_Hamster_Cannibale_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Death" DurationType="OneShot" DurationMin="5.070431" DurationMax="5.070431">
+					<IncludedMemoryFiles>
+						<File Id="133491853" Language="SFX">
+							<ShortName>CRICETO_CANNIBALE\_Criceto_Cannibale_Death.wav</ShortName>
+							<Path>SFX\CRICETO_CANNIBALE\_Criceto_Cannibale_Death_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4187156752" Name="Play_Hamster_Cannibale_Hit" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Hit" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.690136" DurationMax="1.690136">
+					<IncludedMemoryFiles>
+						<File Id="16696151" Language="SFX">
+							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit_2.wav</ShortName>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit_2_10C4C929.wem</Path>
+						</File>
+						<File Id="982036521" Language="SFX">
+							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit 1.wav</ShortName>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit 1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2681729310" Name="Play_Hamster_Cannibale_Verso" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Verso" DurationType="OneShot" DurationMin="1.690136" DurationMax="1.690136">
+					<IncludedMemoryFiles>
+						<File Id="711389746" Language="SFX">
+							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Verso.wav</ShortName>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Verso_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -222,31 +286,47 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="2655563858" Name="Play_Hamster_Squits" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Squits" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="24.421608" DurationMax="36.421608">
+				<Event Id="91805910" Name="Play_Hamster_Ninfomane" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Ninfomane" DurationType="Infinite">
 					<IncludedMemoryFiles>
-						<File Id="222786278" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem</Path>
+						<File Id="271365105" Language="SFX">
+							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta.wav</ShortName>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_10C4C929.wem</Path>
 						</File>
-						<File Id="315214619" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_4_10C4C929.wem</Path>
+						<File Id="541517806" Language="SFX">
+							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss.wav</ShortName>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss_10C4C929.wem</Path>
 						</File>
-						<File Id="491050347" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem</Path>
+						<File Id="661031073" Language="SFX">
+							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Ride 2.wav</ShortName>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Ride 2_10C4C929.wem</Path>
 						</File>
-						<File Id="736105152" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_2_75F64918.wem</Path>
+						<File Id="852812507" Language="SFX">
+							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss 2.wav</ShortName>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss 2_10C4C929.wem</Path>
 						</File>
-						<File Id="1042466446" Language="SFX">
-							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem</Path>
+						<File Id="1056957046" Language="SFX">
+							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_2.wav</ShortName>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="3054066693" Name="Play_Hamsters_Save" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamsters_Save" DurationType="OneShot" DurationMin="3.380295" DurationMax="3.380295">
+				<Event Id="953475988" Name="Play_Hamster_Ninfomane_Aura" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Ninfomane_Aura" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="539821097" Language="SFX">
+							<ShortName>RARE_percussion_Handpan_hangdrum_aura_wet_D_96_loop2.wav</ShortName>
+							<Path>SFX\RARE_percussion_Handpan_hangdrum_aura_wet_D_96_loop2_C5579977.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1568381641" Name="Play_Hamster_Ninfomane_Death" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Ninfomane_Death" DurationType="OneShot" DurationMin="1.543153" DurationMax="1.543153">
+					<IncludedMemoryFiles>
+						<File Id="398970153" Language="SFX">
+							<ShortName>BRS_Voice_Girl_Toddler_Scream_Coarse_3.wav</ShortName>
+							<Path>SFX\BRS_Voice_Girl_Toddler_Scream_Coarse_3_06A75131.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1536861472" Name="Play_Hamster_Save" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Save" DurationType="OneShot" DurationMin="3.380295" DurationMax="3.380295">
 					<IncludedMemoryFiles>
 						<File Id="436051" Language="SFX">
 							<ShortName>_ Hamster_Save_2.wav</ShortName>
@@ -287,6 +367,30 @@
 						<File Id="1070363741" Language="SFX">
 							<ShortName>_ Hamster_Save_1_Squit.wav</ShortName>
 							<Path>SFX\_ Hamster_Save_1_Squit_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2655563858" Name="Play_Hamster_Squits" ObjectPath="\Events\Default Work Unit\Hamster\Play_Hamster_Squits" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="24.421608" DurationMax="36.421608">
+					<IncludedMemoryFiles>
+						<File Id="222786278" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem</Path>
+						</File>
+						<File Id="315214619" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_4_10C4C929.wem</Path>
+						</File>
+						<File Id="491050347" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem</Path>
+						</File>
+						<File Id="736105152" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_2_75F64918.wem</Path>
+						</File>
+						<File Id="1042466446" Language="SFX">
+							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
+							<Path>SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -334,7 +438,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="444434914" Name="Play_Routa_Destroy" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Destroy" DurationType="OneShot" DurationMin="2.330341" DurationMax="2.512436">
+				<Event Id="444434914" Name="Play_Routa_Destroy" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Destroy" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="2.330341" DurationMax="2.512436">
 					<IncludedMemoryFiles>
 						<File Id="293380285" Language="SFX">
 							<ShortName>Blast Laser 4.wav</ShortName>
@@ -346,7 +450,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="4128702423" Name="Play_Routa_Gira" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Gira" DurationType="Infinite">
+				<Event Id="4128702423" Name="Play_Routa_Gira" ObjectPath="\Events\Default Work Unit\Objects\Play_Routa_Gira" MaxAttenuation="50.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="163792938" Language="SFX">
 							<ShortName>RUOTA\_ Cigolio.wav</ShortName>
@@ -366,7 +470,27 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="592787016" Name="Play_Tagliola_Shake" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Shake" DurationType="Infinite">
+				<Event Id="1936083868" Name="Play_Tagliola_Impact" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Impact" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.387471" DurationMax="0.460783">
+					<IncludedMemoryFiles>
+						<File Id="200068974" Language="SFX">
+							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_3.wav</ShortName>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_3_10C4C929.wem</Path>
+						</File>
+						<File Id="210243154" Language="SFX">
+							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_2.wav</ShortName>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_2_10C4C929.wem</Path>
+						</File>
+						<File Id="657846513" Language="SFX">
+							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4.wav</ShortName>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4_10C4C929.wem</Path>
+						</File>
+						<File Id="745756252" Language="SFX">
+							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_1.wav</ShortName>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_1_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="592787016" Name="Play_Tagliola_Shake" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Shake" MaxAttenuation="50.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="1003120525" Language="SFX">
 							<ShortName>Tagliola.wav</ShortName>
@@ -374,7 +498,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="928546414" Name="Play_Tagliola_Snap" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Snap" DurationType="OneShot" DurationMin="1.267619" DurationMax="1.267619">
+				<Event Id="928546414" Name="Play_Tagliola_Snap" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Snap" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.267619" DurationMax="1.267619">
 					<IncludedMemoryFiles>
 						<File Id="814232710" Language="SFX">
 							<ShortName>Tagliola_Snap.wav</ShortName>

@@ -1,3 +1,11 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2603091426	barriera_elettrica_onoff			\Default Work Unit\barriera_elettrica_onoff	
+
+State	ID	Name	State Group			Notes
+	748895195	None	barriera_elettrica_onoff			
+	930712164	off	barriera_elettrica_onoff			
+	1651971902	on	barriera_elettrica_onoff			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
