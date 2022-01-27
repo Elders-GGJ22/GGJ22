@@ -9,7 +9,7 @@ public class Attractor : MonoBehaviour
 {
 	[Header("Variables")]
 	[SerializeField] private bool positive = true;
-	[SerializeField] private bool magnetic = true;
+	[SerializeField] private bool magnetic = false;
 	[SerializeField] private bool cinematic = false;
 
 	[Header("Magnetize")]

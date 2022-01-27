@@ -77,7 +77,7 @@ namespace Assets.Scrips.Hamsters
 	    
             }*/
             // Post the Wwise AKEvent each time player step onto the ground
-            AkSoundEngine.PostEvent("Play_Hamster_Footstep", gameObject);
+            //AkSoundEngine.PostEvent("Play_Hamster_Footstep", gameObject);
             Debug.Log("suono?");
         }
 

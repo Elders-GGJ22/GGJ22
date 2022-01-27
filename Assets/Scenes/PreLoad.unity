@@ -16148,6 +16148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8666471397774382602}
+  - component: {fileID: 8666471397774382614}
   - component: {fileID: 8666471397774382601}
   - component: {fileID: 8666471397774382613}
   m_Layer: 0
@@ -16169,3 +16170,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c6fed2ca991e694c8eb672e3bc51a99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &8666471397774382614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8666471397774382612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8caf70f3fdffe4a439dc63dc1c707eaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitializationSettings: {fileID: 11400000, guid: 8cfc4f3cbfd678541a698a21ad93b1ba, type: 2}
+  basePath: 
+  language: 
+  defaultPoolSize: 0
+  lowerPoolSize: 0
+  streamingPoolSize: 0
+  memoryCutoffThreshold: 0
+  monitorPoolSize: 0
+  monitorQueuePoolSize: 0
+  callbackManagerBufferSize: 0
+  spatialAudioPoolSize: 0
+  maxSoundPropagationDepth: 0
+  engineLogging: 0
