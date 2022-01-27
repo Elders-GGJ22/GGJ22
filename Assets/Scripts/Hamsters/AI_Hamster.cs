@@ -16,36 +16,28 @@ namespace Assets.Scrips.Hamsters
     [RequireComponent(typeof(NavMeshAgent))]
     public class AI_Hamster : MonoBehaviour
     {
-        [Header("Variables")] [SerializeField] private Vector2 timeToWait = new Vector2(1f, 3f);
-        [SerializeField] private float walkRadius = 3f;
+        [Header("Components")]
+        [SerializeField] private ParticleSystem heartParticles;
 
-        [Header("Components")] 
-        [SerializeField]private Transform goal;
-        [SerializeField] private Transform GFX;
-        [SerializeField] private Animator anim;
         private NavMeshAgent agent;
         private NavMeshPath path;
-        private float waiting = 0;
-        private float timer;
-        private int currWayPoints;
-        private GameObject[] _goal, _bitch, _trap, _seed;
-        private List<Transform> _targets;
-        private Vector3 targetsDist;
+        private float timer = 0;
+        private List<Transform> targetsList;
+        private Transform oldTarget;
         
         void Start()
         {
             agent = GetComponent<NavMeshAgent>();
-            timer = 0;
-            currWayPoints = 0;
-            _targets = new List<Transform>();
+            targetsList = new List<Transform>();
             path = new NavMeshPath();
             AddTargets();
         }
 
         public Transform GetGoal()
         {
-            return goal;
+            return closestTarget();
         }
+
         private void Update()
         {
             if (agent.enabled) SetDestinationPoint();
@@ -55,29 +47,34 @@ namespace Assets.Scrips.Hamsters
         {
 #if UNITY_EDITOR
             path = new NavMeshPath();
-            agent.CalculatePath(goal.position, path);
+            agent.CalculatePath(destination, path);
 #endif
             agent.destination = destination;
             Debug.Log("vado a spawn point");
         }
 
-        void SetDestinationPoint()
+        private void SetDestinationPoint()
         {
-            float minDistance = Mathf.Infinity;
-            Transform target = null;
-            
-            for (int i = 0; i < _targets.Count; i++)
-            {
-                //targetsDist = Vector3.Distance(_targets[i].position, transform.position);
-                targetsDist = transform.position - _targets[i].position;
-                float curDistance = targetsDist.sqrMagnitude;
+            Transform target = closestTarget();
 
-                if (curDistance < minDistance)
+            // Play hears particles
+            if(target != oldTarget)
+            {
+                oldTarget = target;
+                if(target.tag == HamsterUtils.TAG_BITCH)
                 {
-                    minDistance = curDistance;
-                    target = _targets[i];
+                    heartParticles.Play();
+                }
+                else
+                {
+                    heartParticles.Stop();
                 }
             }
+
+#if UNITY_EDITOR
+            path = new NavMeshPath();
+            agent.CalculatePath(target.position, path);
+#endif
 
             bool canDo = false;
             if (timer < 0.5f)
@@ -92,52 +89,61 @@ namespace Assets.Scrips.Hamsters
                 {
                     timer = 0; 
                     canDo = false;
-                    _targets.RemoveAt(_targets.FindIndex(x => x.position == target.position));
+                    targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
                 }
             }
             agent.destination = target.position;
         }
+
+        private Transform closestTarget()
+        {
+            float minDistance = Mathf.Infinity;
+            Transform target = null;
+            foreach(Transform _target in targetsList)
+            {
+                //Vector3 targetsDist = Vector3.Distance(_target.position, transform.position);
+                Vector3 targetsDist = transform.position - _target.position;
+                float curDistance = targetsDist.sqrMagnitude;
+
+                if (curDistance < minDistance)
+                {
+                    minDistance = curDistance;
+                    target = _target;
+                }
+            }
+            return target;
+        }
+
         private void AddTargets()
         {
-            if (_goal == null)
+            GameObject[] _goal = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_GOAL);
+            foreach (GameObject obj in _goal)
             {
-                _goal = GameObject.FindGameObjectsWithTag("Goal");
-                foreach (var obj in _goal)
-                {
-                    _targets.Add(obj.transform);
-                }
+                targetsList.Add(obj.transform);
             }
-            if (_bitch == null)
+
+            GameObject[] _bitch = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_BITCH);
+            foreach (GameObject obj in _bitch)
             {
-                _bitch = GameObject.FindGameObjectsWithTag("Bitch");
-                foreach (var obj in _bitch)
-                {
-                    _targets.Add(obj.transform);
-                }
+                targetsList.Add(obj.transform);
             }
-            if (_trap == null)
+
+            GameObject[] _trap = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_TRAP);
+            foreach (GameObject obj in _trap)
             {
-                _trap = GameObject.FindGameObjectsWithTag("Trap");
-                foreach (var obj in _trap)
-                {
-                    _targets.Add(obj.transform);
-                }
+                targetsList.Add(obj.transform);
             }
-            if (_seed == null)
+
+            GameObject[] _seed = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_SEED);
+            foreach (GameObject obj in _seed)
             {
-                _seed = GameObject.FindGameObjectsWithTag("Seed");
-                foreach (var obj in _seed)
-                {
-                    _targets.Add(obj.transform);
-                }
+                targetsList.Add(obj.transform);
             }
         }
+
 #if UNITY_EDITOR
         private void OnDrawGizmosSelected()
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(this.transform.position, walkRadius);
-
             if (path != null)
             {
                 Gizmos.color = Color.magenta;
