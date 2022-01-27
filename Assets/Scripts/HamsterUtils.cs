@@ -7,5 +7,7 @@
         public const string TAG_HAMSTER = "Hamster";
         public const string TAG_MAGNET = "Magnet";
         public const string TAG_TRAP = "Trap";
+        public const string TAG_BITCH = "Bitch";
+        public const string TAG_SEED = "Seed";
     }
 }
