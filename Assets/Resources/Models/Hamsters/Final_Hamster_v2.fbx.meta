@@ -1,0 +1,173 @@
+fileFormatVersion: 2
+guid: dac3816f5c902914b92423c368def21f
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'LeftLowerLeg' not found\n"
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 20
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 1
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Final_Hamster_v2(Clone)
+      parentName: 
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: group1
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: -0, y: 0, z: -0.26839998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3.24303, y: 3.24303, z: 3.24303}
+    - name: Body_low
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: -0, y: 0, z: -0.26839998}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 3.24303, y: 3.24303, z: 3.24303}
+    - name: Teeth_low
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: -0, y: -0.20654398, z: 0.43120998}
+      rotation: {x: 0.13052619, y: -0, z: -0, w: 0.9914449}
+      scale: {x: 0.11462, y: 0.11462, z: 0.11462}
+    - name: Left_Arm
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: -0.18301599, y: -0.096517995, z: 0.020647999}
+      rotation: {x: 0.36577293, y: -0.523451, z: 0.5213713, w: 0.56602234}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_hand
+      parentName: Left_Arm
+      position: {x: -0.058763996, y: -0.044193998, z: 0.163048}
+      rotation: {x: 0.7561838, y: -0.049403645, z: -0.042538337, w: 0.65110356}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Arm
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: 0.16590399, y: -0.099382, z: -0.008475999}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_hand
+      parentName: Right_Arm
+      position: {x: -0.019213999, y: -0.18089199, z: -0.002462}
+      rotation: {x: 0.7141963, y: 0.041025955, z: 0.6931448, w: 0.08826543}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Back
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: -0, y: 0.043325998, z: -0.48008597}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Left_Leg
+      parentName: Back
+      position: {x: -0.175504, y: -0.13032399, z: 0.072501995}
+      rotation: {x: -7.615435e-15, y: -0.000000087266464, z: -0.000000087266464, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Right_Leg
+      parentName: Back
+      position: {x: 0.18801199, y: -0.14693399, z: 0.070388}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hips_02
+      parentName: Final_Hamster_v2(Clone)
+      position: {x: 0.0011959999, y: 0.14505398, z: -0.150144}
+      rotation: {x: -0.002638199, y: 0.9869176, z: -0.1609077, w: 0.009769842}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Head
+      parentName: Hips_02
+      position: {x: -0.013393999, y: -0.207378, z: -0.24402998}
+      rotation: {x: -0.0026383612, y: 0.9869176, z: -0.16090773, w: -0.009769835}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 20
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
