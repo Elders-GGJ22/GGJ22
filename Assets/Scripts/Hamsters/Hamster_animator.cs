@@ -44,7 +44,7 @@ namespace Assets.Scrips.Hamsters
 
         public void SetMagneticAnimation(bool magnetic)
         {
-            anim.SetBool("Magnetic", magnetic);
+            if (anim) anim.SetBool("Magnetic", magnetic);
         }
 
         private void PlayFootstepAudio()

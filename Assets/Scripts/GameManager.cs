@@ -72,6 +72,7 @@ public class GameManager : MonoBehaviour
     {
         foreach(Attractor hamster in hamsters)
         {
+            Debug.Log(hamster);
             if(hamster.transform.position.y < minHeight)
             {
                 Respawn(hamster);
