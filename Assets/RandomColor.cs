@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomColor : MonoBehaviour
 {
-    public MeshRenderer MeshRenderer;
+    private MeshRenderer _meshRenderer;
     
     public Color[] _randomColors; /*= new []{
         new Color(255, 51, 51), 
@@ -16,13 +16,14 @@ public class RandomColor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _meshRenderer = GetComponentInChildren<MeshRenderer>();
+        
         var randScale = Random.Range(80, 130);
         var randColor = Random.Range(0, _randomColors.Length-1);
 
-        Debug.Log(_randomColors[randColor]);
         var yPos = (randScale-100) * 0.005f;
 
-        MeshRenderer.material.color = _randomColors[randColor];
+        _meshRenderer.material.color = _randomColors[randColor];
         transform.GetChild(0).localPosition = new Vector3(0,yPos,0);
         transform.GetChild(0).localScale = new Vector3(randScale,randScale, randScale);
     }
