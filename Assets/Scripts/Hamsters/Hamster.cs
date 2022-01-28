@@ -10,6 +10,13 @@ namespace Assets.Scrips.Hamsters
         [SerializeField] private ParticleSystem particle_bloodExplosion;
         [SerializeField] private ParticleSystem particle_bloodSteam;
         [SerializeField] private ParticleSystem particle_bloodSplit;
+
+        private HamsterExplosion _expolodedHamster;
+
+        private void Awake()
+        {
+            _expolodedHamster = GetComponent<HamsterExplosion>();
+        }
         
         public enum HamsterState
         {
@@ -37,12 +44,12 @@ namespace Assets.Scrips.Hamsters
                 collision.gameObject.tag == HamsterUtils.TAG_BITCH)
             {
                 Debug.Log("Toccato qualcosa di pericoloso");
-                 EventsManager.Instance.OnHamsterDie();
+                 //EventsManager.Instance.OnHamsterDie();
                  
                  particle_bloodExplosion.Play();
                  particle_bloodSteam.Play();
                  particle_bloodSplit.Play();
-                 
+                 if (_expolodedHamster) _expolodedHamster.Explode();
             }
         }
     }
