@@ -8,6 +8,7 @@ using UnityEngine.Events;
 public class Attractor : MonoBehaviour
 {
 	[Header("Variables")]
+	[SerializeField] private float attractiveDistance = 10f;
 	[SerializeField] private bool positive = true;
 	[SerializeField] private bool magnetic = false;
 	[SerializeField] private bool cinematic = false;
@@ -45,7 +46,7 @@ public class Attractor : MonoBehaviour
 		SetMagnetic(magnetic);
 	}
 
-	void FixedUpdate()
+	private void FixedUpdate()
 	{
 		if(!magnetic) { return; }
 		foreach (Attractor attractor in attractors)
@@ -59,7 +60,7 @@ public class Attractor : MonoBehaviour
 		debouncingTimeCurrent += Time.deltaTime;
 	}
 
-	void Attract(Attractor objToAttract)
+	private void Attract(Attractor objToAttract)
 	{
 		if (!objToAttract.magnetic) { return; }
 		Rigidbody rbToAttract = objToAttract.rb;
@@ -68,7 +69,7 @@ public class Attractor : MonoBehaviour
 		float distance = direction.magnitude;
 		SoundEvent(distance);
 
-		if (distance == 0f) { return; }
+		if (distance == 0f || distance > objToAttract.attractiveDistance) { return; }
 
 		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
 		Vector3 force = direction.normalized * forceMagnitude;
@@ -77,7 +78,7 @@ public class Attractor : MonoBehaviour
 		rbToAttract.AddForce(force * opposite);
 	}
 
-	void SoundEvent(float distance)
+	private void SoundEvent(float distance)
 	{
 		if(debouncingTimeCurrent < debouncingTime) { return; }
 		if (!hitted && distance < minDistance)
@@ -94,14 +95,14 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
-	void OnEnable()
+	private void OnEnable()
 	{
 		if (attractors == null) { attractors = new List<Attractor>(); }
 		attractors.Add(this);
 		//TODO: Add this to CinemachineTargetGroup 
 	}
 
-	void OnDisable()
+	private void OnDisable()
 	{
 		attractors.Remove(this);
 		//TODO: Remove this to CinemachineTargetGroup 
@@ -119,6 +120,7 @@ public class Attractor : MonoBehaviour
 
 	public void SetMagnetic(bool _magnetic) // Called from AttractorManager
 	{
+		if(_magnetic == magnetic) { return; }
 		this.magnetic = _magnetic;
 		//this.agent.enabled = !_magnetic;
 		this.rb.isKinematic = cinematic ? true : !_magnetic;
@@ -142,9 +144,6 @@ public class Attractor : MonoBehaviour
 
 	void SetGFX()
 	{
-		/*if (idleGFX) { this.idleGFX.SetActive(!this.magnetic); }
-		if (positiveGFX) { this.positiveGFX.SetActive(this.magnetic && this.positive); }
-		if (negativeGFX) { this.negativeGFX.SetActive(this.magnetic && !this.positive); }*/
 		if(!this.magnetic) {
 			if (meshRenderer) this.meshRenderer.material = this.idleMaterial;
 		}
@@ -162,10 +161,15 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
+#if UNITY_EDITOR
 	private void OnDrawGizmosSelected()
 	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(this.transform.position, attractiveDistance);
+
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireSphere(this.transform.position, minDistance);
 	}
+#endif
 
 }

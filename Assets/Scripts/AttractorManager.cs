@@ -20,7 +20,7 @@ public class AttractorManager : MonoBehaviour
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, maxDistance, layerMask);
             if (hit)
             {
-                Debug.Log("Hit " + hitInfo.transform.gameObject.name);
+                //Debug.Log("Hit " + hitInfo.transform.gameObject.name);
                 //Debug.Log("Tag " + hitInfo.transform.gameObject.tag);
                 //if (hitInfo.transform.gameObject.tag == "Attractable")
                 //{
@@ -33,7 +33,6 @@ public class AttractorManager : MonoBehaviour
                         if (attractor.IsPositive())
                         {
                             attractor.SetMagnetic(false);
-                            positiveCharges++;
                             AddCharge(true);
                         }
                         else if(!attractor.IsPositive())
