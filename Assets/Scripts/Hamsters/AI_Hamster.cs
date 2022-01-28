@@ -10,6 +10,7 @@ using DG.Tweening.Plugins.Core.PathCore;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Events;
+using Random = UnityEngine.Random;
 
 namespace Assets.Scrips.Hamsters
 {
@@ -21,6 +22,7 @@ namespace Assets.Scrips.Hamsters
 
         [Header("Variables")]
         [SerializeField]  private float minDistance = 0.5f;
+        [SerializeField]  private bool casualMove = false;
 
         private NavMeshAgent agent;
         private NavMeshPath path;
@@ -34,6 +36,8 @@ namespace Assets.Scrips.Hamsters
             targetsList = new List<Transform>();
             path = new NavMeshPath();
             AddTargets();
+            
+            if (casualMove) MoveRandom();
         }
 
         private void AddTargets()
@@ -68,8 +72,30 @@ namespace Assets.Scrips.Hamsters
             return closestTarget();
         }
 
+        private bool _waitingNewPosition = false;
+        IEnumerator MoveRandomAgain()
+        {
+            _waitingNewPosition = true;
+            yield return new WaitForSeconds(1.5f);
+            MoveRandom();
+
+            _waitingNewPosition = false;
+        }
+
         private void Update()
         {
+            if (casualMove)
+            {
+                if (_waitingNewPosition) return;
+                var dist = (transform.position - agent.destination).sqrMagnitude;
+                
+                if (dist <= 1.5f) {
+                    StartCoroutine(MoveRandomAgain());
+                }
+
+                return;
+            }
+            
             if (agent.enabled) SetDestinationPoint();
         }
 
@@ -80,18 +106,35 @@ namespace Assets.Scrips.Hamsters
             agent.CalculatePath(destination, path);
 #endif
             agent.destination = destination;
-            Debug.Log("vado a spawn point");
         }
 
         private void SetDestinationPoint()
         {
-            // Search closest target
             Transform target = closestTarget();
+            
+            // Search closest target
             if(target == null) {
 #if UNITY_EDITOR
-            path = null;
+                path = null;
 #endif
                 return;
+            }
+            
+            // Play hears particles and check if is alive
+            if(target.tag == HamsterUtils.TAG_BITCH)
+            {
+                if (target.GetComponent<Hamster>().HState == Hamster.HamsterState.Dead)
+                {
+                    heartParticles.Stop();
+                    targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
+                    oldTarget = null;
+                    return;
+                }
+                heartParticles.Play();
+            }
+            else
+            {
+                heartParticles.Stop();
             }
 
             // If target is reached
@@ -107,15 +150,7 @@ namespace Assets.Scrips.Hamsters
             if(target == oldTarget) { return; }
             oldTarget = target;
 
-            // Play hears particles
-            if(target.tag == HamsterUtils.TAG_BITCH)
-            {
-                heartParticles.Play();
-            }
-            else
-            {
-                heartParticles.Stop();
-            }
+           
 
 #if UNITY_EDITOR
             path = new NavMeshPath();
@@ -160,6 +195,16 @@ namespace Assets.Scrips.Hamsters
         {
                 //Vector3 targetsDist = Vector3.Distance(_target.position, transform.position);
             return (transform.position - _target).sqrMagnitude;
+        }
+        
+        void MoveRandom()
+        {
+            if(!agent.enabled) { return; }
+            Vector3 randomDirection = Random.insideUnitSphere * 3;
+            randomDirection += transform.position;
+            NavMeshHit hit;
+            NavMesh.SamplePosition(randomDirection, out hit, 3, 1);
+            agent.destination = hit.position;
         }
 
 #if UNITY_EDITOR
