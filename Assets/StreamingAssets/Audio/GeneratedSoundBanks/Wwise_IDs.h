@@ -33,6 +33,7 @@ namespace AK
         static const AkUniqueID PLAY_HAMSTER_NINFOMANE_DEATH = 1568381641U;
         static const AkUniqueID PLAY_HAMSTER_SAVE = 1536861472U;
         static const AkUniqueID PLAY_HAMSTER_SQUITS = 2655563858U;
+        static const AkUniqueID PLAY_MUSIC_HAMSTER = 343174768U;
         static const AkUniqueID PLAY_NO_GUN_CHARGE = 1740526775U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_NEGATIVE = 1224237682U;
         static const AkUniqueID PLAY_OBJ_MAGNETIZED_POSITIVE = 3344139506U;
@@ -40,7 +41,6 @@ namespace AK
         static const AkUniqueID PLAY_RUOTA_DESTROY = 1164366714U;
         static const AkUniqueID PLAY_RUOTA_GIRA = 616896207U;
         static const AkUniqueID PLAY_TAGLIOLA_IMPACT = 1936083868U;
-        static const AkUniqueID PLAY_TAGLIOLA_SHAKE = 592787016U;
         static const AkUniqueID PLAY_TAGLIOLA_SNAP = 928546414U;
         static const AkUniqueID STOP_OBJ_MAGNETIZED = 4178633038U;
     } // namespace EVENTS

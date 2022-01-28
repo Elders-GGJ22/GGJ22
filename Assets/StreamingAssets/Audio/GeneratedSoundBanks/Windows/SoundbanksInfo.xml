@@ -8,7 +8,28 @@
 		<ExternalSourcesOutputRoot>C:\Users\anton\Documents\GitHub\GGJ22\Jam2022_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
-	<StreamedFiles/>
+	<StreamedFiles>
+		<File Id="65869930" Language="SFX">
+			<ShortName>_ Magnetizzato +.wav</ShortName>
+			<Path>SFX\_ Magnetizzato +_C2DAD48A.wem</Path>
+		</File>
+		<File Id="295094156" Language="SFX">
+			<ShortName>ELETTROSHOCK\_ Elettroshock_1.wav</ShortName>
+			<Path>SFX\ELETTROSHOCK\_ Elettroshock_1_7F0E64A9.wem</Path>
+		</File>
+		<File Id="654844902" Language="SFX">
+			<ShortName>_ Elettroshock_1.wav</ShortName>
+			<Path>SFX\_ Elettroshock_1_307433EC.wem</Path>
+		</File>
+		<File Id="824903264" Language="SFX">
+			<ShortName>_ Elettroshock_1.wav</ShortName>
+			<Path>SFX\_ Elettroshock_1_A0E72DEE.wem</Path>
+		</File>
+		<File Id="969911899" Language="SFX">
+			<ShortName>_ Magnetizzato -.wav</ShortName>
+			<Path>SFX\_ Magnetizzato -_9214F784.wem</Path>
+		</File>
+	</StreamedFiles>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
 		<SoundBank Id="1355168291" Language="SFX" Hash="4145638358">
@@ -16,20 +37,22 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2438112560">
+		<SoundBank Id="3161908922" Language="SFX" Hash="3548549692">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="1366837455" Name="Play_Barriera_Elettrica_Active" ObjectPath="\Events\Default Work Unit\Play_Barriera_Elettrica_Active" DurationType="Infinite">
-					<IncludedMemoryFiles>
+					<ReferencedStreamedFiles>
 						<File Id="295094156" Language="SFX">
 							<ShortName>ELETTROSHOCK\_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\ELETTROSHOCK\_ Elettroshock_1_742F30A6.wem</Path>
+							<Path>SFX\ELETTROSHOCK\_ Elettroshock_1_7F0E64A9.wem</Path>
 						</File>
+					</ReferencedStreamedFiles>
+					<IncludedMemoryFiles>
 						<File Id="680285113" Language="SFX">
 							<ShortName>ELETTROSHOCK\_ Elettroshock_2.wav</ShortName>
-							<Path>SFX\ELETTROSHOCK\_ Elettroshock_2_0CC43FD9.wem</Path>
+							<Path>SFX\ELETTROSHOCK\_ Elettroshock_2_FF3D4EBE.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -37,7 +60,7 @@
 					<IncludedMemoryFiles>
 						<File Id="908349948" Language="SFX">
 							<ShortName>ELETTROSHOCK\Elettroshock_Stop.wav</ShortName>
-							<Path>SFX\ELETTROSHOCK\Elettroshock_Stop_19997055.wem</Path>
+							<Path>SFX\ELETTROSHOCK\Elettroshock_Stop_F1B4B0A0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -45,7 +68,7 @@
 					<IncludedMemoryFiles>
 						<File Id="29800757" Language="SFX">
 							<ShortName>CIRCULAR_SAW\_ Circular_Saw.wav</ShortName>
-							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_C3E58FC9.wem</Path>
+							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_0FCC9DF0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -53,7 +76,7 @@
 					<IncludedMemoryFiles>
 						<File Id="573403769" Language="SFX">
 							<ShortName>CIRCULAR_SAW\_ Circular_Saw_Stop.wav</ShortName>
-							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_Stop_10C4C929.wem</Path>
+							<Path>SFX\CIRCULAR_SAW\_ Circular_Saw_Stop_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -61,15 +84,15 @@
 					<IncludedMemoryFiles>
 						<File Id="58274880" Language="SFX">
 							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1.wav</ShortName>
-							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1_10C4C929.wem</Path>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="179064730" Language="SFX">
 							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_3.wav</ShortName>
-							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_3_10C4C929.wem</Path>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="963660213" Language="SFX">
 							<ShortName>CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_2.wav</ShortName>
-							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_2_10C4C929.wem</Path>
+							<Path>SFX\CRICETI ESPLOSIVI\_ Criceto_Esplosivo_Esplosione_2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -77,23 +100,23 @@
 					<IncludedMemoryFiles>
 						<File Id="938523553" Language="SFX">
 							<ShortName>_ Pistola (-).wav</ShortName>
-							<Path>SFX\_ Pistola (-)_B4123602.wem</Path>
+							<Path>SFX\_ Pistola (-)_CFE99532.wem</Path>
 						</File>
 						<File Id="977429043" Language="SFX">
 							<ShortName>_ Pistola (-) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (-) 2_06E4D873.wem</Path>
+							<Path>SFX\_ Pistola (-) 2_12737A43.wem</Path>
 						</File>
 						<File Id="1012430974" Language="SFX">
 							<ShortName>_ Pistola (-).wav</ShortName>
-							<Path>SFX\_ Pistola (-)_CCF8A6B3.wem</Path>
+							<Path>SFX\_ Pistola (-)_0A55A4E3.wem</Path>
 						</File>
 						<File Id="1063255614" Language="SFX">
 							<ShortName>_ Pistola (-) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (-) 2_C8B7D0F5.wem</Path>
+							<Path>SFX\_ Pistola (-) 2_4B390785.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
-							<Path>SFX\_Bullet_Hit_10C4C929.wem</Path>
+							<Path>SFX\_Bullet_Hit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -101,23 +124,23 @@
 					<IncludedMemoryFiles>
 						<File Id="482845930" Language="SFX">
 							<ShortName>_ Pistola (+) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (+) 2_7D2256F8.wem</Path>
+							<Path>SFX\_ Pistola (+) 2_800EE6E8.wem</Path>
 						</File>
 						<File Id="564543840" Language="SFX">
 							<ShortName>_ Pistola (+) 2.wav</ShortName>
-							<Path>SFX\_ Pistola (+) 2_F5004D4D.wem</Path>
+							<Path>SFX\_ Pistola (+) 2_F9EDC5BD.wem</Path>
 						</File>
 						<File Id="785827672" Language="SFX">
 							<ShortName>_ Pistola (+).wav</ShortName>
-							<Path>SFX\_ Pistola (+)_4E41B852.wem</Path>
+							<Path>SFX\_ Pistola (+)_4F0CC1C2.wem</Path>
 						</File>
 						<File Id="1033587246" Language="SFX">
 							<ShortName>_ Pistola (+).wav</ShortName>
-							<Path>SFX\_ Pistola (+)_E2299181.wem</Path>
+							<Path>SFX\_ Pistola (+)_3A8A5171.wem</Path>
 						</File>
 						<File Id="1069981656" Language="SFX">
 							<ShortName>_Bullet_Hit.wav</ShortName>
-							<Path>SFX\_Bullet_Hit_10C4C929.wem</Path>
+							<Path>SFX\_Bullet_Hit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -125,7 +148,7 @@
 					<IncludedMemoryFiles>
 						<File Id="509859197" Language="SFX">
 							<ShortName>PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION.wav</ShortName>
-							<Path>SFX\PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION_10C4C929.wem</Path>
+							<Path>SFX\PM_FSSF2_EXOSKELETON_11_SERVO_MOVEMENT_ROTATION_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -133,7 +156,7 @@
 					<IncludedMemoryFiles>
 						<File Id="133491853" Language="SFX">
 							<ShortName>CRICETO_CANNIBALE\_Criceto_Cannibale_Death.wav</ShortName>
-							<Path>SFX\CRICETO_CANNIBALE\_Criceto_Cannibale_Death_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_CANNIBALE\_Criceto_Cannibale_Death_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -141,11 +164,11 @@
 					<IncludedMemoryFiles>
 						<File Id="16696151" Language="SFX">
 							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit_2.wav</ShortName>
-							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit_2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="982036521" Language="SFX">
 							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit 1.wav</ShortName>
-							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit 1_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Hit 1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -153,7 +176,7 @@
 					<IncludedMemoryFiles>
 						<File Id="711389746" Language="SFX">
 							<ShortName>CRICETO_CANNIBALE\_ Criceto_Cannibale_Verso.wav</ShortName>
-							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Verso_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_CANNIBALE\_ Criceto_Cannibale_Verso_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -161,19 +184,19 @@
 					<IncludedMemoryFiles>
 						<File Id="202722580" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_Death_4.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="699027466" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_death_2.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_death_2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="714538673" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_death_1.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_death_1_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="952712436" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_death_3_electric.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_death_3_electric_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_3_electric_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -181,15 +204,15 @@
 					<IncludedMemoryFiles>
 						<File Id="75759534" Language="SFX">
 							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="536273062" Language="SFX">
 							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="927752348" Language="SFX">
 							<ShortName>CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2_BF326A68.wem</Path>
+							<Path>SFX\CRICETO_DEATH_BLOOD\_ Criceto_Base_Death_Blood2_F2336C58.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -197,15 +220,15 @@
 					<IncludedMemoryFiles>
 						<File Id="202722580" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_Death_4.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_Death_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="699027466" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_death_2.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_death_2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="714538673" Language="SFX">
 							<ShortName>CRICETO_DEATH\Mouse_death_1.wav</ShortName>
-							<Path>SFX\CRICETO_DEATH\Mouse_death_1_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_DEATH\Mouse_death_1_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -213,43 +236,43 @@
 					<IncludedMemoryFiles>
 						<File Id="173870524" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footsteps_Hard_Wood_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="227730366" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="271460873" Language="SFX">
 							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="279207376" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="505186553" Language="SFX">
 							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="633068771" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="788315250" Language="SFX">
 							<ShortName>FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\WOOD\_ Hamster_Footstep_Wood_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="790953535" Language="SFX">
 							<ShortName>FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\HARD WOOD\_ Hamster_Footstep_Hard_Wood_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="948751287" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1038825265" Language="SFX">
 							<ShortName>FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2.wav</ShortName>
-							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2_10C4C929.wem</Path>
+							<Path>SFX\FOOTSTEPS\SAND\_ Hamster_Footstep_Sand_2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<DefaultSwitchValue>{CBE7B6BC-BB0E-4035-BB2B-48E87EF10F9A}</DefaultSwitchValue>
@@ -290,23 +313,23 @@
 					<IncludedMemoryFiles>
 						<File Id="271365105" Language="SFX">
 							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta.wav</ShortName>
-							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_3F75BDB9.wem</Path>
 						</File>
 						<File Id="541517806" Language="SFX">
 							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss.wav</ShortName>
-							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss_3F75BDB9.wem</Path>
 						</File>
 						<File Id="661031073" Language="SFX">
 							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Ride 2.wav</ShortName>
-							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Ride 2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Ride 2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="852812507" Language="SFX">
 							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss 2.wav</ShortName>
-							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss 2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Kiss 2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1056957046" Language="SFX">
 							<ShortName>CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_2.wav</ShortName>
-							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_2_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_NINFOMANE\_ Criceto_Ninfomane_Saluta_2_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -314,7 +337,7 @@
 					<IncludedMemoryFiles>
 						<File Id="539821097" Language="SFX">
 							<ShortName>RARE_percussion_Handpan_hangdrum_aura_wet_D_96_loop2.wav</ShortName>
-							<Path>SFX\RARE_percussion_Handpan_hangdrum_aura_wet_D_96_loop2_C5579977.wem</Path>
+							<Path>SFX\RARE_percussion_Handpan_hangdrum_aura_wet_D_96_loop2_18A59087.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -322,7 +345,7 @@
 					<IncludedMemoryFiles>
 						<File Id="398970153" Language="SFX">
 							<ShortName>BRS_Voice_Girl_Toddler_Scream_Coarse_3.wav</ShortName>
-							<Path>SFX\BRS_Voice_Girl_Toddler_Scream_Coarse_3_06A75131.wem</Path>
+							<Path>SFX\BRS_Voice_Girl_Toddler_Scream_Coarse_3_88CAE538.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -330,43 +353,43 @@
 					<IncludedMemoryFiles>
 						<File Id="436051" Language="SFX">
 							<ShortName>_ Hamster_Save_2.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_2_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="59845594" Language="SFX">
 							<ShortName>_ Hamster_Save_3_Squit.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_3_Squit_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_3_Squit_3F75BDB9.wem</Path>
 						</File>
 						<File Id="393407488" Language="SFX">
 							<ShortName>_ Hamster_Save_4.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_4_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="480398602" Language="SFX">
 							<ShortName>_ Hamster_Save_5_Squit.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_5_Squit_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_5_Squit_3F75BDB9.wem</Path>
 						</File>
 						<File Id="641738254" Language="SFX">
 							<ShortName>_ Hamster_Save_5.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_5_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_5_3F75BDB9.wem</Path>
 						</File>
 						<File Id="690322441" Language="SFX">
 							<ShortName>_ Hamster_Save_4_Squit.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_4_Squit_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_4_Squit_3F75BDB9.wem</Path>
 						</File>
 						<File Id="692112234" Language="SFX">
 							<ShortName>_ Hamster_Save_1.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_1_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="767892954" Language="SFX">
 							<ShortName>_ Hamster_Save_3.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_3_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="789777257" Language="SFX">
 							<ShortName>_ Hamster_Save_2_Squit.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_2_Squit_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_2_Squit_3F75BDB9.wem</Path>
 						</File>
 						<File Id="1070363741" Language="SFX">
 							<ShortName>_ Hamster_Save_1_Squit.wav</ShortName>
-							<Path>SFX\_ Hamster_Save_1_Squit_10C4C929.wem</Path>
+							<Path>SFX\_ Hamster_Save_1_Squit_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -374,23 +397,183 @@
 					<IncludedMemoryFiles>
 						<File Id="222786278" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_3.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_3_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="315214619" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_4.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_4_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="491050347" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_1.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_1_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_1_3F75BDB9.wem</Path>
 						</File>
 						<File Id="736105152" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_2.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_2_75F64918.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_2_404F0148.wem</Path>
 						</File>
 						<File Id="1042466446" Language="SFX">
 							<ShortName>CRICETO_SQUIT\Mouse_6.wav</ShortName>
-							<Path>SFX\CRICETO_SQUIT\Mouse_6_10C4C929.wem</Path>
+							<Path>SFX\CRICETO_SQUIT\Mouse_6_3F75BDB9.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="343174768" Name="Play_Music_Hamster" ObjectPath="\Events\Default Work Unit\Play_Music_Hamster" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="23085967" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_LIFE PAD.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_LIFE PAD_9EDFC787.wem</Path>
+						</File>
+						<File Id="70674968" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_SYNTH1.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_SYNTH1_9EDFC787.wem</Path>
+						</File>
+						<File Id="171150093" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_SYNTH1.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_SYNTH1_9EDFC787.wem</Path>
+						</File>
+						<File Id="177953472" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_DEATH PAD.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_DEATH PAD_9EDFC787.wem</Path>
+						</File>
+						<File Id="235189684" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_DRUM KIT.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_DRUM KIT_9EDFC787.wem</Path>
+						</File>
+						<File Id="305544450" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_EPIC BASS.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_EPIC BASS_9EDFC787.wem</Path>
+						</File>
+						<File Id="312347665" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_GRAND PIANO.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_GRAND PIANO_9EDFC787.wem</Path>
+						</File>
+						<File Id="325487624" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_STR RICOCHET.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_STR RICOCHET_9EDFC787.wem</Path>
+						</File>
+						<File Id="374912816" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_DEATH PAD.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_DEATH PAD_9EDFC787.wem</Path>
+						</File>
+						<File Id="384013907" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_STR SPICC.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_STR SPICC_9EDFC787.wem</Path>
+						</File>
+						<File Id="414061242" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_STR PIZZ.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_STR PIZZ_9EDFC787.wem</Path>
+						</File>
+						<File Id="416871670" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_STR SPICC.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_STR SPICC_9EDFC787.wem</Path>
+						</File>
+						<File Id="431794058" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_GRAND PIANO.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_GRAND PIANO_9EDFC787.wem</Path>
+						</File>
+						<File Id="471735876" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_LIFE PAD.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_LIFE PAD_9EDFC787.wem</Path>
+						</File>
+						<File Id="481098818" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_STR RICOCHET.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_STR RICOCHET_9EDFC787.wem</Path>
+						</File>
+						<File Id="481405739" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_DRUM KIT.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_DRUM KIT_9EDFC787.wem</Path>
+						</File>
+						<File Id="500763457" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_STR PIZZ.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_STR PIZZ_9EDFC787.wem</Path>
+						</File>
+						<File Id="515740436" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_STR SPICC.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_STR SPICC_9EDFC787.wem</Path>
+						</File>
+						<File Id="524079381" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_STR VIOLA SPICC.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_STR VIOLA SPICC_9EDFC787.wem</Path>
+						</File>
+						<File Id="549299484" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_GRAND PIANO.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_GRAND PIANO_9EDFC787.wem</Path>
+						</File>
+						<File Id="558756643" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_GUITAR 1.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_GUITAR 1_9EDFC787.wem</Path>
+						</File>
+						<File Id="568579311" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_DEATH PAD.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_DEATH PAD_9EDFC787.wem</Path>
+						</File>
+						<File Id="752338067" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_EPIC BASS.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_EPIC BASS_9EDFC787.wem</Path>
+						</File>
+						<File Id="765708714" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_EPIC BASS.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_EPIC BASS_9EDFC787.wem</Path>
+						</File>
+						<File Id="834670019" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_KICK.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_KICK_9EDFC787.wem</Path>
+						</File>
+						<File Id="860997911" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_STR RICOCHET.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_STR RICOCHET_9EDFC787.wem</Path>
+						</File>
+						<File Id="878768504" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_STR VIOLA SPICC.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_STR VIOLA SPICC_9EDFC787.wem</Path>
+						</File>
+						<File Id="899086130" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_SLOW STRING LOW.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_SLOW STRING LOW_9EDFC787.wem</Path>
+						</File>
+						<File Id="906431473" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_GUITAR 1.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_GUITAR 1_9EDFC787.wem</Path>
+						</File>
+						<File Id="954824491" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_LEGATO ENSAMBLE STRINGS.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_LEGATO ENSAMBLE STRINGS_9EDFC787.wem</Path>
+						</File>
+						<File Id="956985655" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_DRUM KIT.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_DRUM KIT_9EDFC787.wem</Path>
+						</File>
+						<File Id="961416540" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_LUMINA STRINGS.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_LUMINA STRINGS_9EDFC787.wem</Path>
+						</File>
+						<File Id="994015193" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_KICK.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_KICK_9EDFC787.wem</Path>
+						</File>
+						<File Id="995848382" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_STR PIZZ.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_STR PIZZ_9EDFC787.wem</Path>
+						</File>
+						<File Id="1012632052" Language="SFX">
+							<ShortName>MAIN LOOP\hamster_main_LOOP_LEGATO ENSAMBLE STRINGS.wav</ShortName>
+							<Path>SFX\MAIN LOOP\hamster_main_LOOP_LEGATO ENSAMBLE STRINGS_9EDFC787.wem</Path>
+						</File>
+						<File Id="1037812749" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_SLOW STRING LOW.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_SLOW STRING LOW_9EDFC787.wem</Path>
+						</File>
+						<File Id="1044930796" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_LUMINA STRINGS.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_LUMINA STRINGS_9EDFC787.wem</Path>
+						</File>
+						<File Id="1048677922" Language="SFX">
+							<ShortName>INTRO\hamster_music_INTRO_SLOW STRING LOW.wav</ShortName>
+							<Path>SFX\INTRO\hamster_music_INTRO_SLOW STRING LOW_9EDFC787.wem</Path>
+						</File>
+						<File Id="1059457229" Language="SFX">
+							<ShortName>PUZZLE LOOP\hamster_music_puzzle_STR VIOLA SPICC.wav</ShortName>
+							<Path>SFX\PUZZLE LOOP\hamster_music_puzzle_STR VIOLA SPICC_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -398,43 +581,43 @@
 					<IncludedMemoryFiles>
 						<File Id="419793055" Language="SFX">
 							<ShortName>Bleeps_Blops_Clicks_DDM29.wav</ShortName>
-							<Path>SFX\Bleeps_Blops_Clicks_DDM29_10C4C929.wem</Path>
+							<Path>SFX\Bleeps_Blops_Clicks_DDM29_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 				<Event Id="1224237682" Name="Play_Obj_Magnetized_Negative" ObjectPath="\Events\Default Work Unit\Objects\Play_Obj_Magnetized_Negative" DurationType="Infinite">
-					<IncludedMemoryFiles>
+					<ReferencedStreamedFiles>
 						<File Id="654844902" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_69D0A77C.wem</Path>
+							<Path>SFX\_ Elettroshock_1_307433EC.wem</Path>
 						</File>
 						<File Id="969911899" Language="SFX">
 							<ShortName>_ Magnetizzato -.wav</ShortName>
-							<Path>SFX\_ Magnetizzato -_E3849FF4.wem</Path>
+							<Path>SFX\_ Magnetizzato -_9214F784.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="3344139506" Name="Play_Obj_Magnetized_Positive" ObjectPath="\Events\Default Work Unit\Objects\Play_Obj_Magnetized_Positive" DurationType="Infinite">
-					<IncludedMemoryFiles>
+					<ReferencedStreamedFiles>
 						<File Id="65869930" Language="SFX">
 							<ShortName>_ Magnetizzato +.wav</ShortName>
-							<Path>SFX\_ Magnetizzato +_1B6C32FA.wem</Path>
+							<Path>SFX\_ Magnetizzato +_C2DAD48A.wem</Path>
 						</File>
 						<File Id="824903264" Language="SFX">
 							<ShortName>_ Elettroshock_1.wav</ShortName>
-							<Path>SFX\_ Elettroshock_1_108CFB9E.wem</Path>
+							<Path>SFX\_ Elettroshock_1_A0E72DEE.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
+					</ReferencedStreamedFiles>
 				</Event>
 				<Event Id="2353563817" Name="Play_Pallina_Alluminio_Impact" ObjectPath="\Events\Default Work Unit\Objects\Play_Pallina_Alluminio_Impact" DurationType="OneShot" DurationMin="0.678063" DurationMax="0.879339">
 					<IncludedMemoryFiles>
 						<File Id="210304411" Language="SFX">
 							<ShortName>PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2.wav</ShortName>
-							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2_10C4C929.wem</Path>
+							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact2_3F75BDB9.wem</Path>
 						</File>
 						<File Id="466685136" Language="SFX">
 							<ShortName>PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact.wav</ShortName>
-							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact_10C4C929.wem</Path>
+							<Path>SFX\PALLINA_ALLUMINIO\_ Pallina_Metallo_Impact_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -442,11 +625,11 @@
 					<IncludedMemoryFiles>
 						<File Id="293380285" Language="SFX">
 							<ShortName>Blast Laser 4.wav</ShortName>
-							<Path>SFX\Blast Laser 4_9BAE2E0B.wem</Path>
+							<Path>SFX\Blast Laser 4_B4D079FB.wem</Path>
 						</File>
 						<File Id="728435171" Language="SFX">
 							<ShortName>RUOTA\Routa_Destroy.wav</ShortName>
-							<Path>SFX\RUOTA\Routa_Destroy_10C4C929.wem</Path>
+							<Path>SFX\RUOTA\Routa_Destroy_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -454,47 +637,51 @@
 					<IncludedMemoryFiles>
 						<File Id="163792938" Language="SFX">
 							<ShortName>RUOTA\_ Cigolio.wav</ShortName>
-							<Path>SFX\RUOTA\_ Cigolio_D79FB2B7.wem</Path>
+							<Path>SFX\RUOTA\_ Cigolio_9EDFC787.wem</Path>
 						</File>
 						<File Id="614249706" Language="SFX">
 							<ShortName>RUOTA\_ ruota.wav</ShortName>
-							<Path>SFX\RUOTA\_ ruota_D79FB2B7.wem</Path>
+							<Path>SFX\RUOTA\_ ruota_9EDFC787.wem</Path>
 						</File>
 						<File Id="631209540" Language="SFX">
 							<ShortName>ms_insp124_ourtime_reverse.wav</ShortName>
-							<Path>SFX\ms_insp124_ourtime_reverse_8AC63170.wem</Path>
+							<Path>SFX\ms_insp124_ourtime_reverse_71E0A4E0.wem</Path>
 						</File>
 						<File Id="981146523" Language="SFX">
 							<ShortName>RUOTA\_ Rotation Fidget.wav</ShortName>
-							<Path>SFX\RUOTA\_ Rotation Fidget_D79FB2B7.wem</Path>
+							<Path>SFX\RUOTA\_ Rotation Fidget_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1936083868" Name="Play_Tagliola_Impact" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Impact" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="0.387471" DurationMax="0.460783">
+				<Event Id="1936083868" Name="Play_Tagliola_Impact" ObjectPath="\Events\Default Work Unit\Play_Tagliola_Impact" MaxAttenuation="50.000000" DurationType="OneShot" DurationMin="1.174795" DurationMax="1.428804">
 					<IncludedMemoryFiles>
 						<File Id="200068974" Language="SFX">
 							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_3.wav</ShortName>
-							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_3_10C4C929.wem</Path>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_3_3F75BDB9.wem</Path>
 						</File>
 						<File Id="210243154" Language="SFX">
 							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_2.wav</ShortName>
-							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_2_10C4C929.wem</Path>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_2_3F75BDB9.wem</Path>
+						</File>
+						<File Id="266279324" Language="SFX">
+							<ShortName>Tagliola.wav</ShortName>
+							<Path>SFX\Tagliola_329212BB.wem</Path>
 						</File>
 						<File Id="657846513" Language="SFX">
 							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4.wav</ShortName>
-							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4_10C4C929.wem</Path>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4_3F75BDB9.wem</Path>
 						</File>
 						<File Id="745756252" Language="SFX">
 							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_1.wav</ShortName>
-							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_1_10C4C929.wem</Path>
+							<Path>SFX\Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_1_3F75BDB9.wem</Path>
 						</File>
-					</IncludedMemoryFiles>
-				</Event>
-				<Event Id="592787016" Name="Play_Tagliola_Shake" ObjectPath="\Events\Default Work Unit\Objects\Play_Tagliola_Shake" MaxAttenuation="50.000000" DurationType="Infinite">
-					<IncludedMemoryFiles>
+						<File Id="828650804" Language="SFX">
+							<ShortName>Tagliola.wav</ShortName>
+							<Path>SFX\Tagliola_DFDA4ABA.wem</Path>
+						</File>
 						<File Id="1003120525" Language="SFX">
 							<ShortName>Tagliola.wav</ShortName>
-							<Path>SFX\Tagliola_429E5DC5.wem</Path>
+							<Path>SFX\Tagliola_7E9764E0.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -502,7 +689,7 @@
 					<IncludedMemoryFiles>
 						<File Id="814232710" Language="SFX">
 							<ShortName>Tagliola_Snap.wav</ShortName>
-							<Path>SFX\Tagliola_Snap_10C4C929.wem</Path>
+							<Path>SFX\Tagliola_Snap_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

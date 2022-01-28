@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: c42c67daf19aae14e9a2539c6e4199b8, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 81039dfffe0b6424ca7348372e0bb46e, type: 2}
 --- !u!1 &52287427
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 60
     OrthographicSize: 5
-    NearClipPlane: 2
+    NearClipPlane: 2.5
     FarClipPlane: 1000
     Dutch: 0
     LensShift: {x: 0, y: 0}
@@ -807,7 +807,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114505400}
-  m_LocalRotation: {x: 0.27906787, y: -0.017115815, z: 0.0049749445, w: 0.96010596}
+  m_LocalRotation: {x: 0.27906787, y: -0.017115735, z: 0.004974922, w: 0.96010596}
   m_LocalPosition: {x: -10.596881, y: 9.859723, z: 7.94676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1061,7 +1061,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 2
+  near clip plane: 2.5
   far clip plane: 1000
   field of view: 60
   orthographic: 0
@@ -1088,7 +1088,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1381763274}
-  m_LocalRotation: {x: 0.27906787, y: -0.017115815, z: 0.0049749445, w: 0.96010596}
+  m_LocalRotation: {x: 0.27906787, y: -0.017115735, z: 0.004974922, w: 0.96010596}
   m_LocalPosition: {x: -10.596881, y: 9.859723, z: 7.94676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2028,8 +2028,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2083501272}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.0492, z: 16.6417}
-  m_LocalScale: {x: 2, y: 2.098353, z: 18.268057}
+  m_LocalPosition: {x: 1, y: 0.8751, z: 17.2527}
+  m_LocalScale: {x: 2, y: 1.7500263, z: 17.045923}
   m_Children: []
   m_Father: {fileID: 872241741}
   m_RootOrder: 4
