@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9155899047277073440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mano_Sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2769387538283169367}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Schiena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -71,7 +71,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6624115703211874033}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spalla_Sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -102,7 +102,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4066475474059563022}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spalla_Destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 2321750740391509959}
   - component: {fileID: 2488759914007295715}
   - component: {fileID: 2518721062900852879}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ShockWave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,7 +5165,7 @@ GameObject:
   - component: {fileID: 2321750740563209175}
   - component: {fileID: 2488759913268513481}
   - component: {fileID: 2518721063995941207}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10039,7 +10039,7 @@ GameObject:
   - component: {fileID: 2321750741264499167}
   - component: {fileID: 2488759913739825949}
   - component: {fileID: 2518721063382372837}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lightning
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14958,7 +14958,7 @@ GameObject:
   - component: {fileID: 2321750741276242665}
   - component: {fileID: 2488759913493051733}
   - component: {fileID: 2518721062975223117}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Smoke
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19692,13 +19692,13 @@ GameObject:
   - component: {fileID: 2321750741903392417}
   - component: {fileID: 2488759923983430497}
   - component: {fileID: 2518721062214036607}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PlasmaExplosionEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2321750741903392417
 Transform:
   m_ObjectHideFlags: 0
@@ -19707,7 +19707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2320826620365352955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.56, y: 1.68, z: 14.71}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2321750741264499167}
@@ -24433,7 +24433,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3424456015635171644}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Braccio_Destro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24465,7 +24465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2681186411534741462}
   - component: {fileID: 6714591323305334824}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hamster_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24505,7 +24505,7 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 4d356f9f7e7313b4cb5edbf68b3a0e93, type: 2}
+  - {fileID: 2100000, guid: cdb03de80fde46c4589e7bb489601061, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24564,7 +24564,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5786141487612810680}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hips
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29403,7 +29403,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4500228019576279913}
   - component: {fileID: 6252052575480354625}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teeth_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29487,7 +29487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8867159252195227663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Braccio_Sinistro_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29518,7 +29518,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5220746034763967620}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mano_Destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29548,7 +29548,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5066713134017264413}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ginocchio_Sinistro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29579,7 +29579,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8688342800494577528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ginocchio_Destro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29610,7 +29610,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5433102845819135980}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coscia_Destra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29643,7 +29643,7 @@ GameObject:
   - component: {fileID: 5719678205278652611}
   - component: {fileID: 5719678205278652636}
   - component: {fileID: 5719678205278652637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Heart_Particles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29658,7 +29658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5719678205278652638}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -7.56, y: 1.68, z: 14.71}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5779350513307325105}
@@ -34449,7 +34449,7 @@ GameObject:
   - component: {fileID: 5719678205308297317}
   - component: {fileID: 5719678205308297316}
   - component: {fileID: 5719678205308297319}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34497,7 +34497,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34561,7 +34561,7 @@ GameObject:
   - component: {fileID: 5719678205457411307}
   - component: {fileID: 5719678205457411306}
   - component: {fileID: 5719678205457411309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34609,7 +34609,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34673,7 +34673,7 @@ GameObject:
   - component: {fileID: 5719678205620282687}
   - component: {fileID: 5719678205620282686}
   - component: {fileID: 5719678205620282673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Butt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34721,7 +34721,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34785,7 +34785,7 @@ GameObject:
   - component: {fileID: 5719678205925619093}
   - component: {fileID: 5719678205925619092}
   - component: {fileID: 5719678205925619095}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34833,7 +34833,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -34897,7 +34897,7 @@ GameObject:
   - component: {fileID: 5719678205937738767}
   - component: {fileID: 5719678205937738766}
   - component: {fileID: 5719678205937738753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Teeth_low
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34945,7 +34945,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35009,7 +35009,7 @@ GameObject:
   - component: {fileID: 5719678206513783599}
   - component: {fileID: 5719678206513783598}
   - component: {fileID: 5719678206513783585}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Front2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35057,7 +35057,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35121,7 +35121,7 @@ GameObject:
   - component: {fileID: 5719678206615467086}
   - component: {fileID: 5719678206615467073}
   - component: {fileID: 5719678206615467072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35169,7 +35169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35233,7 +35233,7 @@ GameObject:
   - component: {fileID: 5719678206804385145}
   - component: {fileID: 5719678206804385144}
   - component: {fileID: 5719678206804385147}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Eye
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35281,7 +35281,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35345,7 +35345,7 @@ GameObject:
   - component: {fileID: 5719678206930564586}
   - component: {fileID: 5719678206930564589}
   - component: {fileID: 5719678206930564588}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35393,7 +35393,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35457,7 +35457,7 @@ GameObject:
   - component: {fileID: 5719678207037853949}
   - component: {fileID: 5719678207037853948}
   - component: {fileID: 5719678207037853951}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Leg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35505,7 +35505,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35569,7 +35569,7 @@ GameObject:
   - component: {fileID: 5719678207087072598}
   - component: {fileID: 5719678207087072617}
   - component: {fileID: 5719678207087072616}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35617,7 +35617,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8748892135801146194, guid: 2d5b53f68f3800341b82af99c559d388, type: 3}
+  - {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -35677,7 +35677,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5719678207214577603}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pezzi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -35692,7 +35692,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5719678207214577602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.56, y: 1.68, z: 14.71}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5719678206615467075}
@@ -35720,7 +35720,7 @@ GameObject:
   - component: {fileID: 5723605617562280381}
   - component: {fileID: 5611220100037034503}
   - component: {fileID: 5594205706922497173}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: PoolEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40411,13 +40411,13 @@ GameObject:
   - component: {fileID: 5723605617436235635}
   - component: {fileID: 5611220088030861719}
   - component: {fileID: 5594205702819091753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BloodStreamEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5723605617436235635
 Transform:
   m_ObjectHideFlags: 0
@@ -40426,7 +40426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5720676017783088001}
   m_LocalRotation: {x: -0, y: 0.94694734, z: 0.32138887, w: 0}
-  m_LocalPosition: {x: -7.56, y: 1.68, z: 14.71}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5723605613811831971}
@@ -45103,7 +45103,7 @@ GameObject:
   - component: {fileID: 5723605615541002818}
   - component: {fileID: 5611220088007475536}
   - component: {fileID: 5594205703277395664}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BloodGlobs
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -49685,13 +49685,13 @@ GameObject:
   - component: {fileID: 5723605616735838908}
   - component: {fileID: 5611220086371680832}
   - component: {fileID: 5594205700642894332}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BloodSprayEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5723605616735838908
 Transform:
   m_ObjectHideFlags: 0
@@ -49700,7 +49700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5720676019792895786}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.56, y: 1.68, z: 14.71}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5723605615541002818}
@@ -54317,7 +54317,7 @@ GameObject:
   - component: {fileID: 5723605613811831971}
   - component: {fileID: 5611220100594326687}
   - component: {fileID: 5594205706116116329}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BloodSplash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58984,7 +58984,7 @@ GameObject:
   - component: {fileID: 5723605614561677007}
   - component: {fileID: 5611220086186147939}
   - component: {fileID: 5594205705969849181}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BloodPool
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68561,7 +68561,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6736709539183780892}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hamster_low 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68591,7 +68591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 551140324029576072}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Coscia_Sinistra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68627,11 +68627,10 @@ GameObject:
   - component: {fileID: 2477102113756652831}
   - component: {fileID: 3216363446439793842}
   - component: {fileID: 6062078924848524911}
-  - component: {fileID: 5327361824149239569}
   - component: {fileID: 3184997012900342551}
-  m_Layer: 0
-  m_Name: Hamster_X
-  m_TagString: Untagged
+  m_Layer: 6
+  m_Name: Puttana
+  m_TagString: Bitch
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -68643,9 +68642,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6593181925493950475}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 4985468359924799434}
   - {fileID: 3965091162633197058}
@@ -68698,7 +68697,7 @@ NavMeshAgent:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6593181925493950475}
-  m_Enabled: 1
+  m_Enabled: 0
   m_AgentTypeID: 0
   m_Radius: 0.5
   m_Speed: 3
@@ -68747,18 +68746,6 @@ MonoBehaviour:
   magnetizeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4031324691044619078}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 3563448575347313753}
         m_TargetAssemblyTypeName: Assets.Scrips.Hamsters.Hamster_animator, Assembly-CSharp
         m_MethodName: SetMagneticAnimation
@@ -68774,18 +68761,6 @@ MonoBehaviour:
   demagnetizeEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4031324691044619078}
-        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
-        m_MethodName: set_enabled
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 3563448575347313753}
         m_TargetAssemblyTypeName: Assets.Scrips.Hamsters.Hamster_animator, Assembly-CSharp
         m_MethodName: SetMagneticAnimation
@@ -68803,7 +68778,7 @@ MonoBehaviour:
   meshRenderer: {fileID: 6714591323305334824}
   positiveMaterial: {fileID: 2100000, guid: 6a9c4068d4f232347af0916ccab7b3de, type: 2}
   negativeMaterial: {fileID: 2100000, guid: a9baa44a5011ac34495786630b9688bb, type: 2}
-  minDistance: 1.5
+  minDistance: 0.65
   debouncingTime: 0.5
   touchEvent:
     m_PersistentCalls:
@@ -68819,22 +68794,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.31
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5327361824149239569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6593181925493950475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8bc14554ca2e47438c4991d3b54f28d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  heartParticles: {fileID: 5719678205278652636}
-  minDistance: 0.5
 --- !u!114 &3184997012900342551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68851,6 +68812,7 @@ MonoBehaviour:
   particle_bloodSteam: {fileID: 5611220088030861719}
   particle_bloodSplit: {fileID: 5611220086371680832}
   HState: 0
+  hamsterType: 1
 --- !u!1 &7412405553964895050
 GameObject:
   m_ObjectHideFlags: 0
@@ -68860,7 +68822,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9137657626466632194}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Base_Hamster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68891,7 +68853,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2228634765670616249}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Pancia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68923,7 +68885,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 999226578240182962}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Piede_Sinistro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68953,7 +68915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4767323336022010663}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68985,7 +68947,7 @@ GameObject:
   - component: {fileID: 7527236345621714822}
   - component: {fileID: 5719678206942768724}
   - component: {fileID: 3563448575347313753}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Animator_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69020,7 +68982,7 @@ Animator:
   m_GameObject: {fileID: 8774472993086494503}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: a3f9c833cf19da448a19b5f1fb3d98d3, type: 3}
-  m_Controller: {fileID: 9100000, guid: b269a5e90c3ee8c4eaffd2ee150cdeb1, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1543efd9f7f0c254fb58e6b7467da0d2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 1
@@ -69052,7 +69014,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5976689695646793460}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -69082,7 +69044,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7040284822279099134}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Piede_Destro
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -1,6 +1,7 @@
 ﻿using System;
 using Assets.Scrips.Hamsters;
 using Assets.Scrips.UI;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -42,12 +43,12 @@ namespace Assets.Scrips
         {
             if (InfiniteHamsters)
             {
-                //Instantiate(Resources.Load("Hamster");
+                Debug.Log("Spawno nuovo criceto");
+                Instantiate(Resources.Load("Prefabs/Hamster_X"), SpawnTarget.transform, false);
             }
             
             _hamsterOnLevel--;
             _levelStats.HamstersDead++;
-            CheckIfLevelIsCompleted();
         }
 
         private void OnHamsterReachHouse()

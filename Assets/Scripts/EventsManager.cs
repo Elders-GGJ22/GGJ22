@@ -34,8 +34,7 @@ namespace Assets.Scrips
             OnHamsterReachHouseEvent = new HamsterReachHouseEvent();
         }
 
-        [Header("AK Wwise Events")] 
-        public AK.Wwise.Event SfxEvent_HamsterDead;
+        [Header("AK Wwise Events")]
         public AK.Wwise.Event SfxEvent_GameOver;
         public AK.Wwise.Event SfxEvent_Collided;
         // etc
@@ -53,7 +52,8 @@ namespace Assets.Scrips
         /// </summary>
         public void OnHamsterDie()
         {
-            SfxEvent_HamsterDead.Post(this.gameObject);
+            AkSoundEngine.PostEvent("Play_Hamster_Death_Blood", gameObject);
+            
             OnHamsterDieEvent?.Invoke();
         }
 
