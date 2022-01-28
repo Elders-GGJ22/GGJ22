@@ -7,6 +7,10 @@ namespace Assets.Scrips.Hamsters
     [RequireComponent(typeof(AI_Hamster))]
     public class Hamster : MonoBehaviour
     {
+        [SerializeField] private ParticleSystem particle_bloodExplosion;
+        [SerializeField] private ParticleSystem particle_bloodSteam;
+        [SerializeField] private ParticleSystem particle_bloodSplit;
+        
         public enum HamsterState
         {
             Alive,
@@ -28,8 +32,16 @@ namespace Assets.Scrips.Hamsters
                 EventsManager.Instance.OnHamsterReachHouse();
             }
 
-            if (collision.gameObject.tag == HamsterUtils.TAG_TRAP)
+            if (collision.gameObject.tag == HamsterUtils.TAG_PUNES ||
+                collision.gameObject.tag == HamsterUtils.TAG_TRAP || 
+                collision.gameObject.tag == HamsterUtils.TAG_BITCH)
             {
+                Debug.Log("Toccato qualcosa di pericoloso");
+                 EventsManager.Instance.OnHamsterDie();
+                 
+                 particle_bloodExplosion.Play();
+                 particle_bloodSteam.Play();
+                 particle_bloodSplit.Play();
                  
             }
         }

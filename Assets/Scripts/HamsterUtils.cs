@@ -9,5 +9,6 @@
         public const string TAG_TRAP = "Trap";
         public const string TAG_BITCH = "Bitch";
         public const string TAG_SEED = "Seed";
+        public const string TAG_PUNES = "Punes";
     }
 }
