@@ -25,6 +25,10 @@ namespace Assets.Scrips.Hamsters
 
         private void Start()
         {
+            if (agent == null)
+            {
+                agent = GetComponentInParent<NavMeshAgent>();
+            }
             anim = GetComponent<Animator>();
         }
 
@@ -77,8 +81,7 @@ namespace Assets.Scrips.Hamsters
 	    
             }*/
             // Post the Wwise AKEvent each time player step onto the ground
-            //AkSoundEngine.PostEvent("Play_Hamster_Footstep", gameObject);
-            Debug.Log("suono?");
+            AkSoundEngine.PostEvent("Play_Hamster_Footstep", gameObject);
         }
 
         void ProgressStepCycle(float speed)
