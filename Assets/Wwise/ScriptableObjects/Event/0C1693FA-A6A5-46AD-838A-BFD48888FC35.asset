@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac01224be71dfdc4ca5fefb4ae288b67, type: 3}
   m_Name: 0C1693FA-A6A5-46AD-838A-BFD48888FC35
   m_EditorClassIdentifier: 
-  objectName: Play_Hamsters_Save
-  id: 3054066693
+  objectName: Play_Hamster_Save
+  id: 1536861472
   guid: 0C1693FA-A6A5-46AD-838A-BFD48888FC35
