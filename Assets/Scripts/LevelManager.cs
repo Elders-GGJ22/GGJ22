@@ -39,7 +39,7 @@ namespace Assets.Scrips
             EventsManager.Instance.OnLevelStarted();
         }
 
-        private void OnHamsterDie()
+        private void OnHamsterDie(GameObject hamster)
         {
             if (InfiniteHamsters)
             {

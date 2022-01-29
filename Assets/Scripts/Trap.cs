@@ -57,6 +57,7 @@ public class Trap : MonoBehaviour
     private float restartWaitingCurrentTime = 0;
     private float choppingCurrentSpeed = 0;
     private bool blood;
+    public bool isEnabled = true;
 
     public enum TrapState
     {
@@ -67,12 +68,13 @@ public class Trap : MonoBehaviour
         End
     }
     
-    private TrapState status;
+    public TrapState status;
 
     private void Start()
     {
         rb = this.GetComponent<Rigidbody>();
         boxCollider = this.GetComponent<BoxCollider>();
+        isEnabled = true;
 
         startLeftRotation = leftClamp.rotation;
         startRightRotation = rightClamp.rotation;
@@ -116,6 +118,7 @@ public class Trap : MonoBehaviour
                         onDechopEvent.Invoke();
                         restartCurrentSpeed = 0;
                         status = TrapState.Waiting;
+                        isEnabled = true;
                     }
                 }
                 else {
@@ -177,9 +180,16 @@ public class Trap : MonoBehaviour
         }
     }
 
+    void OnMouseDown()
+    {
+        Chop();
+    }
+
     public void Chop(bool _blood = true)
     {
+        //EnableChildColliders(false);
         status = TrapState.Chopping;
+        isEnabled = false;
         blood = _blood;
         //this.rb.AddForce(closingForce, ForceMode.Impulse);
         onChopEvent.Invoke();
@@ -226,8 +236,12 @@ public class Trap : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        if(status != TrapState.Waiting) { return; }
+    {   
+        if (!isEnabled)
+        {
+            Physics.IgnoreCollision(other, this.GetComponent<Collider>());
+            return;
+        }
         if (other.gameObject.tag == HamsterUtils.TAG_HAMSTER)
         {
             Chop();

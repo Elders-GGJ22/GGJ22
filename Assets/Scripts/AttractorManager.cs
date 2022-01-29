@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scrips;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,6 +11,11 @@ public class AttractorManager : MonoBehaviour
     [SerializeField] private float maxDistance = 50f;
     [SerializeField] private LayerMask layerMask;
 
+    void Start()
+    {
+        EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
+    }
+    
     void Update()
     {
         bool leftClick = Input.GetMouseButtonDown(0);
@@ -76,6 +82,7 @@ public class AttractorManager : MonoBehaviour
                         //TODO: some animation for understanding no ammo
                     }
                 }
+                EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
                 //}
             }
         }
@@ -85,10 +92,12 @@ public class AttractorManager : MonoBehaviour
     {
         if(positive)
         {
+            AkSoundEngine.PostEvent("Play_Gun_Positive", gameObject);
             positiveCharges += quantity;
         }
         else
         {
+            AkSoundEngine.PostEvent("Play_Gun_Negative", gameObject);
             negativeCharges += quantity;
         }
     }

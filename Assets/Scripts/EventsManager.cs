@@ -34,11 +34,6 @@ namespace Assets.Scrips
             OnHamsterReachHouseEvent = new HamsterReachHouseEvent();
         }
 
-        [Header("AK Wwise Events")]
-        public AK.Wwise.Event SfxEvent_GameOver;
-        public AK.Wwise.Event SfxEvent_Collided;
-        // etc
-
         [Header("Custom Events")] 
         public GameOverEvent OnGameOverEvent;
 
@@ -47,15 +42,16 @@ namespace Assets.Scrips
         public LevelFinishedEvent OnLevelFinishedEvent;
         public LevelStartedEvent OnLevelStartedEvent;
         public HamsterSpawnEvent OnHamsterSpawnEvent;
+        public UsableChargesEvent OnUsableChargesEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
         /// </summary>
-        public void OnHamsterDie()
+        public void OnHamsterDie(GameObject hamster)
         {
             AkSoundEngine.PostEvent("Play_Hamster_Death_Blood", gameObject);
             
-            OnHamsterDieEvent?.Invoke();
+            OnHamsterDieEvent?.Invoke(hamster);
         }
 
         public void OnHamsterSpawn(GameObject hamster)
@@ -68,9 +64,13 @@ namespace Assets.Scrips
             OnHamsterReachHouseEvent?.Invoke();
         }
 
+        public void OnUsableChargesChanged(int positive, int negative)
+        {
+            OnUsableChargesEvent.Invoke(positive, negative);
+        }
+
         public void OnGameOver()
         {
-            SfxEvent_GameOver.Post(this.gameObject);
             OnGameOverEvent?.Invoke();
         }
 
@@ -99,7 +99,7 @@ namespace Assets.Scrips
     public class LevelStartedEvent : UnityEvent { }
     
     [System.Serializable]
-    public class HamsterDiedEvent : UnityEvent { }
+    public class HamsterDiedEvent : UnityEvent<GameObject> { }
     
     [System.Serializable]
     public class HamsterSpawnEvent : UnityEvent<GameObject> { }
@@ -109,5 +109,8 @@ namespace Assets.Scrips
     
     [System.Serializable]
     public class LevelFinishedEvent : UnityEvent<LevelStats> { }
+    
+    [System.Serializable]
+    public class UsableChargesEvent : UnityEvent<int,int> { }
     #endregion
 }

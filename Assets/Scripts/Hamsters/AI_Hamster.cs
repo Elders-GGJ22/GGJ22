@@ -55,11 +55,11 @@ namespace Assets.Scrips.Hamsters
                 targetsList.Add(obj.transform);
             }
 
-            GameObject[] _trap = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_TRAP);
+            /*ameObject[] _trap = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_TRAP);
             foreach (GameObject obj in _trap)
             {
                 targetsList.Add(obj.transform);
-            }
+            }*/
 
             GameObject[] _seed = GameObject.FindGameObjectsWithTag(HamsterUtils.TAG_SEED);
             foreach (GameObject obj in _seed)
@@ -154,10 +154,10 @@ namespace Assets.Scrips.Hamsters
 
            
 
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
             path = new NavMeshPath();
             agent.CalculatePath(target.position, path);
-#endif
+#endif*/
 
             agent.destination = target.position;
 

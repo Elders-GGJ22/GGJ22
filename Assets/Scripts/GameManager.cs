@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         EventsManager.Instance.OnHamsterSpawnEvent.AddListener(AddNewHamsterToCinematicTarget);
+        EventsManager.Instance.OnHamsterDieEvent.AddListener(RemoveHamsterFromCinematicTarget);
         AssignTargetsToTargetGroup();
     }
 
@@ -38,7 +39,11 @@ public class GameManager : MonoBehaviour
     {
         targetGroup.AddMember(newTarget.transform,1,0);
     }
-    
+
+    void RemoveHamsterFromCinematicTarget(GameObject oldtarget)
+    {
+        targetGroup.RemoveMember(oldtarget.transform);
+    }
 
     void AssignTargetsToTargetGroup()
     {

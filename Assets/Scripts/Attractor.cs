@@ -38,12 +38,16 @@ public class Attractor : MonoBehaviour
 	public static List<Attractor> attractors;
 	private Rigidbody rb;
 	private float debouncingTimeCurrent = 0f;
+	public bool canRemoveConstraint = false;
+	private RigidbodyConstraints _originalConstraint;
 
 	private void Start()
 	{
 		this.rb = this.GetComponent<Rigidbody>();
 		if (meshRenderer) this.idleMaterial = this.meshRenderer.material;
 		SetMagnetic(magnetic);
+
+		_originalConstraint = GetComponent<Rigidbody>().constraints;
 	}
 
 	private void FixedUpdate()
@@ -85,13 +89,10 @@ public class Attractor : MonoBehaviour
 		{
 			hitted = true;
 			touchEvent.Invoke();
-			EventsManager.Instance.SfxEvent_Collided.Post(this.gameObject);
-			Debug.Log("minDistance in");
 		}
 		else if (hitted == true && distance > minDistance)
 		{
 			hitted = false;
-			Debug.Log("minDistance out");
 		}
 	}
 
@@ -118,6 +119,8 @@ public class Attractor : MonoBehaviour
 		return this.magnetic;
 	}
 
+	
+	
 	public void SetMagnetic(bool _magnetic) // Called from AttractorManager
 	{
 		if(_magnetic == magnetic) { return; }
@@ -126,11 +129,16 @@ public class Attractor : MonoBehaviour
 		this.rb.isKinematic = false;
 		//this.rb.isKinematic = cinematic ? true : !_magnetic;
 		SetGFX();
-		if(_magnetic) { magnetizeEvent.Invoke(); }
+		if (_magnetic)
+		{
+			magnetizeEvent.Invoke();
+			if (canRemoveConstraint) GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+		}
 		else
 		{
 			demagnetizeEvent.Invoke();
 			AkSoundEngine.PostEvent("Stop_obj_Magnetized", gameObject);
+			if (canRemoveConstraint) GetComponent<Rigidbody>().constraints = _originalConstraint;
 		}
 	}
 

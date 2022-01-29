@@ -46,7 +46,6 @@ namespace Assets.Scrips.Hamsters
             {
                 case HamsterType.Puttana:
                     var navmesh = GetComponent<NavMeshAgent>();
-                    Debug.Log("trovato navmesh?" + navmesh);
                     Destroy(navmesh);
                     break;
             }
@@ -66,12 +65,18 @@ namespace Assets.Scrips.Hamsters
                 EventsManager.Instance.OnHamsterReachHouse();
             }
 
+            if (collision.gameObject.tag == HamsterUtils.TAG_TRAP)
+            {
+                if (!collision.GetComponent<Trap>().isEnabled)
+                    return;
+            }
+
             if (collision.gameObject.tag == HamsterUtils.TAG_PUNES ||
                 collision.gameObject.tag == HamsterUtils.TAG_TRAP || 
                 collision.gameObject.tag == HamsterUtils.TAG_BITCH)
             {
                 HState = HamsterState.Dead;
-                Debug.Log("Triggered from " + hamsterType);
+                
                 if (hamsterType != HamsterType.Puttana)
                 {
                     StartCoroutine(IePushEventAfterTick());
@@ -86,7 +91,7 @@ namespace Assets.Scrips.Hamsters
         IEnumerator IePushEventAfterTick()
         {
             yield return new WaitForEndOfFrame();
-            EventsManager.Instance.OnHamsterDie();
+            EventsManager.Instance.OnHamsterDie(this.gameObject);
         }
     }
 }
