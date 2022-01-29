@@ -1,5 +1,6 @@
 ﻿using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scrips.Utili
 {
@@ -7,8 +8,10 @@ namespace Assets.Scrips.Utili
     {
         void Start()
         {
+            SceneManager.LoadScene("MainScene");
+
 #if UNITY_EDITOR
-            EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
+            //EditorSceneManager.LoadScene(PlayerPrefs.GetString("MainScene"));
 #endif
         }
     }

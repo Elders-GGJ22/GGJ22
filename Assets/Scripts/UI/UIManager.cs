@@ -17,13 +17,14 @@ namespace Assets.Scrips.UI
         void Awake()
         {
             DontDestroyOnLoad(this.gameObject);
+            
         }
 
         void Start()
         {
             EventsManager.Instance.OnLevelFinishedEvent.AddListener(DrawPanel_LevelEnd);
             EventsManager.Instance.OnLevelStartedEvent.AddListener(OnNewLevelStarted);
-            //EventsManager.Instance.OnMainMenuEvent.AddListener(OnMainMenu);
+            EventsManager.Instance.OnMainMenuEvent.AddListener(OnMainMenu);
         }
 
         void OnMainMenu()

@@ -104,10 +104,13 @@
           <e p="UI" t="Include">
             <e p="AgentLocomotionStart.cs" t="Include" />
             <e p="AgentLookAtStart.cs" t="Include" />
+            <e p="CallMainMenu.cs" t="Include" />
             <e p="LoadPrefs.cs" t="Include" />
+            <e p="MainMenuPanel.cs" t="Include" />
             <e p="MenuController.cs" t="Include" />
             <e p="P_EndOfLevel.cs" t="Include" />
             <e p="P_InGame.cs" t="Include" />
+            <e p="PanelChooseLevel.cs" t="Include" />
             <e p="UIManager.cs" t="Include" />
           </e>
           <e p="Utili" t="Include">

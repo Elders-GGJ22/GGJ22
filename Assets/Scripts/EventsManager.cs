@@ -45,6 +45,7 @@ namespace Assets.Scrips
         public UsableChargesEvent OnUsableChargesEvent;
         public PositiveChargeConsumedEvent OnPositiveChargeEvent;
         public NegativeChargeConsumedEvent OnNegativeChargeEvent;
+        public MainMenuEvent OnMainMenuEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
@@ -54,6 +55,11 @@ namespace Assets.Scrips
             AkSoundEngine.PostEvent("Play_Hamster_Death_Blood", gameObject);
             
             OnHamsterDieEvent?.Invoke(hamster);
+        }
+
+        public void ShowMainMenu()
+        {
+            OnMainMenuEvent.Invoke();
         }
 
         public void OnHamsterSpawn(GameObject hamster)
@@ -131,6 +137,9 @@ namespace Assets.Scrips
     
     [System.Serializable]
     public class NegativeChargeConsumedEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class MainMenuEvent : UnityEvent { }
 
     #endregion
 }
