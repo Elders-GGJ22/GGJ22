@@ -25,10 +25,9 @@ namespace Assets.Scrips.Hamsters
 
         private void Start()
         {
-            if (agent == null)
-            {
-                agent = GetComponentInParent<NavMeshAgent>();
-            }
+            agent = GetComponentInParent<NavMeshAgent>();
+
+           
             anim = GetComponent<Animator>();
         }
 
@@ -38,13 +37,18 @@ namespace Assets.Scrips.Hamsters
             float speed = wwiseFootStepCounter;
             //GetInput(out speed);
             // TODO calcola runtime la velocità del criceto
+            if(agent!=null)
             ProgressStepCycle(speed);
         }
 
         private void OnAnimatorMove()
         {
-            if(anim) { anim.SetFloat("Velocity", agent.velocity.magnitude); }
-            transform.position = agent.nextPosition;
+            if (agent != null)
+            {
+                if(anim) { anim.SetFloat("Velocity", agent.velocity.magnitude); }
+                transform.position = agent.nextPosition;
+            }
+           
         }
 
         public void SetMagneticAnimation(bool magnetic)
