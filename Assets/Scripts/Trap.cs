@@ -29,6 +29,10 @@ public class Trap : MonoBehaviour
     [SerializeField] private float vanishTime = 2f;
     [SerializeField] private float destroyTime = 2f;
     [SerializeField] private bool slerp = true;
+    
+    
+    [SerializeField] private float maxDistance = 50f;
+    [SerializeField] private LayerMask layerMask;
 
     [Header("Events")]
     [SerializeField] private UnityEvent onChopEvent;
@@ -87,6 +91,34 @@ public class Trap : MonoBehaviour
 
     private void Update()
     {
+        bool leftClick = Input.GetMouseButtonDown(0);
+        bool rightClick = Input.GetMouseButtonDown(1);
+        if (leftClick || rightClick)
+        {
+            RaycastHit hitInfo = new RaycastHit();
+            bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, maxDistance,
+                layerMask);
+            if (hit)
+            {
+                Chop();
+                Attractor attractor = hitInfo.transform.GetComponent<Attractor>();
+                if (attractor && hitInfo.transform.tag == HamsterUtils.TAG_TRAP)
+                {
+                    if (leftClick)
+                    {
+                        Debug.Log("fa?");
+                        EventsManager.Instance.OnPositiveUsed();
+                    }
+
+                    if (rightClick)
+                    {
+                        EventsManager.Instance.OnNegativeUsed();
+                    }
+                }
+            }
+        }
+
+
         switch(status) 
         {
             case TrapState.End:
@@ -180,11 +212,6 @@ public class Trap : MonoBehaviour
         }
     }
 
-    void OnMouseDown()
-    {
-        Chop();
-    }
-
     public void Chop(bool _blood = true)
     {
         //EnableChildColliders(false);
@@ -193,7 +220,7 @@ public class Trap : MonoBehaviour
         blood = _blood;
         //this.rb.AddForce(closingForce, ForceMode.Impulse);
         onChopEvent.Invoke();
-        AkSoundEngine.PostEvent("PLAY_TAGLIOLA_SNAP", this.gameObject);
+        AkSoundEngine.PostEvent("Play_Tagliola_Snap", this.gameObject);
     }
 
     private void SetBloodMaterial()

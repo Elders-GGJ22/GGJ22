@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -29,8 +30,19 @@ namespace Assets.Scrips.UI
 
         private void OnUsableChargesChanged(int positive, int negative)
         {
+            Debug.Log("pos: " + positive + " neg " + negative);
             lblPositives.text = positive.ToString();
             lblNegatives.text = negative.ToString();
+
+            if (positive == 0)
+            {
+                lblPositives.transform.parent.GetComponent<Image>().DOFillAmount(1, 2);
+            }
+            
+            if (negative == 0)
+            {
+                lblNegatives.transform.parent.GetComponent<Image>().DOFillAmount(1, 2);
+            }
         }
 
         void Update()

@@ -14,6 +14,8 @@ public class AttractorManager : MonoBehaviour
     void Start()
     {
         EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
+        EventsManager.Instance.OnPositiveChargeEvent.AddListener(OnPositiveChargeConsumed);
+        EventsManager.Instance.OnNegativeChargeEvent.AddListener(OnNegativeChargeConsumed);
     }
     
     void Update()
@@ -94,11 +96,37 @@ public class AttractorManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_Gun_Positive", gameObject);
             positiveCharges += quantity;
+            StartCoroutine(RestorePositive());
         }
         else
         {
             AkSoundEngine.PostEvent("Play_Gun_Negative", gameObject);
             negativeCharges += quantity;
+            StartCoroutine(RestoreNegative());
         }
+    }
+
+    private void OnNegativeChargeConsumed()
+    {
+        AddCharge(false, -1);
+    }
+
+    private void OnPositiveChargeConsumed()
+    {
+        AddCharge(true, -1);
+    }
+
+    IEnumerator RestorePositive()
+    {
+        yield return new WaitForSeconds(2);
+        positiveCharges += 1;
+        EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
+    }
+
+    IEnumerator RestoreNegative()
+    {
+        yield return new WaitForSeconds(2);
+        negativeCharges += 1;
+        EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
     }
 }
