@@ -128,8 +128,8 @@ MonoBehaviour:
         guid: fbbb312f5047b4459381d88944c6dcf8
       Path: Events\Default Work Unit\Play_Barriera_Elettrica_Deactive
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.806358
+      minDuration: 0.678063
     - name: Play_Music_Hamster
       guid: b1e02adee889f844bbdbc425610b88ea
       id: 343174768
@@ -161,9 +161,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1291111c5fc0b84dad844621c1b0753d
       Path: Events\Default Work Unit\Play_Tagliola_Impact
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 1.428804
+      minDuration: 1.174795
   - PhysicalPath: Events\Hamster.wwu
     PathAndIcons:
     - ElementName: Events
@@ -197,9 +197,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 1f92d6566ed26248901aa3919b44cef1
       Path: Events\Default Work Unit\Hamster\Play_Explosive_Hamster_Death
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 2.726269
+      minDuration: 2.29251
     - name: Play_Hamster_Cannibale_Death
       guid: e0c498c359c20d4e9e00989196a549b4
       id: 1775747457
@@ -218,8 +218,8 @@ MonoBehaviour:
         guid: e0c498c359c20d4e9e00989196a549b4
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 5.070431
+      minDuration: 5.070431
     - name: Play_Hamster_Cannibale_Hit
       guid: 79ff4d45ab7c28478ee507227d180d5f
       id: 4187156752
@@ -237,9 +237,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 79ff4d45ab7c28478ee507227d180d5f
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Hit
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 1.690136
+      minDuration: 1.690136
     - name: Play_Hamster_Cannibale_Verso
       guid: 25ed773f3772524abb143dff62798d70
       id: 2681729310
@@ -258,8 +258,8 @@ MonoBehaviour:
         guid: 25ed773f3772524abb143dff62798d70
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Cannibale_Verso
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.690136
+      minDuration: 1.690136
     - name: Play_Hamster_Death
       guid: 0834f7d7ee607f4aa0738cf7bfe57e63
       id: 2986090087
@@ -278,8 +278,8 @@ MonoBehaviour:
         guid: 0834f7d7ee607f4aa0738cf7bfe57e63
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.942558
+      minDuration: 0.772729
     - name: Play_Hamster_Death_Blood
       guid: 998cfc3326ae034d88de551207450c58
       id: 2465610634
@@ -298,8 +298,8 @@ MonoBehaviour:
         guid: 998cfc3326ae034d88de551207450c58
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Death_Blood
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.812137
+      minDuration: 1.050948
     - name: Play_Hamster_Death_Fall
       guid: f02d8ceaea16434ab618333e88107eb3
       id: 2093550265
@@ -318,8 +318,8 @@ MonoBehaviour:
         guid: f02d8ceaea16434ab618333e88107eb3
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Death_Fall
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.942558
+      minDuration: 0.772729
     - name: Play_Hamster_Footstep
       guid: 444fcd9ae1c1db418a509bff6b1d4a94
       id: 3998189881
@@ -398,8 +398,8 @@ MonoBehaviour:
         guid: 48880938b3c9eb4e94db26fd1f4733f0
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Ninfomane_Death
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.543153
+      minDuration: 1.543153
     - name: Play_Hamster_Save
       guid: fa93160ca5a6ad46838abfd48888fc35
       id: 1536861472
@@ -418,8 +418,8 @@ MonoBehaviour:
         guid: fa93160ca5a6ad46838abfd48888fc35
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Save
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 3.380295
+      minDuration: 3.380295
     - name: Play_Hamster_Squits
       guid: 286e92ef12136b4ca1427730cf8924a9
       id: 2655563858
@@ -437,7 +437,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: 286e92ef12136b4ca1427730cf8924a9
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Squits
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: 36.421608
       minDuration: 24.421608
   - PhysicalPath: Events\Objects.wwu
@@ -494,8 +494,8 @@ MonoBehaviour:
         guid: e83d808031832e4b837037e484b2550a
       Path: Events\Default Work Unit\Objects\Play_Circular_Saw_Stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 2.419097
+      minDuration: 2.03421
     - name: Play_Obj_Magnetized_Negative
       guid: 083481ccb4914b4089ce54d8a3c38f99
       id: 1224237682
@@ -554,8 +554,8 @@ MonoBehaviour:
         guid: 7086b8fa3919e44b930ad08a15f864c2
       Path: Events\Default Work Unit\Objects\Play_Pallina_Alluminio_Impact
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.879339
+      minDuration: 0.678063
     - name: Play_Ruota_Destroy
       guid: f27060aced871d40bbc4a95ae7eadee9
       id: 1164366714
@@ -573,9 +573,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: f27060aced871d40bbc4a95ae7eadee9
       Path: Events\Default Work Unit\Objects\Play_Ruota_Destroy
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 2.512436
+      minDuration: 2.330341
     - name: Play_Ruota_Gira
       guid: c4abbe700c9c8443962d631348074356
       id: 616896207
@@ -593,7 +593,7 @@ MonoBehaviour:
         ObjectType: 3
         guid: c4abbe700c9c8443962d631348074356
       Path: Events\Default Work Unit\Objects\Play_Ruota_Gira
-      maxAttenuation: 0
+      maxAttenuation: 50
       maxDuration: -1
       minDuration: -1
     - name: Play_Tagliola_Snap
@@ -613,9 +613,9 @@ MonoBehaviour:
         ObjectType: 3
         guid: 5fe86afd03b7ae46a954cb5285a86030
       Path: Events\Default Work Unit\Objects\Play_Tagliola_Snap
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxAttenuation: 50
+      maxDuration: 1.267619
+      minDuration: 1.267619
     - name: Stop_obj_Magnetized
       guid: 169804dac5311946984172154bc4520a
       id: 4178633038
@@ -634,8 +634,8 @@ MonoBehaviour:
         guid: 169804dac5311946984172154bc4520a
       Path: Events\Default Work Unit\Objects\Stop_obj_Magnetized
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
   - PhysicalPath: Events\Player Gun.wwu
     PathAndIcons:
     - ElementName: Events
@@ -710,8 +710,8 @@ MonoBehaviour:
         guid: 10adf1a7300e0f4fb7f1cc7bfa102415
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Reload
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.963637
+      minDuration: 0.858503
     - name: Play_No_Gun_Charge
       guid: 91d97e1df4d09a4bb027c06f1ec70618
       id: 1740526775
@@ -730,8 +730,8 @@ MonoBehaviour:
         guid: 91d97e1df4d09a4bb027c06f1ec70618
       Path: Events\Default Work Unit\Player Gun\Play_No_Gun_Charge
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.505125
+      minDuration: 0.505125
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:

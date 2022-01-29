@@ -59,6 +59,17 @@ namespace AK
             } // namespace STATE
         } // namespace BARRIERA_ELETTRICA_ONOFF
 
+        namespace MUSIC
+        {
+            static const AkUniqueID GROUP = 3991942870U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NEW_STATE = 2021425847U;
+                static const AkUniqueID NONE = 748895195U;
+            } // namespace STATE
+        } // namespace MUSIC
+
     } // namespace STATES
 
     namespace SWITCHES
