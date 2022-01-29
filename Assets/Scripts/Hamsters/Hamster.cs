@@ -13,7 +13,7 @@ namespace Assets.Scrips.Hamsters
         [SerializeField] private ParticleSystem particle_bloodSteam;
         [SerializeField] private ParticleSystem particle_bloodSplit;
 
-        private HamsterExplosion _expolodedHamster;
+        [SerializeField] private HamsterExplosion _expolodedHamster;
 
         public enum HamsterState
         {
@@ -40,7 +40,7 @@ namespace Assets.Scrips.Hamsters
 
         private void Awake()
         {
-            _expolodedHamster = GetComponent<HamsterExplosion>();
+            //_expolodedHamster = GetComponent<HamsterExplosion>();
             HState = HamsterState.Alive;
             switch (hamsterType)
             {
@@ -53,6 +53,7 @@ namespace Assets.Scrips.Hamsters
         // su cosa ho sbattuto?
         void OnTriggerEnter(Collider collision)
         {
+            Debug.Log(collision.name);
             if (HState == HamsterState.Dead)
             {
                 Physics.IgnoreCollision(collision, GetComponent<Collider>());

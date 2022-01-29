@@ -11,16 +11,26 @@ public class Cannibal_AI : MonoBehaviour
 
     private bool _waitingNewPosition = false;
 
+    public Transform[] patrolTargets;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
 
         if (casualMove) MoveRandom();
+
+        agent.destination = patrolTargets[Random.Range(0, patrolTargets.Length - 1)].position;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (agent.remainingDistance <= 0.1f)
+        {
+            agent.destination = patrolTargets[Random.Range(0, patrolTargets.Length - 1)].position;
+        }
+
+        return;
         if (casualMove)
         {
             if (_waitingNewPosition) return;
@@ -41,7 +51,7 @@ public class Cannibal_AI : MonoBehaviour
             return;
         }
 
-        Vector3 randomDirection = Random.insideUnitSphere * 1;
+        Vector3 randomDirection = Random.insideUnitSphere * 3;
         randomDirection += transform.position;
         NavMeshHit hit;
         NavMesh.SamplePosition(randomDirection, out hit, 2, agent.areaMask);

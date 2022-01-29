@@ -68626,7 +68626,7 @@ GameObject:
   - component: {fileID: 4031324691044619078}
   - component: {fileID: 6062078924848524911}
   - component: {fileID: 5327361824149239569}
-  - component: {fileID: 3184997012900342551}
+  - component: {fileID: 5379152319989277237}
   m_Layer: 0
   m_Name: Hamster
   m_TagString: Untagged
@@ -68740,7 +68740,7 @@ MonoBehaviour:
   minDistance: 0.5
   casualMove: 0
   targetsList: []
---- !u!114 &3184997012900342551
+--- !u!114 &5379152319989277237
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -68752,9 +68752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67b2c3f5fa759646b1c777d71ab3618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particle_bloodExplosion: {fileID: 2488759923983430497}
-  particle_bloodSteam: {fileID: 5611220088030861719}
-  particle_bloodSplit: {fileID: 5611220086371680832}
+  particle_bloodExplosion: {fileID: 5611220088030861719}
+  particle_bloodSteam: {fileID: 5611220086371680832}
+  particle_bloodSplit: {fileID: 2488759923983430497}
+  _expolodedHamster: {fileID: 8410510254600895279}
   HState: 0
   hamsterType: 0
 --- !u!1 &7412405553964895050

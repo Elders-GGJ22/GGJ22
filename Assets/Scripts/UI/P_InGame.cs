@@ -35,7 +35,6 @@ namespace Assets.Scrips.UI
 
         private void OnUsableChargesChanged(int positive, int negative)
         {
-            Debug.Log("pos: " + positive + " neg " + negative);
             lblPositives.text = positive.ToString();
             lblNegatives.text = negative.ToString();
 
