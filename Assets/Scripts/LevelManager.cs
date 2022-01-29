@@ -43,8 +43,8 @@ namespace Assets.Scrips
         {
             if (InfiniteHamsters)
             {
-                Debug.Log("Spawno nuovo criceto");
-                Instantiate(Resources.Load("Prefabs/Hamster_X"), SpawnTarget.transform, false);
+                var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
+                EventsManager.Instance.OnHamsterSpawn(go);
             }
             
             _hamsterOnLevel--;

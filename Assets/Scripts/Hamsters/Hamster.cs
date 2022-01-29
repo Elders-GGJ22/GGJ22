@@ -54,6 +54,12 @@ namespace Assets.Scrips.Hamsters
         // su cosa ho sbattuto?
         void OnTriggerEnter(Collider collision)
         {
+            if (HState == HamsterState.Dead)
+            {
+                Physics.IgnoreCollision(collision, GetComponent<Collider>());
+                return;
+            }
+            
             // raggiunto la casetta.
             if (collision.gameObject.tag == HamsterUtils.TAG_GOAL)
             {
@@ -65,8 +71,11 @@ namespace Assets.Scrips.Hamsters
                 collision.gameObject.tag == HamsterUtils.TAG_BITCH)
             {
                 HState = HamsterState.Dead;
-                
-                StartCoroutine(IePushEventAfterTick());
+                Debug.Log("Triggered from " + hamsterType);
+                if (hamsterType != HamsterType.Puttana)
+                {
+                    StartCoroutine(IePushEventAfterTick());
+                }
                 particle_bloodExplosion.Play();
                 particle_bloodSteam.Play();
                 particle_bloodSplit.Play();

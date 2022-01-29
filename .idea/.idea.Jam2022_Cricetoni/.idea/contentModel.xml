@@ -99,6 +99,7 @@
             <e p="TerrainNoiser.cs" t="Include" />
           </e>
           <e p="Seed.cs" t="Include" />
+          <e p="TeslaCoil.cs" t="Include" />
           <e p="Trap.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AgentLocomotionStart.cs" t="Include" />

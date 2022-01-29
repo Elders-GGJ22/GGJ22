@@ -69,7 +69,7 @@ public class Attractor : MonoBehaviour
 		float distance = direction.magnitude;
 		SoundEvent(distance);
 
-		if (distance == 0f || distance > objToAttract.attractiveDistance) { return; }
+		if (distance == 0f || distance > this.attractiveDistance) { return; }
 
 		float forceMagnitude = G * (rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2);
 		Vector3 force = direction.normalized * forceMagnitude;
@@ -123,7 +123,8 @@ public class Attractor : MonoBehaviour
 		if(_magnetic == magnetic) { return; }
 		this.magnetic = _magnetic;
 		//this.agent.enabled = !_magnetic;
-		this.rb.isKinematic = cinematic ? true : !_magnetic;
+		this.rb.isKinematic = false;
+		//this.rb.isKinematic = cinematic ? true : !_magnetic;
 		SetGFX();
 		if(_magnetic) { magnetizeEvent.Invoke(); }
 		else

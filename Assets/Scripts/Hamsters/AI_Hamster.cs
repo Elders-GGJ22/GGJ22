@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Net;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Cinemachine.Utility;
 using DG.Tweening;
 using DG.Tweening.Plugins.Core.PathCore;
 using UnityEngine;
@@ -26,7 +27,7 @@ namespace Assets.Scrips.Hamsters
 
         private NavMeshAgent agent;
         private NavMeshPath path;
-        private List<Transform> targetsList;
+        public List<Transform> targetsList;
         private Transform oldTarget;
         private float timer = 0;
         
@@ -117,6 +118,7 @@ namespace Assets.Scrips.Hamsters
 #if UNITY_EDITOR
                 path = null;
 #endif
+                targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
                 return;
             }
             
@@ -181,6 +183,8 @@ namespace Assets.Scrips.Hamsters
             Transform target = null;
             foreach(Transform _target in targetsList)
             {
+                if (_target == null) continue;
+                
                 float curDistance = TargetDistance(_target.position);
                 if (curDistance < minDistance)
                 {
@@ -188,11 +192,22 @@ namespace Assets.Scrips.Hamsters
                     target = _target;
                 }
             }
+            
             return target;
         }
 
         private float TargetDistance(Vector3 _target)
         {
+            /*var originalDest = agent.destination;
+
+            agent.destination = _target;
+
+            var res = agent.remainingDistance;
+            agent.destination = originalDest;
+
+            return res;
+            */
+            
                 //Vector3 targetsDist = Vector3.Distance(_target.position, transform.position);
             return (transform.position - _target).sqrMagnitude;
         }
