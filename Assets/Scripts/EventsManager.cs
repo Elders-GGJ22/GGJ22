@@ -68,6 +68,7 @@ namespace Assets.Scrips
 
         public void OnUsableChargesChanged(int positive, int negative)
         {
+            Debug.Log(positive + " " + negative);
             OnUsableChargesEvent.Invoke(positive, negative);
         }
 

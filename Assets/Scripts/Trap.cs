@@ -106,7 +106,6 @@ public class Trap : MonoBehaviour
                 {
                     if (leftClick)
                     {
-                        Debug.Log("fa?");
                         EventsManager.Instance.OnPositiveUsed();
                     }
 

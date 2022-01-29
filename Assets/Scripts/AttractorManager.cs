@@ -84,7 +84,6 @@ public class AttractorManager : MonoBehaviour
                         //TODO: some animation for understanding no ammo
                     }
                 }
-                EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
                 //}
             }
         }
@@ -104,6 +103,7 @@ public class AttractorManager : MonoBehaviour
             negativeCharges += quantity;
             StartCoroutine(RestoreNegative());
         }
+        EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
     }
 
     private void OnNegativeChargeConsumed()
@@ -113,7 +113,9 @@ public class AttractorManager : MonoBehaviour
 
     private void OnPositiveChargeConsumed()
     {
+        
         AddCharge(true, -1);
+        
     }
 
     IEnumerator RestorePositive()

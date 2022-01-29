@@ -5367,6 +5367,12 @@ MonoBehaviour:
   OnUsableChargesEvent:
     m_PersistentCalls:
       m_Calls: []
+  OnPositiveChargeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNegativeChargeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &401132682
 Transform:
   m_ObjectHideFlags: 0
@@ -18242,7 +18248,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6593181925493950475, guid: 78404458214ad6543be63db29e54af45, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 78404458214ad6543be63db29e54af45, type: 3}
@@ -26487,7 +26493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3075322979297946051, guid: 55ff576d4229627439c3acf3b997580b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3075322979297946053, guid: 55ff576d4229627439c3acf3b997580b, type: 3}
       propertyPath: m_Materials.Array.data[0]
