@@ -118,7 +118,7 @@ namespace Assets.Scrips.Hamsters
 #if UNITY_EDITOR
                 path = null;
 #endif
-                targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
+                // targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
                 return;
             }
             
