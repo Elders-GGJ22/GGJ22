@@ -41,7 +41,7 @@ public class Cannibal_AI : MonoBehaviour
             return;
         }
 
-        Vector3 randomDirection = Random.insideUnitSphere * 3;
+        Vector3 randomDirection = Random.insideUnitSphere * 1;
         randomDirection += transform.position;
         NavMeshHit hit;
         NavMesh.SamplePosition(randomDirection, out hit, 2, agent.areaMask);
