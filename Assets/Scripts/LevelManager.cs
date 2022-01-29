@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using Assets.Scrips.Hamsters;
 using Assets.Scrips.UI;
 using DG.Tweening;
@@ -19,7 +20,11 @@ namespace Assets.Scrips
         
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
-
+        
+        [Header("Conditions")]
+        public bool SpawnOverTime = false;
+        public float SpawnTimer = 2;
+        
         [SerializeField] private Transform SpawnTarget;
 
         public void Start()
@@ -37,11 +42,26 @@ namespace Assets.Scrips
             
             // comunica l'inizio del livello al mondo
             EventsManager.Instance.OnLevelStarted();
+
+            if (SpawnOverTime)
+            {
+                StartCoroutine(IeSpawnOverTime());
+            }
+        }
+
+        IEnumerator IeSpawnOverTime()
+        {
+            while (true)
+            {
+                yield return new WaitForSeconds(SpawnTimer);
+                var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
+                EventsManager.Instance.OnHamsterSpawn(go);
+            }
         }
 
         private void OnHamsterDie(GameObject hamster)
         {
-            if (InfiniteHamsters)
+            if (InfiniteHamsters && !SpawnOverTime)
             {
                 var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
                 EventsManager.Instance.OnHamsterSpawn(go);
