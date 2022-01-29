@@ -34,8 +34,7 @@ namespace Assets.Scrips
             OnHamsterReachHouseEvent = new HamsterReachHouseEvent();
         }
 
-        [Header("AK Wwise Events")] 
-        public AK.Wwise.Event SfxEvent_HamsterDead;
+        [Header("AK Wwise Events")]
         public AK.Wwise.Event SfxEvent_GameOver;
         public AK.Wwise.Event SfxEvent_Collided;
         // etc
@@ -47,14 +46,21 @@ namespace Assets.Scrips
         public HamsterReachHouseEvent OnHamsterReachHouseEvent;
         public LevelFinishedEvent OnLevelFinishedEvent;
         public LevelStartedEvent OnLevelStartedEvent;
+        public HamsterSpawnEvent OnHamsterSpawnEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
         /// </summary>
         public void OnHamsterDie()
         {
-            SfxEvent_HamsterDead.Post(this.gameObject);
+            AkSoundEngine.PostEvent("Play_Hamster_Death_Blood", gameObject);
+            
             OnHamsterDieEvent?.Invoke();
+        }
+
+        public void OnHamsterSpawn(GameObject hamster)
+        {
+            OnHamsterSpawnEvent.Invoke(hamster);
         }
 
         public void OnHamsterReachHouse()
@@ -94,6 +100,9 @@ namespace Assets.Scrips
     
     [System.Serializable]
     public class HamsterDiedEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class HamsterSpawnEvent : UnityEvent<GameObject> { }
     
     [System.Serializable]
     public class HamsterReachHouseEvent : UnityEvent { }

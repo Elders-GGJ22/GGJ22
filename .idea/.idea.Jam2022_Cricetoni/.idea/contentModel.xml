@@ -86,6 +86,7 @@
             <e p="AI_Hamster.cs" t="Include" />
             <e p="Hamster.cs" t="Include" />
             <e p="Hamster_animator.cs" t="Include" />
+            <e p="HamsterExplosion.cs" t="Include" />
           </e>
           <e p="HamsterUtils.cs" t="Include" />
           <e p="LevelManager.cs" t="Include" />
@@ -98,6 +99,7 @@
             <e p="TerrainNoiser.cs" t="Include" />
           </e>
           <e p="Seed.cs" t="Include" />
+          <e p="TeslaCoil.cs" t="Include" />
           <e p="Trap.cs" t="Include" />
           <e p="UI" t="Include">
             <e p="AgentLocomotionStart.cs" t="Include" />

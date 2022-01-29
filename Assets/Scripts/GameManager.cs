@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Assets.Scrips;
 using UnityEngine;
 using Assets.Scrips.Hamsters;
 using Cinemachine;
@@ -29,8 +30,15 @@ public class GameManager : MonoBehaviour
     
     void Start()
     {
+        EventsManager.Instance.OnHamsterSpawnEvent.AddListener(AddNewHamsterToCinematicTarget);
         AssignTargetsToTargetGroup();
     }
+
+    void AddNewHamsterToCinematicTarget(GameObject newTarget)
+    {
+        targetGroup.AddMember(newTarget.transform,1,0);
+    }
+    
 
     void AssignTargetsToTargetGroup()
     {

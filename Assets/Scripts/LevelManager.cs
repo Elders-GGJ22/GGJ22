@@ -1,7 +1,9 @@
 ﻿using System;
 using Assets.Scrips.Hamsters;
 using Assets.Scrips.UI;
+using DG.Tweening;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Assets.Scrips
 {
@@ -13,9 +15,12 @@ namespace Assets.Scrips
         [Header("Win condition")] 
         public int MinHamsterAlive;
         public bool AllAlive;
+        public bool InfiniteHamsters;
         
         private int _hamsterOnLevel;
         private LevelStats _levelStats;
+
+        [SerializeField] private Transform SpawnTarget;
 
         public void Start()
         {
@@ -36,15 +41,27 @@ namespace Assets.Scrips
 
         private void OnHamsterDie()
         {
+            if (InfiniteHamsters)
+            {
+                var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
+                EventsManager.Instance.OnHamsterSpawn(go);
+            }
+            
             _hamsterOnLevel--;
             _levelStats.HamstersDead++;
-            CheckIfLevelIsCompleted();
         }
 
         private void OnHamsterReachHouse()
         {
             _hamsterOnLevel--;
             _levelStats.HamstersSave++;
+            
+            if (InfiniteHamsters)
+            {
+                LevelEnded();
+                return;
+            }
+            
             CheckIfLevelIsCompleted();
         }
 
@@ -57,11 +74,15 @@ namespace Assets.Scrips
                 {
                     _levelStats.PlayerWin = true;
                 }
-                
-                // aggiorno il tempo
-                _levelStats.SetTotalTime(Time.realtimeSinceStartup);
-                EventsManager.Instance.OnLevelFinished(_levelStats);
+                LevelEnded();
             }
+        }
+
+        private void LevelEnded()
+        {
+            // aggiorno il tempo
+            _levelStats.SetTotalTime(Time.realtimeSinceStartup);
+            EventsManager.Instance.OnLevelFinished(_levelStats);
         }
     }
 
