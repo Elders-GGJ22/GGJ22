@@ -2870,6 +2870,12 @@ MonoBehaviour:
   OnUsableChargesEvent:
     m_PersistentCalls:
       m_Calls: []
+  OnPositiveChargeEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNegativeChargeEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!4 &401132682
 Transform:
   m_ObjectHideFlags: 0
@@ -4490,7 +4496,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: aa41c009d668b47d1965471d548a04d4, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -10434,7 +10440,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: aa41c009d668b47d1965471d548a04d4, type: 3}
-  m_Type: 0
+  m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -17153,9 +17159,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8666471397774382602}
-  - component: {fileID: 8666471397774382614}
   - component: {fileID: 8666471397774382601}
   - component: {fileID: 8666471397774382613}
+  - component: {fileID: 8666471397774382614}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged

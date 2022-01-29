@@ -43,6 +43,8 @@ namespace Assets.Scrips
         public LevelStartedEvent OnLevelStartedEvent;
         public HamsterSpawnEvent OnHamsterSpawnEvent;
         public UsableChargesEvent OnUsableChargesEvent;
+        public PositiveChargeConsumedEvent OnPositiveChargeEvent;
+        public NegativeChargeConsumedEvent OnNegativeChargeEvent;
         /// <summary>
         /// Ogni evento globale può essere mandato qui dove viene processato dal motore audio
         /// ed eventualmente diramato ad altri gameobject in ascolto
@@ -66,7 +68,18 @@ namespace Assets.Scrips
 
         public void OnUsableChargesChanged(int positive, int negative)
         {
+            Debug.Log(positive + " " + negative);
             OnUsableChargesEvent.Invoke(positive, negative);
+        }
+
+        public void OnPositiveUsed()
+        {
+            OnPositiveChargeEvent.Invoke();
+        }
+
+        public void OnNegativeUsed()
+        {
+            OnNegativeChargeEvent.Invoke();
         }
 
         public void OnGameOver()
@@ -112,5 +125,12 @@ namespace Assets.Scrips
     
     [System.Serializable]
     public class UsableChargesEvent : UnityEvent<int,int> { }
+    
+    [System.Serializable]
+    public class PositiveChargeConsumedEvent : UnityEvent { }
+    
+    [System.Serializable]
+    public class NegativeChargeConsumedEvent : UnityEvent { }
+
     #endregion
 }
