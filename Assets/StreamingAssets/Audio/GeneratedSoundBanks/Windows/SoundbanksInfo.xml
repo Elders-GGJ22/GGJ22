@@ -37,7 +37,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3548549692">
+		<SoundBank Id="3161908922" Language="SFX" Hash="645059885">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
@@ -665,7 +665,7 @@
 						</File>
 						<File Id="266279324" Language="SFX">
 							<ShortName>Tagliola.wav</ShortName>
-							<Path>SFX\Tagliola_329212BB.wem</Path>
+							<Path>SFX\Tagliola_40402BDB.wem</Path>
 						</File>
 						<File Id="657846513" Language="SFX">
 							<ShortName>Tagliola_Impact-20220127T105159Z-001\Tagliola_Impact\_ Tagliola_Impact_4.wav</ShortName>
@@ -677,11 +677,11 @@
 						</File>
 						<File Id="828650804" Language="SFX">
 							<ShortName>Tagliola.wav</ShortName>
-							<Path>SFX\Tagliola_DFDA4ABA.wem</Path>
+							<Path>SFX\Tagliola_5C7E06ED.wem</Path>
 						</File>
 						<File Id="1003120525" Language="SFX">
 							<ShortName>Tagliola.wav</ShortName>
-							<Path>SFX\Tagliola_7E9764E0.wem</Path>
+							<Path>SFX\Tagliola_A0460650.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
