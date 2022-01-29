@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: fd10f6e5a090e24b968b1be1339d8833
     GuidInternal: 
-    m_lastTime: -8585582179997566706
+    m_lastTime: -8585582109183592030
     List:
     - name: Main
       guid: 7d44178dc04c414cb807d01d7dd41c42
@@ -338,8 +338,8 @@ MonoBehaviour:
         guid: 444fcd9ae1c1db418a509bff6b1d4a94
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Footstep
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.921566
+      minDuration: 0.774941
     - name: Play_Hamster_Ninfomane
       guid: 505bcb057d67bf4681652bd565754914
       id: 91805910
@@ -438,8 +438,8 @@ MonoBehaviour:
         guid: 286e92ef12136b4ca1427730cf8924a9
       Path: Events\Default Work Unit\Hamster\Play_Hamster_Squits
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 36.421608
+      minDuration: 24.421608
   - PhysicalPath: Events\Objects.wwu
     PathAndIcons:
     - ElementName: Events
@@ -670,8 +670,8 @@ MonoBehaviour:
         guid: b3e484421e7ba54db341bc2ddedae27f
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Negative
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 17.448124
+      minDuration: 14.672065
     - name: Play_Gun_Positive
       guid: 1b366cea992991438874c1a76aa6a014
       id: 3140575938
@@ -690,8 +690,8 @@ MonoBehaviour:
         guid: 1b366cea992991438874c1a76aa6a014
       Path: Events\Default Work Unit\Player Gun\Play_Gun_Positive
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 17.448124
+      minDuration: 14.672065
     - name: Play_Gun_Reload
       guid: 10adf1a7300e0f4fb7f1cc7bfa102415
       id: 2003795032
