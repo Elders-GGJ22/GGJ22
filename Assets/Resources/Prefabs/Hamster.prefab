@@ -68705,9 +68705,9 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 0
   m_AngularSpeed: 500
-  m_StoppingDistance: 1
+  m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.25
@@ -68741,6 +68741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1e24d0fd3f5148439fcd59b833026c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attractiveDistance: 10
   positive: 1
   magnetic: 0
   cinematic: 0
@@ -68808,6 +68809,7 @@ MonoBehaviour:
   touchEvent:
     m_PersistentCalls:
       m_Calls: []
+  canRemoveConstraint: 0
 --- !u!135 &6062078924848524911
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -68835,6 +68837,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartParticles: {fileID: 5719678205278652636}
   minDistance: 0.5
+  casualMove: 0
+  targetsList: []
 --- !u!114 &3184997012900342551
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68851,6 +68855,7 @@ MonoBehaviour:
   particle_bloodSteam: {fileID: 5611220088030861719}
   particle_bloodSplit: {fileID: 5611220086371680832}
   HState: 0
+  hamsterType: 0
 --- !u!1 &7412405553964895050
 GameObject:
   m_ObjectHideFlags: 0
