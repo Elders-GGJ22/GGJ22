@@ -91,9 +91,9 @@ public class Trap : MonoBehaviour
 
     private void Update()
     {
-        bool leftClick = Input.GetMouseButtonDown(0);
+        /*bool leftClick = Input.GetMouseButtonDown(0);
         bool rightClick = Input.GetMouseButtonDown(1);
-        if (leftClick || rightClick)
+        if ((leftClick || rightClick) && isEnabled)
         {
             RaycastHit hitInfo = new RaycastHit();
             bool hit = Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hitInfo, maxDistance,
@@ -115,7 +115,7 @@ public class Trap : MonoBehaviour
                     }
                 }
             }
-        }
+        }*/
 
 
         switch(status) 
@@ -209,6 +209,11 @@ public class Trap : MonoBehaviour
 #endif
             default: break;
         }
+    }
+
+    void OnMouseDown()
+    {
+        Chop();
     }
 
     public void Chop(bool _blood = true)

@@ -33,7 +33,11 @@ public class AttractorManager : MonoBehaviour
                 //if (hitInfo.transform.gameObject.tag == "Attractable")
                 //{
                 Attractor attractor = hitInfo.transform.GetComponent<Attractor>();
-                if(!attractor) { return; }
+                if (!attractor)
+                {
+                    return;
+                }
+
                 if(leftClick)
                 {
                     if(attractor.IsMagnetic())
