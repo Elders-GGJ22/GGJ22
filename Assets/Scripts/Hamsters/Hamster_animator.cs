@@ -44,6 +44,7 @@ namespace Assets.Scrips.Hamsters
         private void OnAnimatorMove()
         {
             if(anim) { anim.SetFloat("Velocity", agent.velocity.magnitude); }
+            transform.position = agent.nextPosition;
         }
 
         public void SetMagneticAnimation(bool magnetic)
