@@ -11,6 +11,7 @@ namespace Assets.Scrips.UI
         [SerializeField] private GameObject panelHelp;
         [SerializeField] private GameObject panelSide;
         [SerializeField] private GameObject panelInGame;
+        [SerializeField] private GameObject panelMainMenu;
         
         
         void Awake()
@@ -22,6 +23,12 @@ namespace Assets.Scrips.UI
         {
             EventsManager.Instance.OnLevelFinishedEvent.AddListener(DrawPanel_LevelEnd);
             EventsManager.Instance.OnLevelStartedEvent.AddListener(OnNewLevelStarted);
+            //EventsManager.Instance.OnMainMenuEvent.AddListener(OnMainMenu);
+        }
+
+        void OnMainMenu()
+        {
+            panelMainMenu.SetActive(true);
         }
 
         /// <summary>

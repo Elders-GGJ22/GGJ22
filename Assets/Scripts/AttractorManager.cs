@@ -99,13 +99,13 @@ public class AttractorManager : MonoBehaviour
         {
             AkSoundEngine.PostEvent("Play_Gun_Positive", gameObject);
             positiveCharges += quantity;
-            StartCoroutine(RestorePositive());
+            //StartCoroutine(RestorePositive());
         }
         else
         {
             AkSoundEngine.PostEvent("Play_Gun_Negative", gameObject);
             negativeCharges += quantity;
-            StartCoroutine(RestoreNegative());
+            //StartCoroutine(RestoreNegative());
         }
         EventsManager.Instance.OnUsableChargesChanged(positiveCharges, negativeCharges);
     }
