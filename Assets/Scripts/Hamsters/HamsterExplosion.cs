@@ -74,7 +74,7 @@ public class HamsterExplosion : MonoBehaviour
                 }
                 break;
             }
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
             case ExplosionState.Waiting:
             {
                 if(testing)
@@ -87,7 +87,7 @@ public class HamsterExplosion : MonoBehaviour
                 }
                 break;
             }
-#endif
+#endif*/
             default: break;
         }
     }

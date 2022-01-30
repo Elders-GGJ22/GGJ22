@@ -102,10 +102,10 @@ namespace Assets.Scrips.Hamsters
 
         public void SetDestinationPoint(Vector3 destination)
         {
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
             path = new NavMeshPath();
             agent.CalculatePath(destination, path);
-#endif
+//#endif
             agent.destination = destination;
         }
 
@@ -115,9 +115,9 @@ namespace Assets.Scrips.Hamsters
             
             // Search closest target
             if(target == null) {
-#if UNITY_EDITOR
-                path = null;
-#endif
+//#if UNITY_EDITOR
+                //path = null;
+//#endif
                 // targetsList.RemoveAt(targetsList.FindIndex(x => x.position == target.position));
                 return;
             }
@@ -222,8 +222,8 @@ namespace Assets.Scrips.Hamsters
             agent.destination = hit.position;
         }
 
-#if UNITY_EDITOR
-        private void OnDrawGizmosSelected()
+//#if UNITY_EDITOR
+        /*private void OnDrawGizmosSelected()
         {
             Gizmos.color = Color.red;
             Gizmos.DrawWireSphere(this.transform.position, minDistance);
@@ -236,7 +236,7 @@ namespace Assets.Scrips.Hamsters
                     Gizmos.DrawLine(path.corners[i], path.corners[i + 1]);
                 }
             }
-        }
-#endif
+        }*/
+//#endif
     }
 }

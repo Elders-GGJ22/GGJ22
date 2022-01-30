@@ -168,7 +168,7 @@ public class Attractor : MonoBehaviour
 		}
 	}
 
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
 	private void OnDrawGizmosSelected()
 	{
 		Gizmos.color = Color.red;
@@ -177,6 +177,6 @@ public class Attractor : MonoBehaviour
 		Gizmos.color = Color.blue;
 		Gizmos.DrawWireSphere(this.transform.position, minDistance);
 	}
-#endif
+#endif*/
 
 }

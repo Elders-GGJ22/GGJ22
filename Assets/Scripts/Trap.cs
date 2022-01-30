@@ -39,12 +39,12 @@ public class Trap : MonoBehaviour
     [SerializeField] private UnityEvent onDechopEvent;
     [SerializeField] private UnityEvent onExplodeEvent;
 
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
     [Header("Testing")]
     [SerializeField] private bool testing = false;
     [SerializeField] private float chopAfter = 5f;
     [SerializeField] private float explodeAfter = 5f;
-#endif
+#endif*/
 
     private Rigidbody rb;
     private BoxCollider boxCollider;
@@ -188,7 +188,7 @@ public class Trap : MonoBehaviour
                 }
                 break;
             }
-#if UNITY_EDITOR
+/*#if UNITY_EDITOR
             case TrapState.Waiting:
             {
                 if(testing)
@@ -206,7 +206,7 @@ public class Trap : MonoBehaviour
                 }
                 break;
             }
-#endif
+#endif*/
             default: break;
         }
     }

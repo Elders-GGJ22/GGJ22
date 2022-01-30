@@ -10,11 +10,11 @@ namespace Assets.Scrips.Utili
             SceneManager.LoadScene("MainScene");
             return;
             
-#if UNITY_EDITOR
+//#if UNITY_EDITOR
             //EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
-#else
+//#else
             SceneManager.LoadScene("MainScene");
-#endif
+//#endif
         }
     }
 }
