@@ -8,6 +8,5 @@ namespace Assets.Scrips.UI
         {
             EventsManager.Instance.ShowMainMenu();
         }
-
     }
 }

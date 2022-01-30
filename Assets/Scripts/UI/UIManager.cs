@@ -38,6 +38,7 @@ namespace Assets.Scrips.UI
         /// <param name="levelStats"></param>
         private void DrawPanel_LevelEnd(LevelStats levelStats)
         {
+            Debug.Log("level stats di fine livello: " + levelStats.HamstersSave + " " + levelStats.HamstersDead);
             panelEndLevel.gameObject.SetActive(true);
             panelEndLevel.GetComponent<P_EndOfLevel>().Draw(levelStats);
         }

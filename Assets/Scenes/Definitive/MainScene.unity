@@ -498,7 +498,7 @@ Transform:
   m_GameObject: {fileID: 238228174}
   m_LocalRotation: {x: -0, y: -0.7072302, z: -0.7069834, w: 0}
   m_LocalPosition: {x: 0, y: -0.0272, z: 0.0159}
-  m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.07}
   m_Children: []
   m_Father: {fileID: 23563798}
   m_RootOrder: 0
@@ -543,7 +543,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 771c2171328b81e44a3064b4cfa622f9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4021a1a3eeb405488aeda9c7e110b01, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -791,6 +791,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hamster
       objectReference: {fileID: 0}
+    - target: {fileID: 6714591323305334824, guid: 770eb92d268761945813c3a62552299f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: feca21d626fe56a4fb3dad2a2eb8f346, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770eb92d268761945813c3a62552299f, type: 3}
 --- !u!1 &1655328257
@@ -818,8 +822,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655328257}
   m_LocalRotation: {x: -0, y: -0.7072302, z: -0.7069834, w: 0}
-  m_LocalPosition: {x: 0, y: -0.018, z: 0.026}
-  m_LocalScale: {x: 0.08, y: 0.08, z: 0.099999994}
+  m_LocalPosition: {x: 0.009, y: -0.018, z: 0.006}
+  m_LocalScale: {x: 0.06, y: 0.06, z: 0.099999994}
   m_Children: []
   m_Father: {fileID: 8227062948641278247}
   m_RootOrder: 0
@@ -864,7 +868,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: bdff665f74725404a855da9c8d6e7199, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 32ae0150a2b487b4696c4b576e67cbf5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1043,6 +1047,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hamster (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6714591323305334824, guid: 770eb92d268761945813c3a62552299f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: fd5cd9b7ad93816408612d19aaa8ea88, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770eb92d268761945813c3a62552299f, type: 3}
 --- !u!1 &1979729870
@@ -1385,6 +1393,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hamster (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6714591323305334824, guid: 770eb92d268761945813c3a62552299f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: faaa41085bcce6343a79df9fb70ceb39, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 770eb92d268761945813c3a62552299f, type: 3}
 --- !u!1 &56848817116075798

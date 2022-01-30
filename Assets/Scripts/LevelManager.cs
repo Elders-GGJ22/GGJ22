@@ -68,6 +68,7 @@ namespace Assets.Scrips
                 var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
                 go.transform.localScale = new Vector3(scale,scale,scale);
                 EventsManager.Instance.OnHamsterSpawn(go);
+                _hamsterOnLevel++;
             }
             
             _hamsterOnLevel--;
@@ -81,6 +82,7 @@ namespace Assets.Scrips
             
             if (InfiniteHamsters)
             {
+                _levelStats.PlayerWin = true;
                 LevelEnded();
                 return;
             }
@@ -92,6 +94,8 @@ namespace Assets.Scrips
         {
             if (_hamsterOnLevel <= 0)
             {
+                Debug.Log("fine livello: " + MinHamsterAlive + " hamstersave " + _levelStats.HamstersSave );
+                
                 // il giocatore vince solo con le condizioni indicate sopra (tutti salvi se specificato, o almeno il numero minimo
                 if (MinHamsterAlive >= _levelStats.HamstersSave || (AllAlive && _levelStats.HamstersDead == 0))
                 {
