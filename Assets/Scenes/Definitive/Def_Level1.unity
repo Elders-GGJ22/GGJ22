@@ -24270,8 +24270,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7d91941ff9d77a47866b116fdd11ed8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  positiveCharges: 1
-  negativeCharges: 1
+  positiveCharges: 5
+  negativeCharges: 5
   maxDistance: 50
   layerMask:
     serializedVersion: 2
@@ -24327,6 +24327,7 @@ MonoBehaviour:
   SpawnOverTime: 0
   SpawnTimer: 2
   scale: 1
+  levelTitle: Hulkster
   SpawnTarget: {fileID: 2066839338}
 --- !u!1 &2066839337
 GameObject:

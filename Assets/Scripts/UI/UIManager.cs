@@ -43,12 +43,12 @@ namespace Assets.Scrips.UI
             panelEndLevel.GetComponent<P_EndOfLevel>().Draw(levelStats);
         }
 
-        private void OnNewLevelStarted()
+        private void OnNewLevelStarted(string levelName)
         {
             panelInGame.SetActive(true);
             
             panelSide.SetActive(true);
-            panelSide.GetComponentInChildren<TextMeshProUGUI>().text = SceneManager.GetActiveScene().name;
+            panelSide.GetComponentInChildren<TextMeshProUGUI>().text = levelName;
             panelSide.transform.DOMoveX(-200, 0.7f).SetDelay(1).SetEase(Ease.InBack)
                 .OnComplete(() =>
                 {

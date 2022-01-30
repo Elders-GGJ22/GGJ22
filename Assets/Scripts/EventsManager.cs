@@ -103,9 +103,9 @@ namespace Assets.Scrips
         /// Lanciato dallo start del level manager
         /// aggiusta ui, prepara gamemanager
         /// </summary>
-        public void OnLevelStarted()
+        public void OnLevelStarted(string levelname)
         {
-            OnLevelStartedEvent.Invoke();
+            OnLevelStartedEvent.Invoke(levelname);
         }
     }
     
@@ -115,7 +115,7 @@ namespace Assets.Scrips
     public class GameOverEvent : UnityEvent { }
     
     [System.Serializable]
-    public class LevelStartedEvent : UnityEvent { }
+    public class LevelStartedEvent : UnityEvent<string> { }
     
     [System.Serializable]
     public class HamsterDiedEvent : UnityEvent<GameObject> { }

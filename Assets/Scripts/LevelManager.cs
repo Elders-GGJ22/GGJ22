@@ -25,6 +25,8 @@ namespace Assets.Scrips
         public bool SpawnOverTime = false;
         public float SpawnTimer = 2;
         public float scale = 1;
+
+        public string levelTitle;
         
         [SerializeField] private Transform SpawnTarget;
 
@@ -42,7 +44,7 @@ namespace Assets.Scrips
             _levelStats = new LevelStats(_hamsterOnLevel, Time.realtimeSinceStartup);
             
             // comunica l'inizio del livello al mondo
-            EventsManager.Instance.OnLevelStarted();
+            EventsManager.Instance.OnLevelStarted(levelTitle);
 
             if (SpawnOverTime)
             {
