@@ -118,16 +118,14 @@ public class Attractor : MonoBehaviour
 	{
 		return this.magnetic;
 	}
-
-	
 	
 	public void SetMagnetic(bool _magnetic) // Called from AttractorManager
 	{
 		if(_magnetic == magnetic) { return; }
 		this.magnetic = _magnetic;
 		//this.agent.enabled = !_magnetic;
-		this.rb.isKinematic = false;
-		//this.rb.isKinematic = cinematic ? true : !_magnetic;
+		//this.rb.isKinematic = false;
+		this.rb.isKinematic = cinematic ? true : !_magnetic;
 		SetGFX();
 		if (_magnetic)
 		{
