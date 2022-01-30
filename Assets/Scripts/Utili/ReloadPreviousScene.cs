@@ -8,6 +8,9 @@ namespace Assets.Scrips.Utili
     {
         void Start()
         {
+            SceneManager.LoadScene("MainScene");
+            return;
+            
 #if UNITY_EDITOR
             EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
 #else

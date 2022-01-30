@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 namespace Assets.Scrips.UI
 {
@@ -31,12 +32,14 @@ namespace Assets.Scrips.UI
 
         private void OnMainMenu()
         {
-            throw new NotImplementedException();
+            SceneManager.LoadScene("MainScene");
+            this.gameObject.SetActive(false);
         }
 
         private void OnNextLevel()
         {
-            throw new NotImplementedException();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+ 1);
+            this.gameObject.SetActive(false);
         }
     }
 }

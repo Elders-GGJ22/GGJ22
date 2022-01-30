@@ -12,6 +12,7 @@ public class Cannibal_AI : MonoBehaviour
     private bool _waitingNewPosition = false;
 
     public Transform[] patrolTargets;
+    public Animator anim;
 
     void Start()
     {
@@ -22,14 +23,25 @@ public class Cannibal_AI : MonoBehaviour
         agent.destination = patrolTargets[Random.Range(0, patrolTargets.Length - 1)].position;
     }
 
+    private bool isWaiting = false;
+    IEnumerator WaitAndMove()
+    {
+        isWaiting = true;
+        yield return new WaitForSeconds(1f);
+        agent.destination = patrolTargets[Random.Range(0, patrolTargets.Length - 1)].position;
+        isWaiting = false;
+    }
+    
     // Update is called once per frame
     void Update()
     {
-        if (agent.remainingDistance <= 0.1f)
+        if (agent.remainingDistance <= 0.1f && !isWaiting)
         {
-            agent.destination = patrolTargets[Random.Range(0, patrolTargets.Length - 1)].position;
+            StartCoroutine(WaitAndMove());
         }
 
+        if (anim) anim.SetFloat("Velocity", agent.velocity.magnitude);
+        
         return;
         if (casualMove)
         {

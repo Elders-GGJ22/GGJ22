@@ -9,21 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/PreLoad.unity
     guid: e796b780265f53d4da74ea76fa8dd30b
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: da23a58940801df4a852e393f8716e71
+    path: Assets/Scenes/Definitive/MainScene.unity
+    guid: 5fd4aae81d51da247b3a29f8a2108335
   - enabled: 1
     path: Assets/Scenes/Definitive/Tutorial.unity
     guid: 08612bd22bfd6d1469d8976f24bfd748
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: 4406b43734274e149845d54f5e581788
-  - enabled: 1
-    path: Assets/Scenes/Definitive/MainScene.unity
-    guid: 5fd4aae81d51da247b3a29f8a2108335
+    path: Assets/Scenes/Definitive/Def_Level1.unity
+    guid: ecb093118799441478d713de268013e8
   - enabled: 1
     path: Assets/Scenes/Definitive/Def_Level2.unity
     guid: f08908b3b1918214d80d65bc0f3736a7
   - enabled: 1
-    path: Assets/Scenes/Definitive/Def_Level1.unity
-    guid: ecb093118799441478d713de268013e8
+    path: Assets/Level2Final_OK.unity
+    guid: 983aad14c2ec7c345bbf0e423bb1ec06
   m_configObjects: {}
