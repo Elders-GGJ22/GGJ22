@@ -1,5 +1,4 @@
-﻿using UnityEditor.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scrips.Utili
@@ -12,7 +11,7 @@ namespace Assets.Scrips.Utili
             return;
             
 #if UNITY_EDITOR
-            EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
+            //EditorSceneManager.LoadScene(PlayerPrefs.GetString("savedScene"));
 #else
             SceneManager.LoadScene("MainScene");
 #endif

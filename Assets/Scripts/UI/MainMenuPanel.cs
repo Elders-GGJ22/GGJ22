@@ -7,13 +7,16 @@ namespace Assets.Scrips.UI
     {
         public Button btnLevels;
         public Button btnExit;
+        public Button btnCredits;
 
         public GameObject panelLevels;
+        public GameObject panelCredits;
 
         void Start()
         {
             btnExit.onClick.AddListener(ExitGame);
             btnLevels.onClick.AddListener(ShowLevelsChoice);
+            btnCredits.onClick.AddListener(ShowCredits);
         }
 
         void ExitGame()
@@ -25,6 +28,11 @@ namespace Assets.Scrips.UI
         {
             panelLevels.SetActive(true);
             this.gameObject.SetActive(false);
+        }
+
+        void ShowCredits()
+        {
+            panelCredits.gameObject.SetActive(true);
         }
     }
 }

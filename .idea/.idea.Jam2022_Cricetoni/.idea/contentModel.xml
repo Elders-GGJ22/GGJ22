@@ -15,6 +15,7 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="BrutalScroller.cs" t="Include" />
         <e p="Cannibal_AI.cs" t="Include" />
         <e p="DOTween" t="Include">
           <e p="Modules" t="Include">

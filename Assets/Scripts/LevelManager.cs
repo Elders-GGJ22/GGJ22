@@ -24,6 +24,7 @@ namespace Assets.Scrips
         [Header("Conditions")]
         public bool SpawnOverTime = false;
         public float SpawnTimer = 2;
+        public float scale = 1;
         
         [SerializeField] private Transform SpawnTarget;
 
@@ -55,6 +56,7 @@ namespace Assets.Scrips
             {
                 yield return new WaitForSeconds(SpawnTimer);
                 var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
+                go.transform.localScale = new Vector3(scale,scale,scale);
                 EventsManager.Instance.OnHamsterSpawn(go);
             }
         }
@@ -64,6 +66,7 @@ namespace Assets.Scrips
             if (InfiniteHamsters && !SpawnOverTime)
             {
                 var go = Instantiate(Resources.Load("Prefabs/Hamster"), SpawnTarget.transform, false) as GameObject;
+                go.transform.localScale = new Vector3(scale,scale,scale);
                 EventsManager.Instance.OnHamsterSpawn(go);
             }
             

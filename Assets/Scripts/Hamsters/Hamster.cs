@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Runtime.CompilerServices;
-using UnityEditor.AI;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -64,6 +62,7 @@ namespace Assets.Scrips.Hamsters
             if (collision.gameObject.tag == HamsterUtils.TAG_GOAL)
             {
                 EventsManager.Instance.OnHamsterReachHouse();
+                GetComponent<NavMeshAgent>().isStopped = true;
             }
 
             if (collision.gameObject.tag == HamsterUtils.TAG_TRAP)
